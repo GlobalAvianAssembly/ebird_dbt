@@ -1,4 +1,5 @@
-
+.idea/
+*.iml
 target/
 dbt_modules/
 logs/
