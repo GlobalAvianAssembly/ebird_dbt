@@ -1,4 +1,5 @@
-WITH hotspots AS (
+WITH
+hotspots AS (
     SELECT
         locality_id,
         locality as name,
@@ -7,7 +8,7 @@ WITH hotspots AS (
         county_code,
         state_code,
         country_code,
-        row_number() OVER (PARTITION BY locality_id) AS locality_id_rownum
+        row_number() OVER (PARTITION BY locality_id ORDER BY global_unique_identifier) AS locality_id_rownum
     FROM {{ source("dropbox", "ebird") }}
     WHERE locality_type = 'H'
 )

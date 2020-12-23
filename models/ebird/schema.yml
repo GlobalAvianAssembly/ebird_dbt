@@ -43,10 +43,11 @@ models:
         description: The hotspot this checklist was recorded at
         tests:
           -  not_null
+          - relationships:
+              to: ref('hotspot')
+              field: locality_id
       - name: number_observers
         description: The number of observers finding birds on the checklist
-        tests:
-          - not_null
       - name: observation_date
         description: The date the checklist was created
         tests:
@@ -86,5 +87,64 @@ models:
         description: The checklist this observation was submitted under
         tests:
           - not_null
+          - relationships:
+              to: ref('checklist')
+              field: checklist_id
 
+  - name: city
+    description: Potential cities to be included in study that have population over 2 million and eBird hotspots
+    columns:
+      - name: city_id
+        description: The ID of this city
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: The name of this city
+        tests:
+          - not_null
+          - unique
+      - name: population_2015
+        description: The city population in 2015
+        tests:
+          - not_null
+      - name: built_area_2015
+        description: The built up area of the city in 2015
+        tests:
+          - not_null
+      - name: min_hotspot_elevation
+        description: The minimum elevation of any hotspot inside the city
+        tests:
+          - not_null
+      - name: max_hotspot_elevation
+        description: The maximum elevation of any hotspot inside the city
+        tests:
+          - not_null
 
+  - name: hotspot_to_city
+    description: Join table from potential cities to hotspots
+    columns:
+      - name: city_id
+        description: The city this hotspot is associated with
+        tests:
+          - not_null
+          - relationships:
+              to: ref('city')
+              field: city_id
+      - name: locality_id
+        description: The hotspot associated with the city
+        tests:
+          - not_null
+          - relationships:
+              to: ref('hotspot')
+              field: locality_id
+      - name: type
+        description: whether this is an urban hotspot or in the buffer
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['urban', 'buffer']
+      - name: elevation
+        description: The elevation of this hotspot
+        tests:
+          - not_null

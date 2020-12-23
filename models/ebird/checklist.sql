@@ -1,5 +1,5 @@
-
-WITH checklists AS (
+WITH
+checklists AS (
     SELECT
         sampling_event_identifier AS checklist_id,
         locality_id,
@@ -11,7 +11,7 @@ WITH checklists AS (
         effort_area_ha,
         duration_minutes,
         protocol_type,
-        row_number() OVER (PARTITION BY sampling_event_identifier) AS checklist_id_rownum
+        row_number() OVER (PARTITION BY sampling_event_identifier ORDER BY global_unique_identifier) AS checklist_id_rownum
     FROM {{ source("dropbox", "ebird") }}
     WHERE all_species_reported = 1
         AND protocol_type IN ('Traveling', 'Stationary', 'Area')
@@ -20,7 +20,7 @@ WITH checklists AS (
 checklist_deduplicate AS (
   SELECT
     * EXCEPT (checklist_id_rownum, group_identifier),
-    row_number() OVER (PARTITION BY group_identifier) AS group_identifier_rownum
+    row_number() OVER (PARTITION BY group_identifier ORDER BY checklist_id) AS group_identifier_rownum
   FROM checklists
   WHERE checklist_id_rownum = 1
 )
