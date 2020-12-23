@@ -33,6 +33,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   urban_ebird:
-      # Applies to all files under models/example/
-      example:
-          materialized: view
+    ebird:
+      materialized: view
+      +schema: ebird
+    intermediate:
+      materialized: view
+      +schema: intermediate
+    models:
+      materialized: view
+      +schema: models

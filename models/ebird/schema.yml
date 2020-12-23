@@ -1,0 +1,61 @@
+
+version: 2
+
+sources:
+  - name: dropbox
+    tables:
+      - name: ebird
+      - name: urban_buffer_hotspots
+      - name: urban_hotspots
+      - name: elton_traits
+
+models:
+  - name: hotspot
+    description: Individual hotspots found in eBird dataset
+    columns:
+      - name: locality_id
+        description: The ID of the given hotspot
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: The name of the hotspot
+        tests:
+          - not_null
+      - name: latitude
+        description: the latitude of the hotspot
+        tests:
+          - not_null
+      - name: longitude
+        description: the longitude of the hotspot
+        tests:
+          - not_null
+
+  - name: checklist
+    description: Individual checklists found in eBird dataset
+    columns:
+      - name: checklist_id
+        description: The ID of the given checklist
+        tests:
+          - unique
+          - not_null
+      - name: number_observers
+        description: The number of observers finding birds on the checklist
+        tests:
+          - not_null
+      - name: observation_date
+        description: The date the checklist was created
+        tests:
+          - not_null
+      - name: effort_distance_km
+        description: The number of kilometers covered
+      - name: effort_area_ha
+        description: The area covered in hectares
+      - name: duration_minutes
+        description: The total time taken to produce the checklist
+      - name: protocol_type
+        description: The protocol observed when creating the checklist
+
+
+
+
