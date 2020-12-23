@@ -1,0 +1,10 @@
+# Choose the version of dbt that will run the project. Supported versions: 0.17.2, 0.18.0, 0.18.1.
+# If the version is not specified, the version 0.18.0 will be used.
+dbtVersion: 0.18.1
+
+jobs:
+ - name: monday-night
+   schedule: 0 0 * * 1
+   steps:
+     - name: run models
+       command: dbt --version
