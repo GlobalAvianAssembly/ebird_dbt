@@ -32,13 +32,17 @@ models:
           - not_null
 
   - name: checklist
-    description: Individual checklists found in eBird dataset
+    description: Individual checklists found in eBird dataset at hotspots
     columns:
       - name: checklist_id
         description: The ID of the given checklist
         tests:
           - unique
           - not_null
+      - name: locality_id
+        description: The hotspot this checklist was recorded at
+        tests:
+          -  not_null
       - name: number_observers
         description: The number of observers finding birds on the checklist
         tests:
@@ -56,6 +60,31 @@ models:
       - name: protocol_type
         description: The protocol observed when creating the checklist
 
-
+  - name: observation
+    description: Individual approved observations found on eBird checklist
+    columns:
+      - name: observation_id
+        description: The ID of this observation
+        tests:
+          - unique
+          - not_null
+      - name: scientific_name
+        description: The scientific name for the bird seen
+        tests:
+          - not_null
+      - name: subspecies_scientific_name
+        description: The scientific subspecies name, may be null.
+      - name: common_name
+        description: The common name for the bird seen
+        tests:
+          - not_null
+      - name: subspecies_common_name
+        description: The common subspecies name, may be null
+      - name: observation_count
+        description: The number of individuals seen, may be 'X' to indicate present
+      - name: checklist_id
+        description: The checklist this observation was submitted under
+        tests:
+          - not_null
 
 
