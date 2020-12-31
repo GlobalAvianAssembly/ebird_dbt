@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: dropbox
     tables:
-      - name: ebird
+      - name: ebird_2
       - name: urban_buffer_hotspots
       - name: urban_hotspots
       - name: elton_traits
