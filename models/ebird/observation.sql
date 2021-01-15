@@ -6,7 +6,7 @@ SELECT
     subspecies_common_name,
     observation_count,
     sampling_event_identifier AS checklist_id
-FROM {{ source("dropbox", "ebird_2") }}
+FROM {{ source("dropbox", "ebird") }}
 WHERE sampling_event_identifier IN
     (SELECT checklist_id FROM {{ ref("checklist") }})
     AND approved = 1

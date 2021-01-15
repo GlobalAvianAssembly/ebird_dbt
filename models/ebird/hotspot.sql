@@ -9,7 +9,7 @@ hotspots AS (
         state_code,
         country_code,
         row_number() OVER (PARTITION BY locality_id ORDER BY global_unique_identifier) AS locality_id_rownum
-    FROM {{ source("dropbox", "ebird_2") }}
+    FROM {{ source("dropbox", "ebird") }}
     WHERE locality_type = 'H'
 )
 SELECT
