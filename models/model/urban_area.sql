@@ -21,14 +21,14 @@ WITH urban_hotspots AS (
 ), urban_richness AS (
     SELECT
         city_id,
-        COUNT(*) AS urban_richness
+        COUNT(DISTINCT common_name) AS urban_richness
     FROM {{ ref('eph_included_species_at_hotspot') }}
     WHERE locality_id IN (SELECT locality_id FROM {{ ref('eph_included_hotspot') }} WHERE {{ is_urban() }})
     GROUP BY city_id
 ), regional_richness AS (
     SELECT
         city_id,
-        COUNT(*) AS regional_richness
+        COUNT(DISTINCT common_name) AS regional_richness
     FROM {{ ref('eph_included_species_at_hotspot') }}
     WHERE locality_id IN (SELECT locality_id FROM {{ ref('eph_included_hotspot') }} WHERE {{ is_regional() }})
     GROUP BY city_id
