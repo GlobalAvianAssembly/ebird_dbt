@@ -5,9 +5,10 @@ sources:
   - name: dropbox
     tables:
       - name: ebird
-      - name: urban_buffer_hotspots
+      - name: urban_100km_buffer_hotspots
       - name: urban_hotspots
       - name: elton_traits
+      - name: nordpil_urbanareas1_1
 
 models:
   - name: hotspot
@@ -112,15 +113,22 @@ models:
         description: The built up area of the city in 2015
         tests:
           - not_null
-      - name: min_hotspot_elevation
+      - name: min_urban_hotspot_elevation
         description: The minimum elevation of any hotspot inside the city
         tests:
           - not_null
-      - name: max_hotspot_elevation
+      - name: max_urban_hotspot_elevation
         description: The maximum elevation of any hotspot inside the city
         tests:
           - not_null
-
+      - name: min_regional_hotspot_elevation
+        description: The minimum elevation of any hotspot outside the city
+        tests:
+          - not_null
+      - name: max_regional_hotspot_elevation
+        description: The maximum elevation of any hotspot outside the city
+        tests:
+          - not_null
   - name: hotspot_to_city
     description: Join table from potential cities to hotspots
     columns:
