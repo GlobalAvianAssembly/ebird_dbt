@@ -1,5 +1,4 @@
-WITH
-checklists AS (
+WITH checklists AS (
     SELECT
         sampling_event_identifier AS checklist_id,
         locality_id,
@@ -17,14 +16,25 @@ checklists AS (
         AND {{ is_required_protocol() }}
         AND locality_id IN (SELECT locality_id FROM {{ ref('hotspot') }})
 ),
-checklist_deduplicate AS (
+checklist_group_deduplicate AS (
   SELECT
     * EXCEPT (checklist_id_rownum, group_identifier),
     row_number() OVER (PARTITION BY group_identifier ORDER BY checklist_id) AS group_identifier_rownum
   FROM checklists
   WHERE checklist_id_rownum = 1
+  AND group_identifier IS NOT NULL
 )
-SELECT
-    * EXCEPT (group_identifier_rownum)
-FROM checklist_deduplicate
-WHERE group_identifier_rownum = 1
+( -- Single checklist per group
+    SELECT
+        * EXCEPT (group_identifier_rownum)
+    FROM checklist_group_deduplicate
+    WHERE group_identifier_rownum = 1
+)
+UNION ALL
+( -- Single checklists not done by a group
+    SELECT
+        * EXCEPT (checklist_id_rownum, group_identifier)
+    FROM checklists
+    WHERE checklist_id_rownum = 1
+    AND group_identifier IS NULL
+)
