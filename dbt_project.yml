@@ -37,7 +37,7 @@ models:
       materialized: view
       +schema: ebird
     intermediate:
-      materialized: view
+      materialized: table
       +schema: intermediate
     models:
       materialized: view

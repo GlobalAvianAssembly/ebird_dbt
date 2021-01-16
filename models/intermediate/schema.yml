@@ -1,0 +1,92 @@
+
+version: 2
+
+models:
+  - name: int_hotspot
+    description: Hotspots included in study that are within bounds of max and min city elevation
+    columns:
+      - name: locality_id
+        description: The ID of the given hotspot
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: The name of the hotspot
+        tests:
+          - not_null
+      - name: latitude
+        description: the latitude of the hotspot
+        tests:
+          - not_null
+      - name: longitude
+        description: the longitude of the hotspot
+        tests:
+          - not_null
+      - name: elevation
+        description: the elevant of the hotspot in m
+        tests:
+          - not_null
+      - name: city_id
+        description: the city this hotspot is related to
+        tests:
+          - not_null
+      - name: type
+        description: whether this is hotspot is in the urban area or the surrounding buffer
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['urban', 'buffer']
+
+  - name: int_checklist
+    description: Checklists at hotspots included in study
+    columns:
+      - name: checklist_id
+        description: The ID of the given checklist
+        tests:
+          - unique
+          - not_null
+      - name: locality_id
+        description: The hotspot this checklist was recorded at
+        tests:
+          -  not_null
+          - relationships:
+              to: ref('int_hotspot')
+              field: locality_id
+      - name: observation_date
+        description: The date the checklist was created
+        tests:
+          - not_null
+      - name: effort_distance_km
+        description: The number of kilometers covered
+      - name: effort_area_ha
+        description: The area covered in hectares
+      - name: duration_minutes
+        description: The total time taken to produce the checklist
+
+  - name: int_observation
+    description: Individual observations at hotspots included in study
+    columns:
+      - name: observation_id
+        description: The ID of this observation
+        tests:
+          - unique
+          - not_null
+      - name: scientific_name
+        description: The scientific name for the bird seen
+        tests:
+          - not_null
+      - name: common_name
+        description: The common name for the bird seen
+        tests:
+          - not_null
+      - name: observation_count
+        description: The number of individuals seen
+      - name: is_observation_count_provided
+        description: whether a count was provided for all individuals seen
+      - name: checklist_id
+        description: The checklist this observation was submitted under
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_checklist')
+              field: checklist_id
