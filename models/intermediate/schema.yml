@@ -129,3 +129,32 @@ models:
         description: the number of checklists at the hotspot
         tests:
           - not_null
+
+  - name: int_species_at_hotspot
+    description: All species recorded on checklists at a hotspot
+    columns:
+      - name: locality_id
+        description: the hotspot
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_hotspot')
+              field: locality_id
+      - name: scientific_name
+        description: The scientific name for the bird seen
+        tests:
+          - not_null
+      - name: common_name
+        description: The common name for the bird seen
+        tests:
+          - not_null
+      - name: number_of_checklists
+        description: The number of checklists this species appears on
+          - not_null
+      - name: total_checklists_at_hotspot
+        description: the total number of checklists at the hotspot
+          - not_null
+      - name: percentage_of_checklists
+        description: the percentage of checklists the species appears on
+        tests:
+          - not_null
