@@ -1,4 +1,4 @@
-{% set required_number_of_checklists = 15 %}
+{{ config(materialized='ephemeral') }}
 
 WITH checklist_counts AS (
     SELECT
@@ -18,4 +18,4 @@ SELECT
     number_of_checklists
 FROM {{ ref('int_hotspot') }}
 JOIN checklist_counts USING(locality_id)
-WHERE number_of_checklists >= {{ required_number_of_checklists }}
+WHERE {{ has_required_number_of_checklists('number_of_checklists') }}

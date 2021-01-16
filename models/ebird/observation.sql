@@ -9,5 +9,4 @@ SELECT
 FROM {{ source('dropbox', 'ebird') }}
 WHERE sampling_event_identifier IN
     (SELECT checklist_id FROM {{ ref('checklist') }})
-    AND approved = 1
-    AND category = 'species'
+    AND {{ is_included_observation() }}

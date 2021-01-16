@@ -14,6 +14,6 @@ SELECT
     elevation,
     number_of_checklists,
     richness
-FROM {{ ref('int_included_hotspot') }}
+FROM {{ ref('eph_included_hotspot') }}
 JOIN hotspot_richness USING(locality_id)
 WHERE {{ is_urban() }}

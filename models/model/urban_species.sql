@@ -6,6 +6,6 @@ SELECT
     common_name,
     scientific_name,
     percentage_of_checklists
-FROM {{ ref('int_included_species_at_hotspot') }} species
-JOIN {{ ref('int_included_hotspot') }} USING (locality_id)
+FROM {{ ref('eph_included_species_at_hotspot') }} species
+JOIN {{ ref('eph_included_hotspot') }} USING (locality_id)
 WHERE {{ is_urban() }}

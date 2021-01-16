@@ -6,7 +6,7 @@ WITH urban_hotspots AS (
         COUNT(*) AS total_urban_hotspots,
         MAX(elevation) AS max_urban_hotspot_elevation,
         MIN(elevation) AS min_urban_hotspot_elevation
-    FROM {{ ref('int_included_hotspot') }}
+    FROM {{ ref('eph_included_hotspot') }}
     WHERE {{ is_urban() }}
     GROUP BY city_id
 ), buffer_hotspots AS (
@@ -15,22 +15,22 @@ WITH urban_hotspots AS (
         COUNT(*) AS total_regional_hotspots,
         MAX(elevation) AS max_regional_hotspot_elevation,
         MIN(elevation) AS min_regional_hotspot_elevation
-    FROM {{ ref('int_included_hotspot') }}
+    FROM {{ ref('eph_included_hotspot') }}
     WHERE {{ is_regional() }}
     GROUP BY city_id
 ), urban_richness AS (
     SELECT
         city_id,
         COUNT(*) AS urban_richness
-    FROM {{ ref('int_included_species_at_hotspot') }}
-    WHERE locality_id IN (SELECT locality_id FROM {{ ref('int_included_hotspot') }} WHERE {{ is_urban() }})
+    FROM {{ ref('eph_included_species_at_hotspot') }}
+    WHERE locality_id IN (SELECT locality_id FROM {{ ref('eph_included_hotspot') }} WHERE {{ is_urban() }})
     GROUP BY city_id
 ), regional_richness AS (
     SELECT
         city_id,
         COUNT(*) AS regional_richness
-    FROM {{ ref('int_included_species_at_hotspot') }}
-    WHERE locality_id IN (SELECT locality_id FROM {{ ref('int_included_hotspot') }} WHERE {{ is_regional() }})
+    FROM {{ ref('eph_included_species_at_hotspot') }}
+    WHERE locality_id IN (SELECT locality_id FROM {{ ref('eph_included_hotspot') }} WHERE {{ is_regional() }})
     GROUP BY city_id
 )
 SELECT

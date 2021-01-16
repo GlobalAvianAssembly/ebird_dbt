@@ -6,6 +6,20 @@ name: 'urban_ebird'
 version: '1.0.0'
 config-version: 2
 
+vars:
+  # The max distance in elevation a regional hotspot can be either above or below the min/max elevation of urban hotspots.
+  max_difference_in_elevation_for_regional_hotspot: 500
+  # The minimum number of checklists that must be at a hotspot for its inclusion
+  min_number_of_checklists_required_at_hotspot: 15
+  # The minimum percentage of checklists that a species must appear in at a hotspot for it to be included
+  min_percentage_of_checklists_for_species_at_hotspot: 10
+  # Defining min/max effort allowed for checklists
+  max_distance_travelled_for_checklist_km: 10
+  min_duration_for_checklist: 5
+  max_duration_for_checklist: 240
+  # Only include checklists equal or after this year
+  min_year_for_inclusion: 2014
+  
 # This setting configures which "profile" dbt uses for this project.
 profile: 'urban_ebird'
 
