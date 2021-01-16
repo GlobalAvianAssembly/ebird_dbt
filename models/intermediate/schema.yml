@@ -90,3 +90,42 @@ models:
           - relationships:
               to: ref('int_checklist')
               field: checklist_id
+
+  - name: int_included_hotspot
+    description: Hotspots included in study that have required number of checklists
+    columns:
+      - name: locality_id
+        description: The ID of the given hotspot
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: The name of the hotspot
+        tests:
+          - not_null
+      - name: latitude
+        description: the latitude of the hotspot
+        tests:
+          - not_null
+      - name: longitude
+        description: the longitude of the hotspot
+        tests:
+          - not_null
+      - name: elevation
+        description: the elevant of the hotspot in m
+        tests:
+          - not_null
+      - name: city_id
+        description: the city this hotspot is related to
+        tests:
+          - not_null
+      - name: type
+        description: whether this is hotspot is in the urban area or the surrounding buffer
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['urban', 'buffer']
+      - name: number_of_checklists
+        description: the number of checklists at the hotspot
+        tests:
+          - not_null

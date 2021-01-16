@@ -1,6 +1,8 @@
 {% set metres_above_max_elevation = 500 %}
 {% set metres_below_min_elevation = 500 %}
 
+{{ config(materialized='view') }}
+
 SELECT
     hotspot.locality_id,
     hotspot.name,
