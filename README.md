@@ -40,6 +40,57 @@ https://www.googleapis.com/auth/drive.readonly
 - If using SDK, set project name `gcloud config set project [google project ID]`
 - Set up GCS and create a new bucket for the ebird upload. Using SDK: `gsutil mb -b on -l eu gs://ebird/`
 - Upload ebird into new bucket. Using SDK `gsutil cp [path to ebird download] gs://ebird/`
+- Create target table in bigquery for ebird data
+```sql
+create table dropbox.ebird (
+global_unique_identifier STRING,
+last_edited_date DATETIME,
+taxonomic_order INT64,
+category STRING,
+common_name STRING,
+scientific_name STRING,
+subspecies_common_name 	STRING,
+subspecies_scientific_name 	STRING,
+observation_count STRING,
+breeding_bird_atlas_code STRING,
+breeding_bird_atlas_category STRING,
+age_sex STRING,
+country STRING,
+country_code STRING,
+state 	STRING,
+state_code 	STRING,
+county 	STRING, 		
+county_code 	STRING,
+iba_code STRING,
+bcr_code STRING,
+usfws_code STRING,
+atlas_block STRING,
+locality 	STRING,
+locality_id 	STRING,
+locality_type 	STRING,
+latitude 	FLOAT64,
+longitude 	FLOAT64,
+observation_date 	DATE,
+time_observations_started 	STRING,
+observer_id 	STRING,
+sampling_event_identifier 	STRING,
+protocol_type 	STRING,
+protocol_code 	STRING, 	
+project_code 	STRING,
+duration_minutes INT64,
+effort_distance_km 	FLOAT64,
+effort_area_ha 	FLOAT64,
+number_observers 	INT64,
+all_species_reported 	INT64,
+group_identifier 	STRING,
+has_media 	INT64,
+approved 	INT64,
+reviewed 	INT64,
+reason 	STRING,
+trip_comments 	STRING ,
+species_comments 	STRING 	
+);
+```
 - Once uploaded, create new transfer from google console to import data into bigquery
 
 ### Set Up Using DBT
