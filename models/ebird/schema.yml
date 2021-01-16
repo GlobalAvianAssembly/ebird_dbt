@@ -113,6 +113,14 @@ models:
         description: The built up area of the city in 2015
         tests:
           - not_null
+      - name: latitude
+        description: the latitude of the city from nordpil or wikipedia
+        tests:
+          - not_null
+      - name: longitude
+        description: the longitude of the city from nordpil or wikipedia
+        tests:
+          - not_null
       - name: min_urban_hotspot_elevation
         description: The minimum elevation of any hotspot inside the city
         tests:
