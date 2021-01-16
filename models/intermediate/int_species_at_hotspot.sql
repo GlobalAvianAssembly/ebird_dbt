@@ -18,6 +18,7 @@ WITH species_on_checklist AS (
 )
 SELECT
     locality_id,
+    city_id,
     common_name,
     scientific_name,
     number_of_checklist_appearances,
