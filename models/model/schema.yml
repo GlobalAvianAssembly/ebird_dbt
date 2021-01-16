@@ -99,8 +99,8 @@ models:
         description: The average percentage of checklists this species appears on at hotspots within the regionl
         tests:
           - not_null
-      - name: number_of_checklists_appearances
-        description: The number of checklists this species appears on
+      - name: number_of_hotspot_appearances
+        description: The number of hotspots this species appears on
 
   - name: urban_area
     description: Details of the urban areas with in the study
