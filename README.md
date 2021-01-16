@@ -91,7 +91,7 @@ trip_comments 	STRING ,
 species_comments 	STRING 	
 );
 ```
-- Once uploaded, create new transfer from google console to import data into bigquery
+- Create new transfer from [google console](https://console.cloud.google.com/bigquery/transfers) to import data into bigquery.  Select file in google cloud storage  as source, and new table in bigquery as target. File format should be `CSV`, field separator should be `\t` and skip header rows should be `1`.
 
 ### Set Up Using DBT
 - Create views and tables `dbt run`
