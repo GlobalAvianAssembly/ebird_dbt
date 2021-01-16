@@ -5,7 +5,7 @@ urban_hotspots AS (
         CITY_NAME,
         ELEVATION,
         'urban' AS type
-    FROM {{ ref("urban_hotspots") }}
+    FROM {{ ref('urban_hotspots') }}
 ),
 buffer_hotspots AS  (
     SELECT
@@ -13,7 +13,7 @@ buffer_hotspots AS  (
         CITY_NAME,
         ELEVATION,
         'buffer' AS type
-    FROM {{ ref("urban_100km_buffer_hotspots") }}
+    FROM {{ ref('urban_100km_buffer_hotspots') }}
 ),
 all_hotspots AS (
     (SELECT * FROM urban_hotspots) UNION ALL (SELECT * FROM buffer_hotspots)
@@ -24,4 +24,5 @@ SELECT
     ELEVATION AS elevation,
     type
 FROM all_hotspots
-LEFT OUTER JOIN {{ ref("city") }} ON all_hotspots.CITY_NAME = city.name
+LEFT OUTER JOIN {{ ref('city') }} ON all_hotspots.CITY_NAME = city.name
+WHERE LOCALITY_ID IN (SELECT locality_id FROM {{ ref( 'hotspot') }})
