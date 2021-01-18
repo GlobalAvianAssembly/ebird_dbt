@@ -29,8 +29,7 @@ WITH urban_hotspots AS (
     SELECT
         city_id,
         COUNT(DISTINCT common_name) AS regional_richness
-    FROM {{ ref('eph_included_species_at_hotspot') }}
-    WHERE locality_id IN (SELECT locality_id FROM {{ ref('eph_included_hotspot') }} WHERE {{ is_regional() }})
+    FROM {{ ref('regional_species') }}
     GROUP BY city_id
 )
 SELECT
