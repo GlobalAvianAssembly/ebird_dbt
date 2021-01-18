@@ -25,7 +25,7 @@ all_hotspots AS (
         type,
         row_number() OVER (PARTITION BY LOCALITY_ID, city_id, type ORDER BY elevation) AS rownum
     FROM all_hotspots
-    LEFT OUTER JOIN {{ ref('city') }} ON all_hotspots.CITY_NAME = city.name
+    JOIN {{ ref('city') }} ON all_hotspots.CITY_NAME = city.name
     WHERE LOCALITY_ID IN (SELECT locality_id FROM {{ ref( 'hotspot') }})
 )
 SELECT * EXCEPT(rownum) FROM deduped WHERE rownum = 1

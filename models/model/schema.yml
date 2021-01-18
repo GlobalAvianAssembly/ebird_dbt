@@ -7,98 +7,50 @@ models:
     columns:
       - name: locality_id
         description: The ID of the given hotspot
-        tests:
-          - unique
-          - not_null
       - name: name
         description: The name of the hotspot
-        tests:
-          - not_null
       - name: latitude
         description: the latitude of the hotspot
-        tests:
-          - not_null
       - name: longitude
         description: the longitude of the hotspot
-        tests:
-          - not_null
       - name: elevation
-        description: the elevant of the hotspot in m
-        tests:
-          - not_null
+        description: the elevation of the hotspot
       - name: city_id
         description: the city this hotspot is related to
-        tests:
-          - not_null
       - name: type
         description: whether this is hotspot is in the urban area or the surrounding buffer
-        tests:
-          - not_null
-          - accepted_values:
-              values: ['urban', 'buffer']
       - name: number_of_checklists
         description: the number of checklists at the hotspot
-        tests:
-          - not_null
 
   - name: eph_included_species_at_hotspot
     description: Species that appear on over the required percentage of checklists at a hotspot
     columns:
       - name: locality_id
         description: the hotspot
-        tests:
-          - not_null
-          - relationships:
-              to: ref('int_hotspot')
-              field: locality_id
       - name: city_id
         description: the city the hotspot is in
-        tests:
-          - not_null
-          - relationships:
-              to: ref('city')
-              field: city_id
       - name: scientific_name
         description: The scientific name for the bird seen
-        tests:
-          - not_null
       - name: common_name
         description: The common name for the bird seen
-        tests:
-          - not_null
       - name: number_of_checklists
         description: The number of checklists this species appears on
-          - not_null
       - name: total_checklists_at_hotspot
         description: the total number of checklists at the hotspot
-          - not_null
       - name: percentage_of_checklists
         description: the percentage of checklists the species appears on
-        tests:
-          - not_null
 
   - name: regional_species
     description: Species in the regional species pool for a city
     columns:
       - name: city_id
         description: the city the hotspot is in
-        tests:
-          - not_null
-          - relationships:
-              to: ref('urban_area')
-              field: city_id
       - name: scientific_name
         description: The scientific name for the bird seen
-        tests:
-          - not_null
       - name: common_name
         description: The common name for the bird seen
-        tests:
-          - not_null
       - name: average_percentage_of_checklists
-        description: The average percentage of checklists this species appears on at hotspots within the regionl
-        tests:
-          - not_null
+        description: The average percentage of checklists this species appears on at hotspots within the region
       - name: number_of_hotspot_appearances
         description: The number of hotspots this species appears on
 
@@ -107,14 +59,8 @@ models:
     columns:
       - name: city_id
         description: The ID of this city
-        tests:
-          - unique
-          - not_null
       - name: name
         description: The name of this city
-        tests:
-          - not_null
-          - unique
       - name: population_2015
         description: The city population in 2015
       - name: built_area_2015
@@ -133,85 +79,43 @@ models:
         description: the regional species pool richness
       - name: min_urban_hotspot_elevation
         description: The minimum elevation of any hotspot inside the city
-        tests:
-          - not_null
       - name: max_urban_hotspot_elevation
         description: The maximum elevation of any hotspot inside the city
-        tests:
-          - not_null
       - name: min_regional_hotspot_elevation
         description: The minimum elevation of any hotspot outside the city, taking into account max difference allowed
-        tests:
-          - not_null
       - name: max_regional_hotspot_elevation
         description: The maximum elevation of any hotspot outside the city, taking into account max difference allowed
-        tests:
-          - not_null
 
   - name: urban_hotspot
     description: Hotspot included in study within an urban areay
     columns:
       - name: locality_id
         description: The ID of the given hotspot
-        tests:
-          - unique
-          - not_null
       - name: name
         description: The name of the hotspot
-        tests:
-          - not_null
       - name: latitude
         description: the latitude of the hotspot
-        tests:
-          - not_null
       - name: longitude
         description: the longitude of the hotspot
-        tests:
-          - not_null
       - name: elevation
-        description: the elevant of the hotspot in m
-        tests:
-          - not_null
+        description: the elevation of the hotspot
       - name: city_id
         description: the city this hotspot is related to
-        tests:
-          - not_null
       - name: number_of_checklists
         description: the number of checklists at the hotspot
-        tests:
-          - not_null
       - name: richmess
         description: the species richness at this hotspot
-        tests:
-          - not_null
 
   - name: urban_species
     description: Species that occur at urban hotspots
     columns:
       - name: city_id
         description: the city the hotspot is in
-        tests:
-          - not_null
-          - relationships:
-              to: ref('urban_area')
-              field: city_id
-
       - name: locality_id
         description: the hotspot
-        tests:
-          - not_null
-          - relationships:
-              to: ref('urban_hotspot')
-              field: locality_id
       - name: scientific_name
         description: The scientific name for the bird seen
-        tests:
-          - not_null
       - name: common_name
         description: The common name for the bird seen
-        tests:
-          - not_null
       - name: percentage_of_checklists
-        description: The percentage of checklists this species appears on at hotspots within the regionl
-        tests:
-          - not_null
+        description: The percentage of checklists this species appears on at hotspots within the regional
