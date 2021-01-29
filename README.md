@@ -104,6 +104,12 @@ This will create four different datasets in bigquery.
 - `intermediate`, used for tables to reduce data queried in models
 - `model`, holds the final data sets for modelling
 
+### Landscape and habitat variables
+These were generated with google earth engine.
+The code can be found here:
+
+https://code.earthengine.google.com/?accept_repo=users/jamesr/city_metrics
+
 ### DBT Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
