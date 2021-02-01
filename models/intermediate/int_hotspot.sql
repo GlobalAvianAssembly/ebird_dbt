@@ -1,4 +1,5 @@
 SELECT
+    {{ dbt_utils.surrogate_key(['locality_id', 'city_id']) }} AS hotspot_id,
     hotspot.locality_id,
     hotspot.name,
     hotspot.latitude,

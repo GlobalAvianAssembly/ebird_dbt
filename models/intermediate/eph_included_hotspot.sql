@@ -8,6 +8,7 @@ WITH checklist_counts AS (
     GROUP BY locality_id
 )
 SELECT
+    hotspot_id,
     locality_id,
     name,
     latitude,
@@ -17,5 +18,5 @@ SELECT
     type,
     number_of_checklists
 FROM {{ ref('int_hotspot') }}
-JOIN checklist_counts USING(locality_id)
+JOIN checklist_counts USING (locality_id)
 WHERE {{ has_required_number_of_checklists('number_of_checklists') }}

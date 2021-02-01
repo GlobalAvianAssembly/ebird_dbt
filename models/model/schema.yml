@@ -2,26 +2,6 @@
 version: 2
 
 models:
-  - name: eph_included_hotspot
-    description: Hotspots included in study that have required number of checklists
-    columns:
-      - name: locality_id
-        description: The ID of the given hotspot
-      - name: name
-        description: The name of the hotspot
-      - name: latitude
-        description: the latitude of the hotspot
-      - name: longitude
-        description: the longitude of the hotspot
-      - name: elevation
-        description: the elevation of the hotspot
-      - name: city_id
-        description: the city this hotspot is related to
-      - name: type
-        description: whether this is hotspot is in the urban area or the surrounding buffer
-      - name: number_of_checklists
-        description: the number of checklists at the hotspot
-
   - name: eph_included_species_at_hotspot
     description: Species that appear on over the required percentage of checklists at a hotspot
     columns:
@@ -89,8 +69,14 @@ models:
   - name: urban_hotspot
     description: Hotspot included in study within an urban areay
     columns:
+      - name: hotspot_id
+        description: The ID of the hotspot
+        tests:
+          - unique
       - name: locality_id
-        description: The ID of the given hotspot
+        description: The ID of the given ebird locality
+        tests:
+          - unique
       - name: name
         description: The name of the hotspot
       - name: latitude

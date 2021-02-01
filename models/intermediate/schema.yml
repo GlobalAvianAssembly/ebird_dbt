@@ -4,7 +4,17 @@ version: 2
 models:
   - name: int_hotspot
     description: Hotspots included in study that are within bounds of max and min city elevation
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - locality_id
+            - city_id
     columns:
+      - name: hotspot_id
+        description: the unique identifier for this hotspot (locality_id, city_id)
+        tests:
+          - not_null
+          - unique
       - name: locality_id
         description: The ID of the given hotspot
       - name: name
@@ -29,6 +39,9 @@ models:
     columns:
       - name: checklist_id
         description: The ID of the given checklist
+        tests:
+          - unique
+          - not_null
       - name: locality_id
         description: The hotspot this checklist was recorded at
         tests:
@@ -67,6 +80,12 @@ models:
   - name: int_species_at_hotspot
     description: All species recorded on checklists at a hotspot
     columns:
+      - name: hotspot_id
+        description: the unique identifier for this hotspot (locality_id, city_id)
+        tests:
+          - relationships:
+              to: ref('int_hotspot')
+              field: hotspot_id
       - name: locality_id
         description: the hotspot
         tests:
@@ -89,3 +108,25 @@ models:
         description: the total number of checklists at the hotspot
       - name: percentage_of_checklists
         description: the percentage of checklists the species appears on
+
+  - name: eph_included_hotspot
+    description: Hotspots included in study that have required number of checklists
+    columns:
+      - name: hotspot_id
+        description: The unique key for the int_hotspot
+      - name: locality_id
+        description: The ID of the given hotspot
+      - name: name
+        description: The name of the hotspot
+      - name: latitude
+        description: the latitude of the hotspot
+      - name: longitude
+        description: the longitude of the hotspot
+      - name: elevation
+        description: the elevation of the hotspot
+      - name: city_id
+        description: the city this hotspot is related to
+      - name: type
+        description: whether this is hotspot is in the urban area or the surrounding buffer
+      - name: number_of_checklists
+        description: the number of checklists at the hotspot

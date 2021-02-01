@@ -17,6 +17,7 @@ WITH species_on_checklist AS (
   GROUP BY locality_id, common_name, scientific_name
 )
 SELECT
+    hotspot_id,
     locality_id,
     city_id,
     common_name,
@@ -24,5 +25,5 @@ SELECT
     number_of_checklist_appearances,
     number_of_checklists AS total_checklists_at_hotspot,
     ROUND(number_of_checklist_appearances / number_of_checklists * 100, 2) AS percentage_of_checklists
-FROM species_at_hotspot
-JOIN {{ ref('eph_included_hotspot') }} USING(locality_id)
+FROM {{ ref('eph_included_hotspot') }}
+JOIN species_at_hotspot USING (locality_id)

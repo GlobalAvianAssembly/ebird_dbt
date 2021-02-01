@@ -16,7 +16,8 @@ hotspot_data AS (
     FROM
         {{ source('dropbox', 'ee_hotspot_copernicus_land_coverage_and_pop_density') }}
 )
-SELECT 
+SELECT
+    hotspot_id,
     locality_id,
     hotspot.name AS locality_name,
     hotspot.richness AS locality_richness,
