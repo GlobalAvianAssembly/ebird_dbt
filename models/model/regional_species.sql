@@ -13,4 +13,3 @@ WITH regional_species AS (
 SELECT
     *
 FROM regional_species
-WHERE number_of_hotspot_appearances > 1

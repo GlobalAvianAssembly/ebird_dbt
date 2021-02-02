@@ -20,7 +20,9 @@ SELECT
     hotspot_id,
     locality_id,
     hotspot.name AS locality_name,
-    hotspot.richness AS locality_richness,
+    hotspot.project_richness AS locality_project_richness,
+    hotspot.total_richness AS locality_total_richness,
+    hotspot.chao_estimate AS locality_chao_estimate,
     hotspot.number_of_checklists,
     city_data.*,
     hotspot_data.* EXCEPT (locality_id)

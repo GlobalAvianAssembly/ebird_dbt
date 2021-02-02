@@ -89,8 +89,12 @@ models:
         description: the city this hotspot is related to
       - name: number_of_checklists
         description: the number of checklists at the hotspot
-      - name: richmess
-        description: the species richness at this hotspot
+      - name: total_richness
+        description: the total species richness at this hotspot of all species observed
+      - name: project_richness
+        description: the species richness only including species that appear on the required number of checklists.
+      - name: chao_estimate
+        description: The chao2 estimate of richness at this hotspot
 
   - name: urban_species
     description: Species that occur at urban hotspots
