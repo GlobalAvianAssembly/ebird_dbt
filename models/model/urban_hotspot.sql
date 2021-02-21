@@ -13,6 +13,24 @@ total_hotspot_richness AS (
     FROM {{ ref('int_species_at_hotspot' )}}
     GROUP BY hotspot_id
 ),
+checklist_distance_stats AS (
+    SELECT
+        locality_id,
+        AVG(effort_distance_km) AS mean_effort_distance_km,
+        MAX(effort_distance_km) AS max_effort_distance_km
+    FROM {{ ref('int_checklist') }}
+    WHERE effort_distance_km IS NOT NULL
+    GROUP BY locality_id
+),
+checklist_area_stats AS (
+    SELECT
+        locality_id,
+        AVG(effort_area_ha) AS mean_effort_area_ha,
+        MAX(effort_area_ha) AS max_effort_area_ha
+    FROM {{ ref('int_checklist') }}
+    WHERE effort_area_ha IS NOT NULL
+    GROUP BY locality_id
+),
 chao2 AS (
     SELECT
         hotspot_id,
@@ -40,3 +58,5 @@ SELECT
         ELSE -1
     END AS chao_estimate
 FROM chao2
+LEFT JOIN checklist_distance_stats USING (locality_id)
+LEFT JOIN checklist_area_stats USING (locality_id)
