@@ -11,6 +11,8 @@ sources:
       - name: nordpil_urbanareas1_1
       - name: ee_city_copernicus_land_coverage
       - name: ee_hotspot_copernicus_land_coverage_and_pop_density
+      - name: birdlife_distribution_intersection_with_urban_area
+      - name: birdlife_taxonomy
 
 models:
   - name: hotspot

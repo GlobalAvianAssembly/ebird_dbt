@@ -130,3 +130,13 @@ models:
         description: whether this is hotspot is in the urban area or the surrounding buffer
       - name: number_of_checklists
         description: the number of checklists at the hotspot
+
+  - name: int_regional_species_pool
+    description: Regional pool based on birdlife distribution polygons
+    columns:
+      - name: scientific_name
+        description: The scientific name for the bird
+      - name: common_name
+        description: The common name for the bird
+      - name: city_id
+        description: the city this bird appears in the regional pool for

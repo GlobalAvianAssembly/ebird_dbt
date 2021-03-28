@@ -29,10 +29,6 @@ models:
         description: The scientific name for the bird seen
       - name: common_name
         description: The common name for the bird seen
-      - name: average_percentage_of_checklists
-        description: The average percentage of checklists this species appears on at hotspots within the region
-      - name: number_of_hotspot_appearances
-        description: The number of hotspots this species appears on
 
   - name: urban_area
     description: Details of the urban areas with in the study
@@ -55,16 +51,14 @@ models:
         description: the total number of hotspots within the region around this city included in study
       - name: urban_richness
         description: the urban species richness
+      - name: urban_chao_estimate
+        description: the chao estimate for urban species richness
       - name: regional_richness
         description: the regional species pool richness
       - name: min_urban_hotspot_elevation
         description: The minimum elevation of any hotspot inside the city
       - name: max_urban_hotspot_elevation
         description: The maximum elevation of any hotspot inside the city
-      - name: min_regional_hotspot_elevation
-        description: The minimum elevation of any hotspot outside the city, taking into account max difference allowed
-      - name: max_regional_hotspot_elevation
-        description: The maximum elevation of any hotspot outside the city, taking into account max difference allowed
 
   - name: urban_hotspot
     description: Hotspot included in study within an urban areay
