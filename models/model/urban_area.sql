@@ -37,7 +37,9 @@ WITH urban_hotspots AS (
 ), regional_richness AS (
     SELECT
         city_id,
-        COUNT(DISTINCT scientific_name) AS regional_richness
+        COUNT(DISTINCT scientific_name) AS regional_richness,
+        COUNT(IF(number_of_ebird_hotspot_appearances = 1, 1, NULL)) AS one_observation,
+        COUNT(IF(number_of_ebird_hotspot_appearances = 2, 1, NULL)) AS two_observations
     FROM {{ ref('regional_species') }}
     WHERE present_in_birdlife = TRUE AND present_in_ebird = TRUE
     GROUP BY city_id
@@ -58,7 +60,12 @@ SELECT
     END AS urban_chao_estimate,
     urban_hotspots.min_urban_hotspot_elevation AS min_urban_hotspot_elevation,
     urban_hotspots.max_urban_hotspot_elevation AS max_urban_hotspot_elevation,
-    regional_richness.regional_richness AS regional_richness
+    regional_richness.regional_richness AS regional_richness,
+    CASE
+        WHEN regional_richness.two_observations > 0
+        THEN ROUND(regional_richness.regional_richness + ((regional_richness.one_observation * regional_richness.one_observation) / (2 * regional_richness.two_observations)), 1)
+        ELSE -1
+    END AS regional_chao_estimate
 FROM {{ ref ('city') }} city
 JOIN urban_hotspots USING (city_id)
 JOIN buffer_hotspots USING (city_id)

@@ -30,12 +30,15 @@ species_pools AS (
 )
 SELECT
     species_pools.scientific_name AS scientific_name,
-    t.common_name AS common_name,
+    COALESCE(t.common_name, ebird.common_name) AS common_name,
     species_pools.city_id AS city_id,
     species_pools.present_in_ebird AS present_in_ebird,
-    species_pools.present_in_birdlife AS present_in_birdlife
+    species_pools.present_in_birdlife AS present_in_birdlife,
+    COALESCE(ebird.number_of_hotspot_appearances, 0) AS number_of_ebird_hotspot_appearances
 FROM species_pools
 LEFT JOIN {{ ref('int_birdlife_taxonomy') }} t
     ON species_pools.scientific_name = t.scientific_name
+LEFT JOIN {{ ref('int_ebird_regional_species_pool') }} ebird
+    ON species_pools.scientific_name = ebird.scientific_name AND species_pools.city_id = ebird.city_id
 ORDER BY present_in_ebird DESC, present_in_birdlife DESC, species_pools.scientific_name
 
