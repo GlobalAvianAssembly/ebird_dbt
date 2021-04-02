@@ -1,3 +1,3 @@
 SELECT
     *
-FROM {{ ref('int_regional_species_pool') }}
+FROM {{ ref('int_birdlife_regional_species_pool') }}
