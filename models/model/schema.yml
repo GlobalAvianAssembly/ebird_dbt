@@ -29,6 +29,10 @@ models:
         description: The scientific name for the bird seen
       - name: common_name
         description: The common name for the bird seen
+      - name: present_in_birdlife
+        description: Whether this species is present in the birdlife compiled species pool
+      - name: present_in_ebird
+        description: Whether this species is present in the ebird compiled species pool
 
   - name: urban_area
     description: Details of the urban areas with in the study

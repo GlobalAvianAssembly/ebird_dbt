@@ -39,6 +39,7 @@ WITH urban_hotspots AS (
         city_id,
         COUNT(DISTINCT scientific_name) AS regional_richness
     FROM {{ ref('regional_species') }}
+    WHERE present_in_birdlife = TRUE AND present_in_ebird = TRUE
     GROUP BY city_id
 )
 SELECT
