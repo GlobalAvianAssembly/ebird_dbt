@@ -11,7 +11,7 @@ SELECT DISTINCT
     regional_pool.binomial AS scientific_name,
     taxonomy_clean.common_name AS common_name,
     city.city_id AS city_id
-FROM {{ source('dropbox', 'birdlife_distribution_intersection_with_urban_area') }} regional_pool
+FROM {{ source('dropbox', 'ee_birdlife_distribution_intersection_with_urban_area') }} regional_pool
 LEFT JOIN taxonomy_clean
     ON regional_pool.binomial = taxonomy_clean.scientific_name
 JOIN {{ ref('city') }} city

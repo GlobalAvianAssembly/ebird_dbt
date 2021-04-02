@@ -13,6 +13,7 @@ sources:
       - name: ee_hotspot_copernicus_land_coverage_and_pop_density
       - name: birdlife_distribution_intersection_with_urban_area
       - name: birdlife_taxonomy
+      - name: ee_birdlife_distribution_intersection_with_urban_area
 
 models:
   - name: hotspot
