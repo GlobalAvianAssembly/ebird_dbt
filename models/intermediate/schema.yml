@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: int_birdlife_taxonmy
+  - name: int_birdlife_taxonomy
     description: Mapping from scientific name to common name  using birdlife taxonomy
     columns:
       - name: common_name
@@ -147,7 +147,21 @@ models:
       - name: common_name
         description: The common name for the bird
       - name: city_id
-        description: the city this bird appears in the regional pool for
+        description: the city this bird appears in the regional pool for,
+      - name: iucn_red_list_2020
+        description: IUCN red list category
+      - name: presence
+        description: The presence type for this region (e.g. extinct)
+      - name: presence_code
+        description: birdlist code for presence
+      - name: origin
+        description: The origin type for this region (e.g. native, introduced)
+      - name: origin_code
+        description: birdlist code for origin
+      - name: seasonal
+        description: The presence type for this region (e.g. breeding, passage, resident)
+      - name: seasonal_code
+        description: birdlist code for seasonal
 
   - name: int_ebird_regional_species_pool
     description: Regional pool based on ebird hotspots in buffer around urban area

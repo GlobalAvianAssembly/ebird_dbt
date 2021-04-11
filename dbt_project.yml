@@ -53,8 +53,11 @@ models:
     intermediate:
       materialized: table
       +schema: intermediate
-    model:
+    taxonomy:
       materialized: view
+      +schema: taxonomy
+    model:
+      materialized: table
       +schema: model
 
 seeds:
@@ -487,4 +490,24 @@ seeds:
         b5km_pc_unknown: float64
         b5km_pc_urban: float64
         latitude: float64
-        
+    birdlife_taxonomy_v5:
+      +column_types:
+        Seq: int64
+        Subspp_Seq: int64
+        Order: string
+        Family_name: string
+        Family: string
+        Subfamily: string
+        Tribe: string
+        Common_name: string
+        Scientific_name: string
+        Authority: string
+        BirdLife_taxonomic_treatment: string
+        IUCN_Red_List_category_2020: string
+        Synonyms: string
+        Alternative_common_names: string
+        Taxonomic_sources: string
+        SISRecID: string
+        SpcRecID: string
+        SubsppID: string
+        X: string

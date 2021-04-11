@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+  - name: birdlife_taxonomy_with_alternatives
+    description: Mapping from scientific name to common name  using birdlife taxonomy
+    columns:
+      - name: common_name
+        description: the common name for the species
+      - name: scientific_name
+        description: the birdlife binomial for the species
+      - name: alternative_scientific_names
+        description: array of alternative scientific names for this species
+
+  - name: used_ebird_taxonomy
+    description: Species included in models from ebird taxonomy
+    columns:
+      - name: common_name
+        description: the common name for the species
+      - name: scientific_name
+        description: the eBird binomial for the species
+      - name: birdlife_common_name
+        description: the common name for the species from birdlife
+      - name: birdlife_scientific_name
+        description: the birdlife binomial for the species
