@@ -11,10 +11,10 @@ WITH alternative_names AS (
     FROM alternative_names
     JOIN UNNEST(alternative_scientific_names) alternative_scientific_name
     WHERE scientific_name != alternative_scientific_name
+        AND TRIM(alternative_scientific_name) NOT IN (SELECT scientific_name FROM {{ ref('base_birdlife_taxonomy') }})
 )
 SELECT
     birdlife.scientific_name,
     birdlife.common_name,
     ARRAY(SELECT alternative_scientific_name FROM alternative_names_cleaned t WHERE t.scientific_name = birdlife.scientific_name) AS alternative_scientific_names,
 FROM {{ ref('base_birdlife_taxonomy') }} birdlife
-WHERE birdlife.scientific_name NOT IN (SELECT alternative_scientific_name FROM alternative_names_cleaned)
