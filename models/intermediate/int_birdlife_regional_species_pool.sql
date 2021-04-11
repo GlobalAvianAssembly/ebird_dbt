@@ -33,7 +33,7 @@ SELECT DISTINCT
     regional_pool.origin AS origin_code,
     t.iucn_red_list_2020 AS iucn_red_list_2020
 FROM {{ source('dropbox', 'ee_birdlife_distribution_intersection_with_urban_area') }} regional_pool
-LEFT JOIN {{ ref('int_birdlife_taxonomy') }} t
+LEFT JOIN {{ ref('base_birdlife_taxonomy') }} t
     ON regional_pool.species = t.scientific_name
 JOIN {{ ref('city') }} city
     ON regional_pool.city_name = city.name

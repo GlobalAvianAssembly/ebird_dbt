@@ -1,4 +1,3 @@
-{{ config(materialized='ephemeral') }}
 SELECT DISTINCT
     Common_name AS common_name,
     Scientific_name AS scientific_name,

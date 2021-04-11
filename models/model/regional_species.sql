@@ -48,7 +48,7 @@ SELECT
     birdlife.presence_code AS birdlife_presence_code,
     birdlife.origin_code AS birdlife_origin_code
 FROM species_pools
-LEFT JOIN {{ ref('int_birdlife_taxonomy') }} t
+LEFT JOIN {{ ref('base_birdlife_taxonomy') }} t
     ON species_pools.scientific_name = t.scientific_name
 LEFT JOIN {{ ref('int_ebird_regional_species_pool') }} ebird
     ON species_pools.scientific_name = ebird.scientific_name AND species_pools.city_id = ebird.city_id

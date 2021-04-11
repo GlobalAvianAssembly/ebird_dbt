@@ -2,14 +2,6 @@
 version: 2
 
 models:
-  - name: int_birdlife_taxonomy
-    description: Mapping from scientific name to common name  using birdlife taxonomy
-    columns:
-      - name: common_name
-        description: the common name for the species
-      - name: scientific_name
-        description: the birdlife binomial for the species
-
   - name: int_hotspot
     description: Hotspots included in study that are within bounds of max and min city elevation
     tests:

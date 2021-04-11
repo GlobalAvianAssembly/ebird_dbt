@@ -47,6 +47,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   urban_ebird:
+    dropbox:
+      materialized: ephemeral
+      +schema: dropbox
     ebird:
       materialized: view
       +schema: ebird
@@ -57,7 +60,7 @@ models:
       materialized: view
       +schema: taxonomy
     model:
-      materialized: table
+      materialized: view
       +schema: model
 
 seeds:
