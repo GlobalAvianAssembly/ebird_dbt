@@ -1,0 +1,27 @@
+SELECT DISTINCT
+    common_name AS common_name,
+    scientific_name AS scientific_name,
+    diet_invertebrate,
+    diet_vert_endo,
+    diet_vert_ecto,
+    diet_vert_fish,
+    diet_vert_unknown,
+    diet_scavenger,
+    diet_fruit,
+    diet_nectar,
+    diet_seed,
+    diet_other_plant,
+    diet_category,
+    diet_certainty,
+    foraging_below_water,
+    foraging_around_surf,
+    foraging_ground,
+    foraging_understory,
+    foraging_midheight,
+    foraging_canopy,
+    foraging_aerial,
+    is_noctural,
+    body_mass_value,
+    is_pelagic_specialist
+FROM
+    {{ source('dropbox', 'elton_traits') }}
