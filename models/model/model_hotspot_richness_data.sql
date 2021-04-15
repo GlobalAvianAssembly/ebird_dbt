@@ -25,10 +25,14 @@ SELECT
     hotspot.chao_estimate AS locality_chao_estimate,
     hotspot.number_of_checklists,
     city_data.*,
-    hotspot_data.* EXCEPT (locality_id)
+    hotspot_data.* EXCEPT (locality_id),
+    urban_area.regional_richness AS regional_richness,
+    ROUND(hotspot.project_richness / urban_area.regional_richness * 100, 1) AS percentage_of_regional_richness
 FROM
     {{ ref('urban_hotspot') }} hotspot
 JOIN
     hotspot_data USING (locality_id)
 JOIN
     city_data USING (city_id)
+JOIN
+    {{ ref('urban_area') }} urban_area USING (city_id)
