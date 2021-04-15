@@ -26,8 +26,8 @@ SELECT
     hotspot.number_of_checklists,
     city_data.*,
     hotspot_data.* EXCEPT (locality_id),
-    urban_area.regional_richness AS regional_richness,
-    ROUND(hotspot.project_richness / urban_area.regional_richness * 100, 1) AS percentage_of_regional_richness
+    urban_area.birdlife_regional_richness AS birdlife_regional_richness,
+    ROUND(hotspot.project_richness / urban_area.birdlife_regional_richness * 100, 1) AS percentage_of_regional_richness
 FROM
     {{ ref('urban_hotspot') }} hotspot
 JOIN

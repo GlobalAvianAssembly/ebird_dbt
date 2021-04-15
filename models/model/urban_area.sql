@@ -65,7 +65,8 @@ SELECT
         WHEN regional_richness.two_observations > 0
         THEN ROUND(regional_richness.regional_richness + ((regional_richness.one_observation * regional_richness.one_observation) / (2 * regional_richness.two_observations)), 1)
         ELSE -1
-    END AS regional_chao_estimate
+    END AS regional_chao_estimate,
+    (SELECT COUNT(*) FROM {{ ref('regional_species') }} bl WHERE bl.present_in_birdlife = TRUE AND bl.city_id = city.city_id) AS birdlife_regional_richness
 FROM {{ ref ('city') }} city
 JOIN urban_hotspots USING (city_id)
 JOIN buffer_hotspots USING (city_id)
