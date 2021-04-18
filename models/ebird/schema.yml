@@ -1,21 +1,6 @@
 
 version: 2
 
-sources:
-  - name: dropbox
-    tables:
-      - name: ebird
-      - name: urban_100km_buffer_hotspots
-      - name: urban_hotspots
-      - name: elton_traits
-      - name: nordpil_urbanareas1_1
-      - name: ee_city_copernicus_land_coverage
-      - name: ee_hotspot_copernicus_land_coverage_and_pop_density
-      - name: birdlife_distribution_intersection_with_urban_area
-      - name: birdlife_taxonomy_v4
-      - name: birdlife_taxonomy_v5
-      - name: ee_birdlife_distribution_intersection_with_urban_area
-
 models:
   - name: hotspot
     description: Individual hotspots found in eBird dataset
