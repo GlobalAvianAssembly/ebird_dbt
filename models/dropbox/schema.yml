@@ -16,3 +16,4 @@ sources:
       - name: birdlife_taxonomy_v5
       - name: ee_birdlife_distribution_intersection_with_urban_area
       - name: ee_city_distance_to_coastline
+      - name: ee_city_elevation_delta

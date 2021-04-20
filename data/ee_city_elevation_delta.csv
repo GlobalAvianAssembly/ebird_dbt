@@ -1,0 +1,222 @@
+city_name,max_elevation,min_elevation
+Maputo,30,0
+Tel Aviv,215,-21
+Beirut,-395,-726
+Khartoum,396,366
+Damascus,829,627
+Amman,865,592
+Aleppo,484,408
+Kampala,1189,1166
+Nairobi,1722,1584
+Jeddah,229,-10
+Addis Ababa,2514,2285
+Dar es Salaam,91,-74
+Baghdad,40,30
+Sana'a,2568,2484
+Riyadh,731,610
+Kuwait City,30,-21
+Tehran,1978,1010
+Antananarivo,1425,1357
+Isfahan,1673,1571
+Dubai,61,-15
+Mashhad,1002,940
+Tashkent,472,412
+Kabul,2743,2438
+Karachi,92,0
+Peshawar,412,305
+Rawalpindi [Islamabad],617,488
+Multan,106,91
+Faisalabad,183,183
+Gujranwala,213,213
+Lahore,213,183
+Ahmedabad,61,61
+Surat,30,30
+Vadodara,46,30
+Chandigarh,396,343
+Mumbai,153,-2
+Jaipur,442,396
+Delhi [New Delhi],244,183
+Pune,762,503
+Ürümqi,1707,838
+Meerut,228,213
+Indore,549,457
+Agra,183,183
+Bhopal,503,488
+Kozhikode,152,-1
+Kanpur,122,122
+Lucknow,122,122
+Kochi,152,-10
+Nagpur,335,320
+Hyderabad,549,503
+Coimbatore,365,312
+Bengaluru,792,762
+Prayagraj,91,91
+Gorakhpur,91,91
+Varanasi,99,61
+Chennai,45,-10
+Kathmandu,1524,1524
+Colombo,122,-10
+Patna,61,61
+Dhanbad,183,183
+Asansol,152,106
+Kolkata,0,-1
+Dhaka,61,-10
+Comilla,61,30
+Noakhali,61,30
+Chattogram,61,-10
+Lanzhou,2134,1829
+Yangon,30,0
+Chengdu,580,488
+Kunming,2133,1950
+Xi'an,762,610
+Taiyuan,1220,914
+Chongqing,457,335
+Beijing,152,22
+Medan,76,-11
+Bangkok,30,0
+Shijiazhuang,84,61
+Guiyang,1371,1219
+Tianjin,0,0
+Zhengzhou,152,152
+Harbin,198,183
+Hanoi,122,0
+Kuala Lumpur,457,-1
+Jinan,457,229
+Changchun,305,244
+Shenyang,91,91
+Nanning,137,122
+Singapore,30,-4
+Dalian,121,-10
+Wuhan,91,61
+Changsha,98,45
+Qingdao,335,-10
+Ho Chi Minh City,122,0
+Jakarta,1067,-10
+Hefei,61,61
+Nanchang,61,30
+Bandung,929,701
+Nanjing,168,61
+Guangzhou,183,-10
+Pyongyang,139,19
+Tasikmalaya,731,320
+Changzhou,45,23
+Tegal,305,-10
+Hong Kong,76,-10
+Suzhou,46,15
+Semarang,396,-10
+Hangzhou,138,-10
+Seoul,279,-10
+Yogyakarta,313,107
+Shanghai,61,-10
+Jieyang,122,-10
+Ningbo,213,-9
+Xiamen,106,-10
+Fuzhou,305,152
+Quanzhou,106,-10
+Wenzhou,152,-4
+Surabaya,1318,-10
+Daegu,100,55
+Busan,116,21
+Taichung,991,335
+New Taipei [Taipei],656,-2
+Kaohsiung,213,76
+Fukuoka,201,-3
+Quezon City [Manila],305,-11
+Osaka [Kyoto],300,-10
+Makassar,259,-2
+Nagoya,221,-14
+Tokyo,116,-28
+Cebu City,60,-107
+Melbourne,267,-1
+Sydney,185,-88
+San Jose,442,-10
+Los Angeles,774,-7
+Tijuana,450,-68
+Las Vegas,959,529
+Phoenix,684,321
+Guadalajara,1604,1491
+Seattle,295,-10
+Mexico City,2560,2217
+Puebla,2491,2150
+Vancouver,156,-8
+Monterrey,1200,350
+Denver,1810,1559
+Guatemala City,1753,1371
+Houston,48,-2
+Dallas,225,127
+Guayaquil,15,-10
+Quito,3277,2896
+Cali,1174,944
+Lima,1067,-10
+Miami,6,-306
+Medellín,2286,2247
+Bogota,3048,2484
+Chicago,224,167
+Maracaibo,30,-10
+Port-au-Prince,741,-7
+Detroit,282,118
+Santo Domingo,40,-100
+Washington D.C.,130,14
+Caracas,853,792
+Toronto,278,48
+Philadelphia,79,0
+Santiago,2133,549
+New York,135,-10
+Manaus,61,37
+Montreal,60,10
+Boston,37,-11
+Buenos Aires,30,-10
+Belém,30,-1
+Curitiba,899,739
+São Paulo,853,731
+Belo Horizonte,991,861
+Rio de Janeiro,167,-10
+Fortaleza,30,-10
+Salvador,-4,-45
+Recife,15,-10
+Dakar,15,-111
+Conakry,183,-1
+Bamako,411,366
+Casablanca,137,-43
+Abidjan,61,15
+Madrid,681,580
+Manchester,332,45
+Kumasi,259,229
+Ouagadougou,305,282
+Birmingham,166,97
+Accra,83,-10
+London,157,11
+Lomé,30,30
+Paris,153,27
+Barcelona,231,-16
+Algiers,144,-569
+Lagos,45,-10
+Ibadan,183,152
+Dortmund,138,25
+Onitsha,152,122
+Milan,273,96
+Kano,503,457
+Tunis,57,-10
+Douala,61,38
+Berlin,65,34
+Rome,112,2
+Yaounde,731,731
+Naples,215,-46
+Luanda,122,-95
+Kinshasa,396,305
+Cape Town,229,-1
+Saint Petersburg,20,-10
+Minsk,234,203
+Athens,411,-10
+Kyiv,155,97
+Izmir,586,-10
+Mbuji-Mayi,640,610
+Istanbul,208,-10
+Johannesburg,1676,1554
+Moscow,183,152
+Alexandria,0,-51
+Lubumbashi,1219,1189
+Lusaka,1219,1204
+Ankara,1133,872
+Durban,152,-10
+Cairo,274,18

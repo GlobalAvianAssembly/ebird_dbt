@@ -514,3 +514,8 @@ seeds:
         SpcRecID: string
         SubsppID: string
         X: string
+    ee_city_elevation_delta:
+      +column_types:
+        city_name: string
+        max_elevation: int64
+        min_elevation: int64
