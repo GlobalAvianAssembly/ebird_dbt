@@ -1,9 +1,11 @@
 WITH
 ebird AS (
-    SELECT
-        scientific_name,
-        city_id
-    FROM {{ ref('int_ebird_regional_species_pool') }}
+    SELECT DISTINCT
+        taxonomy_join.birdlife_scientific_name AS scientific_name,
+        ebird.city_id
+    FROM {{ ref('int_ebird_regional_species_pool') }} ebird
+    JOIN {{ ref('used_ebird_taxonomy')}} taxonomy_join
+        ON ebird.scientific_name = taxonomy_join.scientific_name
 ),
 birdlife AS (
     SELECT
@@ -21,7 +23,11 @@ all_species AS (
     SELECT DISTINCT
         scientific_name,
         city_id
-    FROM (SELECT * FROM ebird UNION ALL SELECT scientific_name, city_id FROM birdlife)
+    FROM (
+        SELECT scientific_name, city_id FROM ebird
+        UNION ALL
+        SELECT scientific_name, city_id FROM birdlife
+    )
 ),
 species_pools AS (
     SELECT
