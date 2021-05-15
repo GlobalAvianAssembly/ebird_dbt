@@ -4,10 +4,14 @@ ebird AS (
         taxonomy_join.birdlife_scientific_name AS scientific_name,
         taxonomy_join.birdlife_common_name AS common_name,
         ebird.city_id,
-        number_of_hotspot_appearances AS number_of_hotspot_appearances
+        SUM(number_of_hotspot_appearances) AS number_of_hotspot_appearances
     FROM {{ ref('int_ebird_regional_species_pool') }} ebird
     JOIN {{ ref('used_ebird_taxonomy')}} taxonomy_join
         ON ebird.scientific_name = taxonomy_join.scientific_name
+    GROUP BY
+        taxonomy_join.birdlife_scientific_name,
+        taxonomy_join.birdlife_common_name,
+        ebird.city_id
 ),
 birdlife AS (
     SELECT
