@@ -142,17 +142,17 @@ models:
         description: the city this bird appears in the regional pool for,
       - name: iucn_red_list_2020
         description: IUCN red list category
-      - name: presence
+      - name: presence.presence
         description: The presence type for this region (e.g. extinct)
-      - name: presence_code
+      - name: presence.presence_code
         description: birdlist code for presence
-      - name: origin
+      - name: presence.origin
         description: The origin type for this region (e.g. native, introduced)
-      - name: origin_code
+      - name: presence.origin_code
         description: birdlist code for origin
-      - name: seasonal
+      - name: presence.seasonal
         description: The presence type for this region (e.g. breeding, passage, resident)
-      - name: seasonal_code
+      - name: presence.seasonal_code
         description: birdlist code for seasonal
 
   - name: int_ebird_regional_species_pool

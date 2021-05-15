@@ -33,6 +33,10 @@ models:
         description: Whether this species is present in the birdlife compiled species pool
       - name: present_in_ebird
         description: Whether this species is present in the ebird compiled species pool
+      - name: number_of_ebird_hotspot_appearances
+        description: Number of hotspots this species appears at in the city
+      - name: presence
+        description: birdlife presence data
 
   - name: urban_area
     description: Details of the urban areas with in the study

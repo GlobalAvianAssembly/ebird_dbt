@@ -2,7 +2,9 @@ WITH
 ebird AS (
     SELECT DISTINCT
         taxonomy_join.birdlife_scientific_name AS scientific_name,
-        ebird.city_id
+        taxonomy_join.birdlife_common_name AS common_name,
+        ebird.city_id,
+        number_of_hotspot_appearances AS number_of_hotspot_appearances
     FROM {{ ref('int_ebird_regional_species_pool') }} ebird
     JOIN {{ ref('used_ebird_taxonomy')}} taxonomy_join
         ON ebird.scientific_name = taxonomy_join.scientific_name
@@ -10,23 +12,18 @@ ebird AS (
 birdlife AS (
     SELECT
         scientific_name,
+        common_name,
         city_id,
-        seasonal,
-        seasonal_code,
-        presence,
-        presence_code,
-        origin,
-        origin_code
+        presence
     FROM {{ ref('int_birdlife_regional_species_pool') }}
 ),
 all_species AS (
     SELECT DISTINCT
-        scientific_name,
-        city_id
+        *
     FROM (
-        SELECT scientific_name, city_id FROM ebird
+        SELECT scientific_name, common_name, city_id FROM ebird
         UNION ALL
-        SELECT scientific_name, city_id FROM birdlife
+        SELECT scientific_name, common_name, city_id FROM birdlife
     )
 ),
 species_pools AS (
@@ -42,23 +39,16 @@ species_pools AS (
 )
 SELECT
     species_pools.scientific_name AS scientific_name,
-    COALESCE(t.common_name, ebird.common_name) AS common_name,
+    species_pools.common_name AS common_name,
     species_pools.city_id AS city_id,
     species_pools.present_in_ebird AS present_in_ebird,
     species_pools.present_in_birdlife AS present_in_birdlife,
     COALESCE(ebird.number_of_hotspot_appearances, 0) AS number_of_ebird_hotspot_appearances,
-    birdlife.seasonal AS birdlife_seasonal,
     birdlife.presence AS birdlife_presence,
-    birdlife.origin AS birdlife_origin,
-    birdlife.seasonal_code AS birdlife_seasonal_code,
-    birdlife.presence_code AS birdlife_presence_code,
-    birdlife.origin_code AS birdlife_origin_code
 FROM species_pools
-LEFT JOIN {{ ref('base_birdlife_taxonomy') }} t
-    ON species_pools.scientific_name = t.scientific_name
-LEFT JOIN {{ ref('int_ebird_regional_species_pool') }} ebird
+LEFT JOIN ebird
     ON species_pools.scientific_name = ebird.scientific_name AND species_pools.city_id = ebird.city_id
-LEFT JOIN {{ ref('int_birdlife_regional_species_pool') }} birdlife
+LEFT JOIN birdlife
     ON species_pools.scientific_name = birdlife.scientific_name AND species_pools.city_id = birdlife.city_id
 ORDER BY present_in_ebird DESC, present_in_birdlife DESC, species_pools.scientific_name
 
