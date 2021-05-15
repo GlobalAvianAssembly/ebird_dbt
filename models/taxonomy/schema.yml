@@ -21,5 +21,9 @@ models:
         description: the eBird binomial for the species
       - name: birdlife_common_name
         description: the common name for the species from birdlife
+        tests:
+          - not_null
       - name: birdlife_scientific_name
         description: the birdlife binomial for the species
+        tests:
+          - not_null
