@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 WITH distinct_ebird_species AS (
     SELECT DISTINCT
      scientific_name,
