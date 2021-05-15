@@ -39,7 +39,7 @@ models:
         description: birdlife presence data
 
   - name: urban_area
-    description: Details of the urban areas with in the study
+    description: Details of the urban areas with in the study using birdlife regional pool
     columns:
       - name: city_id
         description: The ID of this city
@@ -55,18 +55,18 @@ models:
         description: the longitude of the city from nordpil or wikipedia
       - name: total_urban_hotspots
         description: the total number of hotspots within this city included in study
-      - name: total_regional_hotspots
-        description: the total number of hotspots within the region around this city included in study
       - name: urban_richness
-        description: the urban species richness
+        description: the number of species present in the city that are in the regional pool
       - name: urban_chao_estimate
         description: the chao estimate for urban species richness
-      - name: regional_richness
-        description: the regional species pool richness
+      - name: species_in_regional_pool
+        description: the size of the birdlife species pool richness
       - name: min_urban_hotspot_elevation
         description: The minimum elevation of any hotspot inside the city
       - name: max_urban_hotspot_elevation
         description: The maximum elevation of any hotspot inside the city
+      - name: percentage_of_regional_richness
+        description: The percentage of the regional pool found inside the city
 
   - name: urban_hotspot
     description: Hotspot included in study within an urban areay
