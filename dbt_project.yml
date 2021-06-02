@@ -519,3 +519,24 @@ seeds:
         city_name: string
         max_elevation: int64
         min_elevation: int64
+    merlin_effort:
+      +column_types:
+        CITY_NAME: string
+        NUMBER_OF_CHECKLISTS_AVG: float64
+        NUMBER_OF_CHECKLISTS_MAX: int64
+        NUMBER_OF_CHECKLISTS_MIN: int64
+        NUMBER_OF_INVALID_PERIODS: int64
+        NUMBER_OF_RECORDS: int64
+        PRECISION_AVG_KM: float64
+        PRECISION_MAX_KM: int64
+        PRECISION_MIN_KM: int64
+    merlin_frequencies:
+      +column_types:
+        city_name: string
+        ebird_code: string
+        common_name: string
+        scientific_name: string
+        species_category: string
+        number_of_non_zero_frequency: int64
+        longest_run_of_non_zero_frequency: int64
+        smallest_precision: int64

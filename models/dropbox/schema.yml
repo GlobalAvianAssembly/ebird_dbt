@@ -18,3 +18,5 @@ sources:
       - name: ee_city_distance_to_coastline
       - name: ee_city_elevation_delta
       - name: avibase_mapped_ebird_taxonomy_missing_from_birdlife
+      - name: merlin_effort
+      - name: merlin_frequencies
