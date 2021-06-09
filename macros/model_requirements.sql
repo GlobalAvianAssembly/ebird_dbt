@@ -23,7 +23,7 @@ protocol_type IN ('Traveling', 'Stationary', 'Area')
     approved = 1
     AND
     (
-        category IN ('species', 'issf', 'form')
+        category IN ('species', 'issf')
         OR
         (
             category = 'domestic' AND scientific_name = 'Columba livia'
