@@ -30,7 +30,7 @@ WITH urban_hotspots AS (
         city_id,
         COUNT(DISTINCT scientific_name) AS species_in_regional_pool
     FROM {{ ref('regional_species') }}
-    WHERE present_in_birdlife = TRUE
+    WHERE present_in_birdlife_pool = TRUE
     GROUP BY city_id
 ), city_landcover AS (
     SELECT

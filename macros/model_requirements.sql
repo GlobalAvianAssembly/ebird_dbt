@@ -20,7 +20,19 @@ protocol_type IN ('Traveling', 'Stationary', 'Area')
 -- Species observations to include
 --
 {% macro is_included_observation() %}
-    approved = 1 AND category = 'species'
+    approved = 1
+    AND
+    (
+        category IN ('species', 'issf', 'form')
+        OR
+        (
+            category = 'domestic' AND scientific_name = 'Columba livia'
+        )
+        OR
+        (
+            category = 'form' AND REGEXP_CONTAINS(scientific_name, '^[A-Z][a-z]+ [a-z]+$')
+        )
+    )
 {% endmacro %}
 
 --

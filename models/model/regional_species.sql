@@ -67,6 +67,7 @@ SELECT
     species_pools.scientific_name AS scientific_name,
     species_pools.common_name AS common_name,
     city.name AS city_name,
+    city.city_id AS city_id,
     species_pools.present_in_merlin AS present_in_merlin_pool,
     species_pools.present_in_birdlife AS present_in_birdlife_pool,
     species_pools.present_in_city AS present_in_city,
