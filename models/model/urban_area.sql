@@ -82,6 +82,14 @@ WITH urban_hotspots AS (
         {{ source ('dropbox', 'ee_city_distance_to_coastline') }} coast_distance USING (city_name)
     JOIN
         {{ ref('city') }} city ON city.name = data.city_name
+),
+merlin_data AS (
+    SELECT
+        city_id,
+        precision.max AS max_precision,
+        invalid_periods,
+    FROM {{ ref('base_merlin_effort') }}
+    JOIN {{ ref('city') }} IN name = city_name
 )
 SELECT
     city.city_id,
@@ -103,9 +111,14 @@ SELECT
         urban_hotspots.max_urban_hotspot_elevation AS max_elevation,
         urban_hotspots.total_urban_hotspots AS count
     ) AS urban_hotspots,
+    STRUCT(
+        max_precision,
+        invalid_periods
+    ) AS merlin_quality,
     city_landcover.* EXCEPT (city_id)
 FROM {{ ref ('city') }} city
 JOIN urban_hotspots USING (city_id)
 JOIN urban_richness USING (city_id)
 JOIN regional_richness USING (city_id)
 JOIN city_landcover USING(city_id)
+JOIN merlin_data USING (city_id)
