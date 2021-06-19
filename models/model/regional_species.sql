@@ -8,8 +8,6 @@ ebird_city AS (
         COUNT(*) AS number_of_hotspot_appearances
     FROM
         {{ ref('urban_species') }}
-    JOIN
-        {{ ref('used_ebird_taxonomy') }} USING (scientific_name)
     GROUP BY
         birdlife_scientific_name,
         birdlife_common_name,
