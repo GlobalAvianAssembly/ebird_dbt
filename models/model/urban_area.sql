@@ -87,9 +87,9 @@ merlin_data AS (
     SELECT
         city_id,
         precision.max AS max_precision,
-        invalid_periods,
+        invalid_periods
     FROM {{ ref('base_merlin_effort') }}
-    JOIN {{ ref('city') }} IN name = city_name
+    JOIN {{ ref('city') }} ON name = city_name
 )
 SELECT
     city.city_id,
