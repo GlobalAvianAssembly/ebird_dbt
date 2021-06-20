@@ -116,7 +116,7 @@ SELECT
         THEN ROUND(urban_richness.urban_richness + ((urban_richness.one_observation * urban_richness.one_observation) / (2 * urban_richness.two_observations)), 1)
         ELSE -1
     END AS urban_chao_estimate,
-    ROUND(urban_richness.urban_richness / regional_richness.species_in_regional_pool * 100, 1) AS percentage_of_regional_richness,
+    ROUND(urban_richness.urban_richness / regional_richness_birdlife.species_in_regional_pool * 100, 1) AS percentage_of_birdlife_regional_richness,
     STRUCT(
         urban_hotspots.min_urban_hotspot_elevation AS min_elevation,
         urban_hotspots.max_urban_hotspot_elevation AS max_elevation,
@@ -133,6 +133,6 @@ FROM {{ ref ('city') }} city
 JOIN urban_hotspots USING (city_id)
 JOIN regional_richness_birdlife USING (city_id)
 JOIN regional_richness_merlin USING (city_id)
-JOIN regional_richness USING (city_id)
+JOIN urban_richness USING (city_id)
 JOIN city_landcover USING(city_id)
 JOIN merlin_data USING (city_id)
