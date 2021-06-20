@@ -113,7 +113,9 @@ SELECT
     ) AS urban_hotspots,
     STRUCT(
         max_precision,
-        invalid_periods
+        invalid_periods,
+        periods_with_large_precision,
+        total_unusable_periods
     ) AS merlin_quality,
     city_landcover.* EXCEPT (city_id)
 FROM {{ ref ('city') }} city

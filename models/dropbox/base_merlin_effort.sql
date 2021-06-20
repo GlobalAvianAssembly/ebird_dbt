@@ -12,6 +12,8 @@ WITH dedup AS (
             PRECISION_AVG_KM AS average
         ) AS precision,
         NUMBER_OF_INVALID_PERIODS AS invalid_periods,
+        NUMBER_OF_PERIODS_WITH_MORE_THAN_100KM_PRECISION AS periods_with_large_precision,
+        NUMBER_OF_INVALID_PERIODS + NUMBER_OF_PERIODS_WITH_MORE_THAN_100KM_PRECISION AS total_unusable_periods
         ROW_NUMBER() OVER (PARTITION BY CITY_NAME ORDER BY PRECISION_MAX_KM DESC) AS row_num
     FROM
         {{ source ('dropbox', 'merlin_effort') }}
