@@ -96,7 +96,6 @@ merlin_data AS (
         city_id,
         precision.max AS max_precision,
         invalid_periods,
-        periods_with_large_precision,
         total_unusable_periods
     FROM {{ ref('base_merlin_effort') }}
     JOIN {{ ref('city') }} ON name = city_name
@@ -125,7 +124,6 @@ SELECT
     STRUCT(
         max_precision,
         invalid_periods,
-        periods_with_large_precision,
         total_unusable_periods
     ) AS merlin_quality,
     city_landcover.* EXCEPT (city_id)
