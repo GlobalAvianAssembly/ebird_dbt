@@ -78,3 +78,9 @@ AND {{ col_duration_minutes }} <= {{ var('max_duration_for_checklist') }}
 {% macro year_is_included(col_date) %}
 EXTRACT(YEAR FROM {{ col_date }}) >= {{ var('min_year_for_inclusion') }}
 {% endmacro %}
+
+{% macro merlin_pool_requirements(col_merlin_number_of_non_zero_frequency, col_merlin_longest_run_of_non_zero_frequency, col_merlin_smallest_precision) %}
+        {{ col_merlin_number_of_non_zero_frequency }} > {{ var('min_merlin_number_of_periods_allowed') }}
+    AND {{ col_merlin_longest_run_of_non_zero_frequency }} > {{ var('min_merlin_continuous_periods_present_allowed') }}
+    AND {{ col_merlin_smallest_precision }} <= {{ var('min_merlin_precision_allowed') }}
+{% endmacro %}

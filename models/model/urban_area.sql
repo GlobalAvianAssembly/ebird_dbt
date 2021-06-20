@@ -25,14 +25,22 @@ WITH urban_hotspots AS (
         COUNT(IF(number_of_hotspot_appearances = 2, 1, NULL)) AS two_observations
     FROM urban_species
     GROUP BY city_id
-), regional_richness AS (
+), regional_richness_birdlife AS (
     SELECT
         city_id,
         COUNT(DISTINCT scientific_name) AS species_in_regional_pool
     FROM {{ ref('regional_species') }}
     WHERE present_in_birdlife_pool = TRUE
     GROUP BY city_id
-), city_landcover AS (
+), regional_richness_merlin AS (
+     SELECT
+         city_id,
+         COUNT(DISTINCT scientific_name) AS species_in_regional_pool
+     FROM {{ ref('regional_species') }}
+     WHERE present_in_merlin_pool = TRUE
+         AND {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
+     GROUP BY city_id
+ ), city_landcover AS (
     SELECT
         city_id,
         STRUCT(
@@ -100,7 +108,8 @@ SELECT
         city.latitude,
         city.longitude
     ) AS location,
-    regional_richness.species_in_regional_pool AS species_in_regional_pool,
+    regional_richness_birdlife.species_in_regional_pool AS species_in_birdlife_regional_pool,
+    regional_richness_merlin.species_in_regional_pool AS species_in_merlin_regional_pool,
     urban_richness.urban_richness AS urban_richness,
     CASE
         WHEN urban_richness.two_observations > 0
@@ -122,7 +131,8 @@ SELECT
     city_landcover.* EXCEPT (city_id)
 FROM {{ ref ('city') }} city
 JOIN urban_hotspots USING (city_id)
-JOIN urban_richness USING (city_id)
+JOIN regional_richness_birdlife USING (city_id)
+JOIN regional_richness_merlin USING (city_id)
 JOIN regional_richness USING (city_id)
 JOIN city_landcover USING(city_id)
 JOIN merlin_data USING (city_id)

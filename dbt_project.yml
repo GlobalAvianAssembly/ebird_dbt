@@ -19,6 +19,9 @@ vars:
   max_duration_for_checklist: 240
   # Only include checklists equal or after this year
   min_year_for_inclusion: 2014
+  min_merlin_number_of_periods_allowed: 3
+  min_merlin_continuous_periods_present_allowed: 3
+  min_merlin_precision_allowed: 100
   
 # This setting configures which "profile" dbt uses for this project.
 profile: 'urban_ebird'
