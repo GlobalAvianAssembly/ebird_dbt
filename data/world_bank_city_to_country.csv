@@ -1,223 +1,223 @@
 LEVEL,TYPE,FORMAL_EN,POP_EST,POP_RANK,GDP_MD_EST,POP_YEAR,LASTCENSUS,GDP_YEAR,ECONOMY,INCOME_GRP,FIPS_10_,CONTINENT,REGION_UN,SUBREGION,REGION_WB,NAME_MAIN
-2,Sovereign country,Republic of Ivory Coast,24184810,15,87120.00000000000,2017,1998,2016,6. Developing region,4. Lower middle income,IV,Africa,Africa,Western Africa,Sub-Saharan Africa,Abidjan
-2,Sovereign country,Republic of Ghana,27499924,15,120800.00000000000,2017,2010,2016,6. Developing region,4. Lower middle income,GH,Africa,Africa,Western Africa,Sub-Saharan Africa,Accra
-2,Sovereign country,Federal Democratic Republic of Ethiopia,105350020,17,174700.00000000000,2017,2007,2016,7. Least developed region,5. Low income,ET,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Addis Ababa
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Agra
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Ahmedabad
-2,Sovereign country,Syrian Arab Republic,18028549,14,50280.00000000000,2017,2004,2015,6. Developing region,4. Lower middle income,SY,Asia,Asia,Western Asia,Middle East & North Africa,Aleppo
-2,Sovereign country,Arab Republic of Egypt,97041072,16,1105000.00000000000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,EG,Africa,Africa,Northern Africa,Middle East & North Africa,Alexandria
-2,Sovereign country,People's Democratic Republic of Algeria,40969443,15,609400.00000000000,2017,2008,2016,6. Developing region,3. Upper middle income,AG,Africa,Africa,Northern Africa,Middle East & North Africa,Algiers
-2,Sovereign country,Hashemite Kingdom of Jordan,10248069,14,86190.00000000000,2017,2004,2016,6. Developing region,3. Upper middle income,JO,Asia,Asia,Western Asia,Middle East & North Africa,Amman
-2,Sovereign country,Republic of Turkey,80845215,16,1670000.00000000000,2017,2000,2016,4. Emerging region: MIKT,3. Upper middle income,TU,Asia,Asia,Western Asia,Europe & Central Asia,Ankara
-2,Sovereign country,Republic of Madagascar,25054161,15,36860.00000000000,2017,1993,2016,7. Least developed region,5. Low income,MA,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Antananarivo
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Asansol
-2,Sovereign country,Hellenic Republic,10768477,14,290500.00000000000,2017,2011,2016,2. Developed region: nonG7,1. High income: OECD,GR,Europe,Europe,Southern Europe,Europe & Central Asia,Athens
-2,Sovereign country,Republic of Iraq,39192111,15,596700.00000000000,2017,1997,2016,6. Developing region,4. Lower middle income,IZ,Asia,Asia,Western Asia,Middle East & North Africa,Baghdad
-2,Sovereign country,Republic of Mali,17885245,14,38090.00000000000,2017,2009,2016,7. Least developed region,5. Low income,ML,Africa,Africa,Western Africa,Sub-Saharan Africa,Bamako
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Bandung
-2,Sovereign country,Kingdom of Thailand,68414135,16,1161000.00000000000,2017,2010,2016,5. Emerging region: G20,3. Upper middle income,TH,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Bangkok
-2,Sovereign country,Kingdom of Spain,48958159,15,1690000.00000000000,2017,2001,2016,2. Developed region: nonG7,1. High income: OECD,SP,Europe,Europe,Southern Europe,Europe & Central Asia,Barcelona
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Beijing
-2,Sovereign country,Lebanese Republic,6229794,13,85160.00000000000,2017,1970,2016,6. Developing region,3. Upper middle income,LE,Asia,Asia,Western Asia,Middle East & North Africa,Beirut
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Belém
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Belo Horizonte
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Bengaluru
-2,Sovereign country,Federal Republic of Germany,80594017,16,3979000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,GM,Europe,Europe,Western Europe,Europe & Central Asia,Berlin
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Bhopal
-2,Country,United Kingdom of Great Britain and Northern Ireland,64769452,16,2788000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,UK,Europe,Europe,Northern Europe,Europe & Central Asia,Birmingham
-2,Sovereign country,Republic of Colombia,47698524,15,688000.00000000000,2017,2006,2016,6. Developing region,3. Upper middle income,CO,South America,Americas,South America,Latin America & Caribbean,Bogota
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Boston
-2,Sovereign country,Argentine Republic,44293293,15,879400.00000000000,2017,2010,2016,5. Emerging region: G20,3. Upper middle income,AR,South America,Americas,South America,Latin America & Caribbean,Buenos Aires
-2,Sovereign country,Republic of Korea,51181299,16,1929000.00000000000,2017,2010,2016,4. Emerging region: MIKT,1. High income: OECD,KS,Asia,Asia,Eastern Asia,East Asia & Pacific,Busan
-2,Sovereign country,Arab Republic of Egypt,97041072,16,1105000.00000000000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,EG,Africa,Africa,Northern Africa,Middle East & North Africa,Cairo
-2,Sovereign country,Republic of Colombia,47698524,15,688000.00000000000,2017,2006,2016,6. Developing region,3. Upper middle income,CO,South America,Americas,South America,Latin America & Caribbean,Cali
-2,Sovereign country,Republic of South Africa,54841552,16,739100.00000000000,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,SF,Africa,Africa,Southern Africa,Sub-Saharan Africa,Cape Town
-2,Sovereign country,Bolivarian Republic of Venezuela,31304016,15,468600.00000000000,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,VE,South America,Americas,South America,Latin America & Caribbean,Caracas
-2,Sovereign country,Kingdom of Morocco,33986655,15,282800.00000000000,2017,2004,2016,6. Developing region,4. Lower middle income,MO,Africa,Africa,Northern Africa,Middle East & North Africa,Casablanca
-2,Sovereign country,Republic of the Philippines,104256076,17,801900.00000000000,2017,2010,2016,5. Emerging region: G20,4. Lower middle income,RP,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Cebu City
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Chandigarh
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Changchun
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Changsha
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Changzhou
-2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400.00000000000,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Chattogram
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Chengdu
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Chennai
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Chicago
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Chongqing
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Coimbatore
-2,Sovereign country,Democratic Socialist Republic of Sri Lanka,22409381,15,236700.00000000000,2017,2001,2016,6. Developing region,4. Lower middle income,CE,Asia,Asia,Southern Asia,South Asia,Colombo
-2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400.00000000000,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Comilla
-2,Sovereign country,Republic of Guinea,12413867,14,16080.00000000000,2017,1996,2016,7. Least developed region,5. Low income,GV,Africa,Africa,Western Africa,Sub-Saharan Africa,Conakry
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Curitiba
-2,Sovereign country,Republic of Korea,51181299,16,1929000.00000000000,2017,2010,2016,4. Emerging region: MIKT,1. High income: OECD,KS,Asia,Asia,Eastern Asia,East Asia & Pacific,Daegu
-2,Sovereign country,Republic of Senegal,14668522,14,39720.00000000000,2017,2002,2016,7. Least developed region,4. Lower middle income,SG,Africa,Africa,Western Africa,Sub-Saharan Africa,Dakar
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Dalian
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Dallas
-2,Sovereign country,Syrian Arab Republic,18028549,14,50280.00000000000,2017,2004,2015,6. Developing region,4. Lower middle income,SY,Asia,Asia,Western Asia,Middle East & North Africa,Damascus
-2,Sovereign country,United Republic of Tanzania,53950935,16,150600.00000000000,2017,2002,2016,7. Least developed region,5. Low income,TZ,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Dar es Salaam
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Delhi [New Delhi]
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Denver
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Detroit
-2,Sovereign country,Canada,35623680,15,1674000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Detroit
-2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400.00000000000,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Dhaka
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Dhanbad
-2,Sovereign country,Federal Republic of Germany,80594017,16,3979000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,GM,Europe,Europe,Western Europe,Europe & Central Asia,Dortmund
-2,Sovereign country,Republic of Cameroon,24994885,15,77240.00000000000,2017,2005,2016,6. Developing region,4. Lower middle income,CM,Africa,Africa,Middle Africa,Sub-Saharan Africa,Douala
-2,Sovereign country,United Arab Emirates,6072475,13,667200.00000000000,2017,2010,2016,6. Developing region,2. High income: nonOECD,AE,Asia,Asia,Western Asia,Middle East & North Africa,Dubai
-2,Sovereign country,Republic of South Africa,54841552,16,739100.00000000000,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,SF,Africa,Africa,Southern Africa,Sub-Saharan Africa,Durban
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Faisalabad
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Fortaleza
-2,Sovereign country,Japan,126451398,17,4932000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Fukuoka
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Fuzhou
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Gorakhpur
-2,Sovereign country,United Mexican States,124574795,17,2307000.00000000000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Guadalajara
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Guangzhou
-2,Sovereign country,Republic of Guatemala,15460732,14,131800.00000000000,2017,2002,2016,6. Developing region,4. Lower middle income,GT,North America,Americas,Central America,Latin America & Caribbean,Guatemala City
-2,Sovereign country,Republic of Ecuador,16290913,14,182400.00000000000,2017,2010,2016,6. Developing region,3. Upper middle income,EC,South America,Americas,South America,Latin America & Caribbean,Guayaquil
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Guiyang
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Gujranwala
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Hangzhou
-2,Sovereign country,Socialist Republic of Vietnam,96160163,16,594900.00000000000,2017,2009,2016,5. Emerging region: G20,4. Lower middle income,VM,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Hanoi
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Harbin
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Hefei
-2,Sovereign country,Socialist Republic of Vietnam,96160163,16,594900.00000000000,2017,2009,2016,5. Emerging region: G20,4. Lower middle income,VM,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Ho Chi Minh City
-2,Country,"Hong Kong Special Administrative Region, PRC",7191503,13,427400.00000000000,2017,2006,2016,6. Developing region,2. High income: nonOECD,HK,Asia,Asia,Eastern Asia,East Asia & Pacific,Hong Kong
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Houston
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Hyderabad
-2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000.00000000000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Ibadan
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Indore
-2,Sovereign country,Islamic Republic of Iran,82021564,16,1459000.00000000000,2017,2006,2016,5. Emerging region: G20,3. Upper middle income,IR,Asia,Asia,Southern Asia,Middle East & North Africa,Isfahan
-2,Sovereign country,Republic of Turkey,80845215,16,1670000.00000000000,2017,2000,2016,4. Emerging region: MIKT,3. Upper middle income,TU,Asia,Asia,Western Asia,Europe & Central Asia,Istanbul
-2,Sovereign country,Republic of Turkey,80845215,16,1670000.00000000000,2017,2000,2016,4. Emerging region: MIKT,3. Upper middle income,TU,Asia,Asia,Western Asia,Europe & Central Asia,Izmir
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Jaipur
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Jakarta
-2,Sovereign country,Kingdom of Saudi Arabia,28571770,15,1731000.00000000000,2017,2010,2016,2. Developed region: nonG7,2. High income: nonOECD,SA,Asia,Asia,Western Asia,Middle East & North Africa,Jeddah
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Jieyang
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Jinan
-2,Sovereign country,Republic of South Africa,54841552,16,739100.00000000000,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,SF,Africa,Africa,Southern Africa,Sub-Saharan Africa,Johannesburg
-2,Sovereign country,Islamic State of Afghanistan,34124811,15,64080.00000000000,2017,1979,2016,7. Least developed region,5. Low income,AF,Asia,Asia,Southern Asia,South Asia,Kabul
-2,Sovereign country,Republic of Uganda,39570125,15,84930.00000000000,2017,2002,2016,7. Least developed region,5. Low income,UG,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Kampala
-2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000.00000000000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Kano
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kanpur
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Kaohsiung
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Karachi
-2,Sovereign country,Nepal,29384297,15,71520.00000000000,2017,2001,2016,7. Least developed region,5. Low income,NP,Asia,Asia,Southern Asia,South Asia,Kathmandu
-2,Sovereign country,Republic of the Sudan,37345935,15,176300.00000000000,2017,2008,2016,6. Developing region,4. Lower middle income,SU,Africa,Africa,Northern Africa,Sub-Saharan Africa,Khartoum
-2,Sovereign country,Democratic Republic of the Congo,83301151,16,66010.00000000000,2017,1984,2016,7. Least developed region,5. Low income,CG,Africa,Africa,Middle Africa,Sub-Saharan Africa,Kinshasa
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kochi
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kolkata
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kozhikode
-2,Sovereign country,Malaysia,31381992,15,863000.00000000000,2017,2010,2016,6. Developing region,3. Upper middle income,MY,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Kuala Lumpur
-2,Sovereign country,Republic of Ghana,27499924,15,120800.00000000000,2017,2010,2016,6. Developing region,4. Lower middle income,GH,Africa,Africa,Western Africa,Sub-Saharan Africa,Kumasi
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Kunming
-2,Sovereign country,State of Kuwait,2875422,12,301100.00000000000,2017,2010,2016,6. Developing region,2. High income: nonOECD,KU,Asia,Asia,Western Asia,Middle East & North Africa,Kuwait City
-2,Sovereign country,Ukraine,44033874,15,352600.00000000000,2017,2001,2016,6. Developing region,4. Lower middle income,UP,Europe,Europe,Eastern Europe,Europe & Central Asia,Kyiv
-2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000.00000000000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Lagos
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Lahore
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Lanzhou
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Las Vegas
-2,Sovereign country,Republic of Peru,31036656,15,410400.00000000000,2017,2007,2016,5. Emerging region: G20,3. Upper middle income,PE,South America,Americas,South America,Latin America & Caribbean,Lima
-2,Sovereign country,Togolese Republic,7965055,13,11610.00000000000,2017,2010,2016,7. Least developed region,5. Low income,TO,Africa,Africa,Western Africa,Sub-Saharan Africa,Lomé
-2,Country,United Kingdom of Great Britain and Northern Ireland,64769452,16,2788000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,UK,Europe,Europe,Northern Europe,Europe & Central Asia,London
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Los Angeles
-2,Sovereign country,People's Republic of Angola,29310273,15,189000.00000000000,2017,1970,2016,7. Least developed region,3. Upper middle income,AO,Africa,Africa,Middle Africa,Sub-Saharan Africa,Luanda
-2,Sovereign country,Democratic Republic of the Congo,83301151,16,66010.00000000000,2017,1984,2016,7. Least developed region,5. Low income,CG,Africa,Africa,Middle Africa,Sub-Saharan Africa,Lubumbashi
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Lucknow
-2,Sovereign country,Republic of Zambia,15972000,14,65170.00000000000,2017,2010,2016,7. Least developed region,4. Lower middle income,ZA,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Lusaka
-2,Sovereign country,Kingdom of Spain,48958159,15,1690000.00000000000,2017,2001,2016,2. Developed region: nonG7,1. High income: OECD,SP,Europe,Europe,Southern Europe,Europe & Central Asia,Madrid
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Makassar
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Manaus
-2,Country,United Kingdom of Great Britain and Northern Ireland,64769452,16,2788000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,UK,Europe,Europe,Northern Europe,Europe & Central Asia,Manchester
-2,Sovereign country,Republic of Mozambique,26573706,15,35010.00000000000,2017,2007,2016,7. Least developed region,5. Low income,MZ,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Maputo
-2,Sovereign country,Bolivarian Republic of Venezuela,31304016,15,468600.00000000000,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,VE,South America,Americas,South America,Latin America & Caribbean,Maracaibo
-2,Sovereign country,Islamic Republic of Iran,82021564,16,1459000.00000000000,2017,2006,2016,5. Emerging region: G20,3. Upper middle income,IR,Asia,Asia,Southern Asia,Middle East & North Africa,Mashhad
-2,Sovereign country,Democratic Republic of the Congo,83301151,16,66010.00000000000,2017,1984,2016,7. Least developed region,5. Low income,CG,Africa,Africa,Middle Africa,Sub-Saharan Africa,Mbuji-Mayi
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Medan
-2,Sovereign country,Republic of Colombia,47698524,15,688000.00000000000,2017,2006,2016,6. Developing region,3. Upper middle income,CO,South America,Americas,South America,Latin America & Caribbean,Medellín
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Meerut
-2,Country,Commonwealth of Australia,23232413,15,1189000.00000000000,2017,2006,2016,2. Developed region: nonG7,1. High income: OECD,AS,Oceania,Oceania,Australia and New Zealand,East Asia & Pacific,Melbourne
-2,Sovereign country,United Mexican States,124574795,17,2307000.00000000000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Mexico City
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Miami
-2,Sovereign country,Italian Republic,62137802,16,2221000.00000000000,2017,2012,2016,1. Developed region: G7,1. High income: OECD,IT,Europe,Europe,Southern Europe,Europe & Central Asia,Milan
-2,Sovereign country,Republic of Belarus,9549747,13,165400.00000000000,2017,2009,2016,6. Developing region,3. Upper middle income,BO,Europe,Europe,Eastern Europe,Europe & Central Asia,Minsk
-2,Sovereign country,United Mexican States,124574795,17,2307000.00000000000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Monterrey
-2,Sovereign country,Canada,35623680,15,1674000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Montreal
-2,Sovereign country,Russian Federation,142257519,17,3745000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,RS,Europe,Europe,Eastern Europe,Europe & Central Asia,Moscow
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Multan
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Mumbai
-2,Sovereign country,Japan,126451398,17,4932000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Nagoya
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Nagpur
-2,Sovereign country,Republic of Kenya,47615739,15,152700.00000000000,2017,2009,2016,5. Emerging region: G20,5. Low income,KE,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Nairobi
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Nanchang
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Nanjing
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Nanning
-2,Sovereign country,Italian Republic,62137802,16,2221000.00000000000,2017,2012,2016,1. Developed region: G7,1. High income: OECD,IT,Europe,Europe,Southern Europe,Europe & Central Asia,Naples
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,New Taipei [Taipei]
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,New York
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Ningbo
-2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400.00000000000,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Noakhali
-2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000.00000000000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Onitsha
-2,Sovereign country,Japan,126451398,17,4932000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Osaka [Kyoto]
-2,Sovereign country,Burkina Faso,20107509,15,32990.00000000000,2017,2006,2016,7. Least developed region,5. Low income,UV,Africa,Africa,Western Africa,Sub-Saharan Africa,Ouagadougou
-2,Country,French Republic,67106161,16,2699000.00000000000,2017,-99,2016,1. Developed region: G7,1. High income: OECD,FR,Europe,Europe,Western Europe,Europe & Central Asia,Paris
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Patna
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Peshawar
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Philadelphia
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Phoenix
-2,Sovereign country,Republic of Haiti,10646714,14,19340.00000000000,2017,2003,2016,7. Least developed region,5. Low income,HA,North America,Americas,Caribbean,Latin America & Caribbean,Port-au-Prince
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Prayagraj
-2,Sovereign country,United Mexican States,124574795,17,2307000.00000000000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Puebla
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Pune
-2,Sovereign country,Democratic People's Republic of Korea,25248140,15,40000.00000000000,2013,2009,2016,7. Least developed region,5. Low income,KN,Asia,Asia,Eastern Asia,East Asia & Pacific,Pyongyang
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Qingdao
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Quanzhou
-2,Sovereign country,Republic of the Philippines,104256076,17,801900.00000000000,2017,2010,2016,5. Emerging region: G20,4. Lower middle income,RP,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Quezon City [Manila]
-2,Sovereign country,Republic of Ecuador,16290913,14,182400.00000000000,2017,2010,2016,6. Developing region,3. Upper middle income,EC,South America,Americas,South America,Latin America & Caribbean,Quito
-2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200.00000000000,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Rawalpindi [Islamabad]
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Recife
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Rio de Janeiro
-2,Sovereign country,Kingdom of Saudi Arabia,28571770,15,1731000.00000000000,2017,2010,2016,2. Developed region: nonG7,2. High income: nonOECD,SA,Asia,Asia,Western Asia,Middle East & North Africa,Riyadh
-2,Sovereign country,Italian Republic,62137802,16,2221000.00000000000,2017,2012,2016,1. Developed region: G7,1. High income: OECD,IT,Europe,Europe,Southern Europe,Europe & Central Asia,Rome
-2,Sovereign country,Russian Federation,142257519,17,3745000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,RS,Europe,Europe,Eastern Europe,Europe & Central Asia,Saint Petersburg
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Salvador
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,San Jose
-2,Sovereign country,Republic of Yemen,28036829,15,73450.00000000000,2017,2004,2016,7. Least developed region,4. Lower middle income,YM,Asia,Asia,Western Asia,Middle East & North Africa,Sana'a
-2,Sovereign country,Republic of Chile,17789267,14,436100.00000000000,2017,2002,2016,5. Emerging region: G20,3. Upper middle income,CI,South America,Americas,South America,Latin America & Caribbean,Santiago
-2,Sovereign country,Dominican Republic,10734247,14,161900.00000000000,2017,2010,2016,6. Developing region,3. Upper middle income,DR,North America,Americas,Caribbean,Latin America & Caribbean,Santo Domingo
-2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,São Paulo
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Seattle
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Semarang
-2,Sovereign country,Republic of Korea,51181299,16,1929000.00000000000,2017,2010,2016,4. Emerging region: MIKT,1. High income: OECD,KS,Asia,Asia,Eastern Asia,East Asia & Pacific,Seoul
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Shanghai
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Shenyang
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Shijiazhuang
-2,Sovereign country,Republic of Singapore,5888926,13,487900.00000000000,2017,2010,2016,6. Developing region,2. High income: nonOECD,SN,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Singapore
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Surabaya
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Surat
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Suzhou
-2,Country,Commonwealth of Australia,23232413,15,1189000.00000000000,2017,2006,2016,2. Developed region: nonG7,1. High income: OECD,AS,Oceania,Oceania,Australia and New Zealand,East Asia & Pacific,Sydney
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Taichung
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Taiyuan
-2,Sovereign country,Republic of Uzbekistan,29748859,15,202300.00000000000,2017,1989,2016,6. Developing region,4. Lower middle income,UZ,Asia,Asia,Central Asia,Europe & Central Asia,Tashkent
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Tasikmalaya
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Tegal
-2,Sovereign country,Islamic Republic of Iran,82021564,16,1459000.00000000000,2017,2006,2016,5. Emerging region: G20,3. Upper middle income,IR,Asia,Asia,Southern Asia,Middle East & North Africa,Tehran
-2,Country,State of Israel,8299706,13,297000.00000000000,2017,2009,2016,2. Developed region: nonG7,1. High income: OECD,-99,Asia,Asia,Western Asia,Middle East & North Africa,Tel Aviv
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Tianjin
-2,Sovereign country,United Mexican States,124574795,17,2307000.00000000000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Tijuana
-2,Sovereign country,Japan,126451398,17,4932000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Tokyo
-2,Sovereign country,Canada,35623680,15,1674000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Toronto
-2,Sovereign country,Republic of Tunisia,11403800,14,130800.00000000000,2017,2004,2016,6. Developing region,3. Upper middle income,TS,Africa,Africa,Northern Africa,Middle East & North Africa,Tunis
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Ürümqi
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Vadodara
-2,Sovereign country,Canada,35623680,15,1674000.00000000000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Vancouver
-2,Sovereign country,Republic of India,1281935911,18,8721000.00000000000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Varanasi
-2,Country,United States of America,326625791,17,18560000.00000000000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Washington D.C.
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Wenzhou
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Wuhan
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Xi'an
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Xiamen
-2,Sovereign country,Republic of the Union of Myanmar,55123814,16,311100.00000000000,2017,1983,2016,7. Least developed region,5. Low income,BM,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Yangon
-2,Sovereign country,Republic of Cameroon,24994885,15,77240.00000000000,2017,2005,2016,6. Developing region,4. Lower middle income,CM,Africa,Africa,Middle Africa,Sub-Saharan Africa,Yaounde
-2,Sovereign country,Republic of Indonesia,260580739,17,3028000.00000000000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Yogyakarta
-2,Country,People's Republic of China,1379302771,18,21140000.00000000000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Zhengzhou
+2,Sovereign country,Republic of Ivory Coast,24184810,15,87120,2017,1998,2016,6. Developing region,4. Lower middle income,IV,Africa,Africa,Western Africa,Sub-Saharan Africa,Abidjan
+2,Sovereign country,Republic of Ghana,27499924,15,120800,2017,2010,2016,6. Developing region,4. Lower middle income,GH,Africa,Africa,Western Africa,Sub-Saharan Africa,Accra
+2,Sovereign country,Federal Democratic Republic of Ethiopia,105350020,17,174700,2017,2007,2016,7. Least developed region,5. Low income,ET,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Addis Ababa
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Agra
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Ahmedabad
+2,Sovereign country,Syrian Arab Republic,18028549,14,50280,2017,2004,2015,6. Developing region,4. Lower middle income,SY,Asia,Asia,Western Asia,Middle East & North Africa,Aleppo
+2,Sovereign country,Arab Republic of Egypt,97041072,16,1105000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,EG,Africa,Africa,Northern Africa,Middle East & North Africa,Alexandria
+2,Sovereign country,People's Democratic Republic of Algeria,40969443,15,609400,2017,2008,2016,6. Developing region,3. Upper middle income,AG,Africa,Africa,Northern Africa,Middle East & North Africa,Algiers
+2,Sovereign country,Hashemite Kingdom of Jordan,10248069,14,86190,2017,2004,2016,6. Developing region,3. Upper middle income,JO,Asia,Asia,Western Asia,Middle East & North Africa,Amman
+2,Sovereign country,Republic of Turkey,80845215,16,1670000,2017,2000,2016,4. Emerging region: MIKT,3. Upper middle income,TU,Asia,Asia,Western Asia,Europe & Central Asia,Ankara
+2,Sovereign country,Republic of Madagascar,25054161,15,36860,2017,1993,2016,7. Least developed region,5. Low income,MA,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Antananarivo
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Asansol
+2,Sovereign country,Hellenic Republic,10768477,14,290500,2017,2011,2016,2. Developed region: nonG7,1. High income: OECD,GR,Europe,Europe,Southern Europe,Europe & Central Asia,Athens
+2,Sovereign country,Republic of Iraq,39192111,15,596700,2017,1997,2016,6. Developing region,4. Lower middle income,IZ,Asia,Asia,Western Asia,Middle East & North Africa,Baghdad
+2,Sovereign country,Republic of Mali,17885245,14,38090,2017,2009,2016,7. Least developed region,5. Low income,ML,Africa,Africa,Western Africa,Sub-Saharan Africa,Bamako
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Bandung
+2,Sovereign country,Kingdom of Thailand,68414135,16,1161000,2017,2010,2016,5. Emerging region: G20,3. Upper middle income,TH,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Bangkok
+2,Sovereign country,Kingdom of Spain,48958159,15,1690000,2017,2001,2016,2. Developed region: nonG7,1. High income: OECD,SP,Europe,Europe,Southern Europe,Europe & Central Asia,Barcelona
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Beijing
+2,Sovereign country,Lebanese Republic,6229794,13,85160,2017,1970,2016,6. Developing region,3. Upper middle income,LE,Asia,Asia,Western Asia,Middle East & North Africa,Beirut
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Belém
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Belo Horizonte
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Bengaluru
+2,Sovereign country,Federal Republic of Germany,80594017,16,3979000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,GM,Europe,Europe,Western Europe,Europe & Central Asia,Berlin
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Bhopal
+2,Country,United Kingdom of Great Britain and Northern Ireland,64769452,16,2788000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,UK,Europe,Europe,Northern Europe,Europe & Central Asia,Birmingham
+2,Sovereign country,Republic of Colombia,47698524,15,688000,2017,2006,2016,6. Developing region,3. Upper middle income,CO,South America,Americas,South America,Latin America & Caribbean,Bogota
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Boston
+2,Sovereign country,Argentine Republic,44293293,15,879400,2017,2010,2016,5. Emerging region: G20,3. Upper middle income,AR,South America,Americas,South America,Latin America & Caribbean,Buenos Aires
+2,Sovereign country,Republic of Korea,51181299,16,1929000,2017,2010,2016,4. Emerging region: MIKT,1. High income: OECD,KS,Asia,Asia,Eastern Asia,East Asia & Pacific,Busan
+2,Sovereign country,Arab Republic of Egypt,97041072,16,1105000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,EG,Africa,Africa,Northern Africa,Middle East & North Africa,Cairo
+2,Sovereign country,Republic of Colombia,47698524,15,688000,2017,2006,2016,6. Developing region,3. Upper middle income,CO,South America,Americas,South America,Latin America & Caribbean,Cali
+2,Sovereign country,Republic of South Africa,54841552,16,739100,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,SF,Africa,Africa,Southern Africa,Sub-Saharan Africa,Cape Town
+2,Sovereign country,Bolivarian Republic of Venezuela,31304016,15,468600,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,VE,South America,Americas,South America,Latin America & Caribbean,Caracas
+2,Sovereign country,Kingdom of Morocco,33986655,15,282800,2017,2004,2016,6. Developing region,4. Lower middle income,MO,Africa,Africa,Northern Africa,Middle East & North Africa,Casablanca
+2,Sovereign country,Republic of the Philippines,104256076,17,801900,2017,2010,2016,5. Emerging region: G20,4. Lower middle income,RP,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Cebu City
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Chandigarh
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Changchun
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Changsha
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Changzhou
+2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Chattogram
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Chengdu
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Chennai
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Chicago
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Chongqing
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Coimbatore
+2,Sovereign country,Democratic Socialist Republic of Sri Lanka,22409381,15,236700,2017,2001,2016,6. Developing region,4. Lower middle income,CE,Asia,Asia,Southern Asia,South Asia,Colombo
+2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Comilla
+2,Sovereign country,Republic of Guinea,12413867,14,16080,2017,1996,2016,7. Least developed region,5. Low income,GV,Africa,Africa,Western Africa,Sub-Saharan Africa,Conakry
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Curitiba
+2,Sovereign country,Republic of Korea,51181299,16,1929000,2017,2010,2016,4. Emerging region: MIKT,1. High income: OECD,KS,Asia,Asia,Eastern Asia,East Asia & Pacific,Daegu
+2,Sovereign country,Republic of Senegal,14668522,14,39720,2017,2002,2016,7. Least developed region,4. Lower middle income,SG,Africa,Africa,Western Africa,Sub-Saharan Africa,Dakar
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Dalian
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Dallas
+2,Sovereign country,Syrian Arab Republic,18028549,14,50280,2017,2004,2015,6. Developing region,4. Lower middle income,SY,Asia,Asia,Western Asia,Middle East & North Africa,Damascus
+2,Sovereign country,United Republic of Tanzania,53950935,16,150600,2017,2002,2016,7. Least developed region,5. Low income,TZ,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Dar es Salaam
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Delhi [New Delhi]
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Denver
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Detroit
+2,Sovereign country,Canada,35623680,15,1674000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Detroit
+2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Dhaka
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Dhanbad
+2,Sovereign country,Federal Republic of Germany,80594017,16,3979000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,GM,Europe,Europe,Western Europe,Europe & Central Asia,Dortmund
+2,Sovereign country,Republic of Cameroon,24994885,15,77240,2017,2005,2016,6. Developing region,4. Lower middle income,CM,Africa,Africa,Middle Africa,Sub-Saharan Africa,Douala
+2,Sovereign country,United Arab Emirates,6072475,13,667200,2017,2010,2016,6. Developing region,2. High income: nonOECD,AE,Asia,Asia,Western Asia,Middle East & North Africa,Dubai
+2,Sovereign country,Republic of South Africa,54841552,16,739100,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,SF,Africa,Africa,Southern Africa,Sub-Saharan Africa,Durban
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Faisalabad
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Fortaleza
+2,Sovereign country,Japan,126451398,17,4932000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Fukuoka
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Fuzhou
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Gorakhpur
+2,Sovereign country,United Mexican States,124574795,17,2307000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Guadalajara
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Guangzhou
+2,Sovereign country,Republic of Guatemala,15460732,14,131800,2017,2002,2016,6. Developing region,4. Lower middle income,GT,North America,Americas,Central America,Latin America & Caribbean,Guatemala City
+2,Sovereign country,Republic of Ecuador,16290913,14,182400,2017,2010,2016,6. Developing region,3. Upper middle income,EC,South America,Americas,South America,Latin America & Caribbean,Guayaquil
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Guiyang
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Gujranwala
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Hangzhou
+2,Sovereign country,Socialist Republic of Vietnam,96160163,16,594900,2017,2009,2016,5. Emerging region: G20,4. Lower middle income,VM,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Hanoi
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Harbin
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Hefei
+2,Sovereign country,Socialist Republic of Vietnam,96160163,16,594900,2017,2009,2016,5. Emerging region: G20,4. Lower middle income,VM,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Ho Chi Minh City
+2,Country,"Hong Kong Special Administrative Region, PRC",7191503,13,427400,2017,2006,2016,6. Developing region,2. High income: nonOECD,HK,Asia,Asia,Eastern Asia,East Asia & Pacific,Hong Kong
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Houston
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Hyderabad
+2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Ibadan
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Indore
+2,Sovereign country,Islamic Republic of Iran,82021564,16,1459000,2017,2006,2016,5. Emerging region: G20,3. Upper middle income,IR,Asia,Asia,Southern Asia,Middle East & North Africa,Isfahan
+2,Sovereign country,Republic of Turkey,80845215,16,1670000,2017,2000,2016,4. Emerging region: MIKT,3. Upper middle income,TU,Asia,Asia,Western Asia,Europe & Central Asia,Istanbul
+2,Sovereign country,Republic of Turkey,80845215,16,1670000,2017,2000,2016,4. Emerging region: MIKT,3. Upper middle income,TU,Asia,Asia,Western Asia,Europe & Central Asia,Izmir
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Jaipur
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Jakarta
+2,Sovereign country,Kingdom of Saudi Arabia,28571770,15,1731000,2017,2010,2016,2. Developed region: nonG7,2. High income: nonOECD,SA,Asia,Asia,Western Asia,Middle East & North Africa,Jeddah
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Jieyang
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Jinan
+2,Sovereign country,Republic of South Africa,54841552,16,739100,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,SF,Africa,Africa,Southern Africa,Sub-Saharan Africa,Johannesburg
+2,Sovereign country,Islamic State of Afghanistan,34124811,15,64080,2017,1979,2016,7. Least developed region,5. Low income,AF,Asia,Asia,Southern Asia,South Asia,Kabul
+2,Sovereign country,Republic of Uganda,39570125,15,84930,2017,2002,2016,7. Least developed region,5. Low income,UG,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Kampala
+2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Kano
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kanpur
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Kaohsiung
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Karachi
+2,Sovereign country,Nepal,29384297,15,71520,2017,2001,2016,7. Least developed region,5. Low income,NP,Asia,Asia,Southern Asia,South Asia,Kathmandu
+2,Sovereign country,Republic of the Sudan,37345935,15,176300,2017,2008,2016,6. Developing region,4. Lower middle income,SU,Africa,Africa,Northern Africa,Sub-Saharan Africa,Khartoum
+2,Sovereign country,Democratic Republic of the Congo,83301151,16,66010,2017,1984,2016,7. Least developed region,5. Low income,CG,Africa,Africa,Middle Africa,Sub-Saharan Africa,Kinshasa
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kochi
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kolkata
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Kozhikode
+2,Sovereign country,Malaysia,31381992,15,863000,2017,2010,2016,6. Developing region,3. Upper middle income,MY,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Kuala Lumpur
+2,Sovereign country,Republic of Ghana,27499924,15,120800,2017,2010,2016,6. Developing region,4. Lower middle income,GH,Africa,Africa,Western Africa,Sub-Saharan Africa,Kumasi
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Kunming
+2,Sovereign country,State of Kuwait,2875422,12,301100,2017,2010,2016,6. Developing region,2. High income: nonOECD,KU,Asia,Asia,Western Asia,Middle East & North Africa,Kuwait City
+2,Sovereign country,Ukraine,44033874,15,352600,2017,2001,2016,6. Developing region,4. Lower middle income,UP,Europe,Europe,Eastern Europe,Europe & Central Asia,Kyiv
+2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Lagos
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Lahore
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Lanzhou
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Las Vegas
+2,Sovereign country,Republic of Peru,31036656,15,410400,2017,2007,2016,5. Emerging region: G20,3. Upper middle income,PE,South America,Americas,South America,Latin America & Caribbean,Lima
+2,Sovereign country,Togolese Republic,7965055,13,11610,2017,2010,2016,7. Least developed region,5. Low income,TO,Africa,Africa,Western Africa,Sub-Saharan Africa,Lomé
+2,Country,United Kingdom of Great Britain and Northern Ireland,64769452,16,2788000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,UK,Europe,Europe,Northern Europe,Europe & Central Asia,London
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Los Angeles
+2,Sovereign country,People's Republic of Angola,29310273,15,189000,2017,1970,2016,7. Least developed region,3. Upper middle income,AO,Africa,Africa,Middle Africa,Sub-Saharan Africa,Luanda
+2,Sovereign country,Democratic Republic of the Congo,83301151,16,66010,2017,1984,2016,7. Least developed region,5. Low income,CG,Africa,Africa,Middle Africa,Sub-Saharan Africa,Lubumbashi
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Lucknow
+2,Sovereign country,Republic of Zambia,15972000,14,65170,2017,2010,2016,7. Least developed region,4. Lower middle income,ZA,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Lusaka
+2,Sovereign country,Kingdom of Spain,48958159,15,1690000,2017,2001,2016,2. Developed region: nonG7,1. High income: OECD,SP,Europe,Europe,Southern Europe,Europe & Central Asia,Madrid
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Makassar
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Manaus
+2,Country,United Kingdom of Great Britain and Northern Ireland,64769452,16,2788000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,UK,Europe,Europe,Northern Europe,Europe & Central Asia,Manchester
+2,Sovereign country,Republic of Mozambique,26573706,15,35010,2017,2007,2016,7. Least developed region,5. Low income,MZ,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Maputo
+2,Sovereign country,Bolivarian Republic of Venezuela,31304016,15,468600,2017,2001,2016,5. Emerging region: G20,3. Upper middle income,VE,South America,Americas,South America,Latin America & Caribbean,Maracaibo
+2,Sovereign country,Islamic Republic of Iran,82021564,16,1459000,2017,2006,2016,5. Emerging region: G20,3. Upper middle income,IR,Asia,Asia,Southern Asia,Middle East & North Africa,Mashhad
+2,Sovereign country,Democratic Republic of the Congo,83301151,16,66010,2017,1984,2016,7. Least developed region,5. Low income,CG,Africa,Africa,Middle Africa,Sub-Saharan Africa,Mbuji-Mayi
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Medan
+2,Sovereign country,Republic of Colombia,47698524,15,688000,2017,2006,2016,6. Developing region,3. Upper middle income,CO,South America,Americas,South America,Latin America & Caribbean,Medellín
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Meerut
+2,Country,Commonwealth of Australia,23232413,15,1189000,2017,2006,2016,2. Developed region: nonG7,1. High income: OECD,AS,Oceania,Oceania,Australia and New Zealand,East Asia & Pacific,Melbourne
+2,Sovereign country,United Mexican States,124574795,17,2307000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Mexico City
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Miami
+2,Sovereign country,Italian Republic,62137802,16,2221000,2017,2012,2016,1. Developed region: G7,1. High income: OECD,IT,Europe,Europe,Southern Europe,Europe & Central Asia,Milan
+2,Sovereign country,Republic of Belarus,9549747,13,165400,2017,2009,2016,6. Developing region,3. Upper middle income,BO,Europe,Europe,Eastern Europe,Europe & Central Asia,Minsk
+2,Sovereign country,United Mexican States,124574795,17,2307000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Monterrey
+2,Sovereign country,Canada,35623680,15,1674000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Montreal
+2,Sovereign country,Russian Federation,142257519,17,3745000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,RS,Europe,Europe,Eastern Europe,Europe & Central Asia,Moscow
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Multan
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Mumbai
+2,Sovereign country,Japan,126451398,17,4932000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Nagoya
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Nagpur
+2,Sovereign country,Republic of Kenya,47615739,15,152700,2017,2009,2016,5. Emerging region: G20,5. Low income,KE,Africa,Africa,Eastern Africa,Sub-Saharan Africa,Nairobi
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Nanchang
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Nanjing
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Nanning
+2,Sovereign country,Italian Republic,62137802,16,2221000,2017,2012,2016,1. Developed region: G7,1. High income: OECD,IT,Europe,Europe,Southern Europe,Europe & Central Asia,Naples
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,New Taipei [Taipei]
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,New York
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Ningbo
+2,Sovereign country,People's Republic of Bangladesh,157826578,17,628400,2017,2011,2016,7. Least developed region,5. Low income,BG,Asia,Asia,Southern Asia,South Asia,Noakhali
+2,Sovereign country,Federal Republic of Nigeria,190632261,17,1089000,2017,2006,2016,5. Emerging region: G20,4. Lower middle income,NI,Africa,Africa,Western Africa,Sub-Saharan Africa,Onitsha
+2,Sovereign country,Japan,126451398,17,4932000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Osaka [Kyoto]
+2,Sovereign country,Burkina Faso,20107509,15,32990,2017,2006,2016,7. Least developed region,5. Low income,UV,Africa,Africa,Western Africa,Sub-Saharan Africa,Ouagadougou
+2,Country,French Republic,67106161,16,2699000,2017,-99,2016,1. Developed region: G7,1. High income: OECD,FR,Europe,Europe,Western Europe,Europe & Central Asia,Paris
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Patna
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Peshawar
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Philadelphia
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Phoenix
+2,Sovereign country,Republic of Haiti,10646714,14,19340,2017,2003,2016,7. Least developed region,5. Low income,HA,North America,Americas,Caribbean,Latin America & Caribbean,Port-au-Prince
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Prayagraj
+2,Sovereign country,United Mexican States,124574795,17,2307000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Puebla
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Pune
+2,Sovereign country,Democratic People's Republic of Korea,25248140,15,40000,2013,2009,2016,7. Least developed region,5. Low income,KN,Asia,Asia,Eastern Asia,East Asia & Pacific,Pyongyang
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Qingdao
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Quanzhou
+2,Sovereign country,Republic of the Philippines,104256076,17,801900,2017,2010,2016,5. Emerging region: G20,4. Lower middle income,RP,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Quezon City [Manila]
+2,Sovereign country,Republic of Ecuador,16290913,14,182400,2017,2010,2016,6. Developing region,3. Upper middle income,EC,South America,Americas,South America,Latin America & Caribbean,Quito
+2,Sovereign country,Islamic Republic of Pakistan,204924861,17,988200,2017,1998,2016,5. Emerging region: G20,4. Lower middle income,PK,Asia,Asia,Southern Asia,South Asia,Rawalpindi [Islamabad]
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Recife
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Rio de Janeiro
+2,Sovereign country,Kingdom of Saudi Arabia,28571770,15,1731000,2017,2010,2016,2. Developed region: nonG7,2. High income: nonOECD,SA,Asia,Asia,Western Asia,Middle East & North Africa,Riyadh
+2,Sovereign country,Italian Republic,62137802,16,2221000,2017,2012,2016,1. Developed region: G7,1. High income: OECD,IT,Europe,Europe,Southern Europe,Europe & Central Asia,Rome
+2,Sovereign country,Russian Federation,142257519,17,3745000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,RS,Europe,Europe,Eastern Europe,Europe & Central Asia,Saint Petersburg
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,Salvador
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,San Jose
+2,Sovereign country,Republic of Yemen,28036829,15,73450,2017,2004,2016,7. Least developed region,4. Lower middle income,YM,Asia,Asia,Western Asia,Middle East & North Africa,Sana'a
+2,Sovereign country,Republic of Chile,17789267,14,436100,2017,2002,2016,5. Emerging region: G20,3. Upper middle income,CI,South America,Americas,South America,Latin America & Caribbean,Santiago
+2,Sovereign country,Dominican Republic,10734247,14,161900,2017,2010,2016,6. Developing region,3. Upper middle income,DR,North America,Americas,Caribbean,Latin America & Caribbean,Santo Domingo
+2,Sovereign country,Federative Republic of Brazil,207353391,17,3081000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,BR,South America,Americas,South America,Latin America & Caribbean,São Paulo
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Seattle
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Semarang
+2,Sovereign country,Republic of Korea,51181299,16,1929000,2017,2010,2016,4. Emerging region: MIKT,1. High income: OECD,KS,Asia,Asia,Eastern Asia,East Asia & Pacific,Seoul
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Shanghai
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Shenyang
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Shijiazhuang
+2,Sovereign country,Republic of Singapore,5888926,13,487900,2017,2010,2016,6. Developing region,2. High income: nonOECD,SN,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Singapore
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Surabaya
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Surat
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Suzhou
+2,Country,Commonwealth of Australia,23232413,15,1189000,2017,2006,2016,2. Developed region: nonG7,1. High income: OECD,AS,Oceania,Oceania,Australia and New Zealand,East Asia & Pacific,Sydney
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Taichung
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Taiyuan
+2,Sovereign country,Republic of Uzbekistan,29748859,15,202300,2017,1989,2016,6. Developing region,4. Lower middle income,UZ,Asia,Asia,Central Asia,Europe & Central Asia,Tashkent
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Tasikmalaya
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Tegal
+2,Sovereign country,Islamic Republic of Iran,82021564,16,1459000,2017,2006,2016,5. Emerging region: G20,3. Upper middle income,IR,Asia,Asia,Southern Asia,Middle East & North Africa,Tehran
+2,Country,State of Israel,8299706,13,297000,2017,2009,2016,2. Developed region: nonG7,1. High income: OECD,-99,Asia,Asia,Western Asia,Middle East & North Africa,Tel Aviv
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Tianjin
+2,Sovereign country,United Mexican States,124574795,17,2307000,2017,2010,2016,4. Emerging region: MIKT,3. Upper middle income,MX,North America,Americas,Central America,Latin America & Caribbean,Tijuana
+2,Sovereign country,Japan,126451398,17,4932000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,JA,Asia,Asia,Eastern Asia,East Asia & Pacific,Tokyo
+2,Sovereign country,Canada,35623680,15,1674000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Toronto
+2,Sovereign country,Republic of Tunisia,11403800,14,130800,2017,2004,2016,6. Developing region,3. Upper middle income,TS,Africa,Africa,Northern Africa,Middle East & North Africa,Tunis
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Ürümqi
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Vadodara
+2,Sovereign country,Canada,35623680,15,1674000,2017,2011,2016,1. Developed region: G7,1. High income: OECD,CA,North America,Americas,Northern America,North America,Vancouver
+2,Sovereign country,Republic of India,1281935911,18,8721000,2017,2011,2016,3. Emerging region: BRIC,4. Lower middle income,IN,Asia,Asia,Southern Asia,South Asia,Varanasi
+2,Country,United States of America,326625791,17,18560000,2017,2010,2016,1. Developed region: G7,1. High income: OECD,US,North America,Americas,Northern America,North America,Washington D.C.
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Wenzhou
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Wuhan
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Xi'an
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Xiamen
+2,Sovereign country,Republic of the Union of Myanmar,55123814,16,311100,2017,1983,2016,7. Least developed region,5. Low income,BM,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Yangon
+2,Sovereign country,Republic of Cameroon,24994885,15,77240,2017,2005,2016,6. Developing region,4. Lower middle income,CM,Africa,Africa,Middle Africa,Sub-Saharan Africa,Yaounde
+2,Sovereign country,Republic of Indonesia,260580739,17,3028000,2017,2010,2016,4. Emerging region: MIKT,4. Lower middle income,ID,Asia,Asia,South-Eastern Asia,East Asia & Pacific,Yogyakarta
+2,Country,People's Republic of China,1379302771,18,21140000,2017,2010,2016,3. Emerging region: BRIC,3. Upper middle income,CH,Asia,Asia,Eastern Asia,East Asia & Pacific,Zhengzhou
