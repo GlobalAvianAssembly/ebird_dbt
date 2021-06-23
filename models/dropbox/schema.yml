@@ -20,3 +20,5 @@ sources:
       - name: avibase_mapped_ebird_taxonomy_missing_from_birdlife
       - name: merlin_effort
       - name: merlin_frequencies
+      - name: resolve_city_to_ecosystem
+      - name: world_bank_city_to_country
