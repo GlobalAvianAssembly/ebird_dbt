@@ -103,10 +103,7 @@ merlin_data AS (
 SELECT
     city.city_id,
     city.name,
-    STRUCT(
-        city.latitude,
-        city.longitude
-    ) AS location,
+    city.location,
     regional_richness_birdlife.species_in_regional_pool AS species_in_birdlife_regional_pool,
     regional_richness_merlin.species_in_regional_pool AS species_in_merlin_regional_pool,
     urban_richness.urban_richness AS urban_richness,

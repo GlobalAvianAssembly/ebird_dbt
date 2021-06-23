@@ -12,7 +12,7 @@ ecosystems AS (
         recovery_id,
         area_of_city,
         ecosystem_biome_reference
-    FROM {{ ref('base_resolve_to_ecosystem') }}
+    FROM {{ ref('base_resolve_city_to_ecosystem') }}
 ),
 biomes AS (
     SELECT
@@ -20,6 +20,7 @@ biomes AS (
         biome_id,
         biome_name,
         SUM(area_of_city) AS area_of_city,
+        row_number() OVER (PARTITION BY city ORDER BY SUM(area_of_city) DESC) AS rank
     FROM ecosystems
     GROUP BY city, biome_id, biome_name
 ),
@@ -34,6 +35,7 @@ recovery AS (
         recovery_id,
         recovery_description,
         SUM(area_of_city) AS area_of_city,
+        row_number() OVER (PARTITION BY city ORDER BY SUM(area_of_city) DESC) AS rank
     FROM ecosystems
     GROUP BY city, recovery_id, recovery_description
 ),
@@ -65,33 +67,35 @@ SELECT
             STRUCT(
                 biome_id,
                 biome_name,
-                area_of_city
+                biomes.area_of_city
             )
         FROM biomes
         WHERE cities.city = biomes.city
     ) AS biomes,
-    SELECT
-        STRUCT(
-            biome_id,
-            biome_name,
-            area_of_city
-        )
-    FROM biomes WHERE cities.city = biomes.city ORDER BY area_of_city DESC LIMIT 1 AS biome,
-    SELECT realm FROM realms WHERE cities.city = realms.city AS realm,
+    STRUCT(
+        biome_id,
+        biome_name
+    ) AS biome,
+    realm,
     ARRAY(
         SELECT
             STRUCT(
                 recovery_id,
                 recovery_description,
-                area_of_city
+                recovery.area_of_city
             )
         FROM recovery
-        WHERE cities.city = biomes.city
+        WHERE cities.city = recovery.city
     ) AS recovery_areas,
-    SELECT
-        STRUCT(
-            recovery_id,
-            recovery_description
-        )
-    FROM recovery WHERE cities.city = recovery.city ORDER BY area_of_city DESC LIMIT 1 AS recovery,
+    STRUCT(
+        recovery_id,
+        recovery_description
+    ) AS recovery,
 FROM cities
+JOIN biomes top_biome USING (city)
+JOIN recovery top_recovery USING (city)
+JOIN realms USING (city)
+WHERE
+    top_biome.rank = 1
+AND
+    top_recovery.rank = 1

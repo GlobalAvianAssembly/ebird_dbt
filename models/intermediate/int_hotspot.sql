@@ -10,4 +10,4 @@ SELECT
 FROM {{ ref ('hotspot_to_city') }} hotspot_to_city
 JOIN {{ ref('hotspot') }} hotspot USING (locality_id)
 JOIN {{ ref('city') }} city USING (city_id)
-WHERE {{ elevation_is_within_bounds('elevation', 'min_urban_hotspot_elevation', 'max_urban_hotspot_elevation') }}
+WHERE {{ elevation_is_within_bounds('elevation', 'urban_hotspot_elevations.min', 'urban_hotspot_elevations.max') }}

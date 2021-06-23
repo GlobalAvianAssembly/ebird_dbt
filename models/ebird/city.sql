@@ -41,5 +41,5 @@ SELECT
     ) AS ecosystem
 FROM cities_from_urban_hotspots
 JOIN {{ ref('base_city_nordpil_data') }} USING (name)
-JOIN {{ ref('base_world_bank_city_to_country')}} USING (name)
+JOIN {{ ref('base_world_bank_city_to_country') }} USING (name)
 JOIN {{ ref('biome') }} USING(name)
