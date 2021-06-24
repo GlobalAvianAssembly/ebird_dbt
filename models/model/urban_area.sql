@@ -40,7 +40,30 @@ WITH urban_hotspots AS (
      WHERE present_in_merlin_pool = TRUE
          AND {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
      GROUP BY city_id
- ), city_landcover AS (
+), regional_richness_both AS (
+     SELECT
+         city_id,
+         COUNT(DISTINCT scientific_name) AS species_in_regional_pool
+     FROM {{ ref('regional_species') }}
+     WHERE
+            present_in_merlin_pool = TRUE
+            AND present_in_birdlife_pool = TRUE
+            AND {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
+     GROUP BY city_id
+), regional_richness_either AS (
+     SELECT
+         city_id,
+         COUNT(DISTINCT scientific_name) AS species_in_regional_pool
+     FROM {{ ref('regional_species') }}
+     WHERE  present_in_birdlife_pool = TRUE
+            OR
+            (
+                present_in_merlin_pool = TRUE
+                AND
+                {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
+            )
+    GROUP BY city_id
+), city_landcover AS (
     SELECT
         city_id,
         STRUCT(
@@ -106,6 +129,8 @@ SELECT
     city.location,
     regional_richness_birdlife.species_in_regional_pool AS species_in_birdlife_regional_pool,
     regional_richness_merlin.species_in_regional_pool AS species_in_merlin_regional_pool,
+    regional_richness_both.species_in_regional_pool AS species_in_both_regional_pools,
+    regional_richness_either.species_in_regional_pool AS species_in_either_regional_pool,
     urban_richness.urban_richness AS urban_richness,
     CASE
         WHEN urban_richness.two_observations > 0
@@ -128,6 +153,8 @@ FROM {{ ref ('city') }} city
 JOIN urban_hotspots USING (city_id)
 JOIN regional_richness_birdlife USING (city_id)
 JOIN regional_richness_merlin USING (city_id)
+JOIN regional_richness_both USING(city_id)
+JOIN regional_richness_either USING(city_id)
 JOIN urban_richness USING (city_id)
 JOIN city_landcover USING(city_id)
 JOIN merlin_data USING (city_id)

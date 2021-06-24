@@ -68,6 +68,8 @@ SELECT
     city.city_id AS city_id,
     species_pools.present_in_merlin AS present_in_merlin_pool,
     species_pools.present_in_birdlife AS present_in_birdlife_pool,
+    (species_pools.present_in_merlin AND species_pools.present_in_birdlife) AS present_in_both_pools,
+    (species_pools.present_in_merlin OR species_pools.present_in_birdlife) AS present_in_either_pool,
     species_pools.present_in_city AS present_in_city,
     COALESCE(ebird_city.number_of_hotspot_appearances, 0) AS number_of_urban_ebird_hotspot_appearances,
     merlin_number_of_non_zero_frequency,
