@@ -26,8 +26,12 @@ biomes AS (
 ),
 realms AS (
     SELECT
-        DISTINCT city, realm
+        city,
+        realm,
+        SUM(area_of_city) AS area_of_city,
+         row_number() OVER (PARTITION BY city ORDER BY SUM(area_of_city) DESC) AS rank
     FROM ecosystems
+    GROUP BY city, realm
 ),
 recovery AS (
     SELECT
@@ -99,3 +103,5 @@ WHERE
     top_biome.rank = 1
 AND
     top_recovery.rank = 1
+AND
+    realms.rank = 1
