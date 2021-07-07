@@ -17,7 +17,7 @@ sources:
       - name: ee_birdlife_distribution_intersection_with_urban_area
       - name: ee_city_distance_to_coastline
       - name: ee_city_elevation_delta
-      - name: avibase_mapped_ebird_taxonomy_missing_from_birdlife
+      - name: avibase_mapped_taxonomy_missing_from_birdlife
       - name: merlin_effort
       - name: merlin_frequencies
       - name: resolve_city_to_ecosystem
