@@ -9,8 +9,8 @@ WITH elton_species AS (
     {{ map_taxonomy('elton_taxonomy') }}
 )
 SELECT
-    mapped.birdlife_scientific_name,
-    mapped.birdlife_common_name,
+    mapped_taxonomy.birdlife_scientific_name,
+    mapped_taxonomy.birdlife_common_name,
     elton_species.*
 FROM elton_species
 LEFT JOIN mapped_taxonomy USING (scientific_name)

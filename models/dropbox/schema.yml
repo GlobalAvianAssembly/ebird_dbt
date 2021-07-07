@@ -22,3 +22,4 @@ sources:
       - name: merlin_frequencies
       - name: resolve_city_to_ecosystem
       - name: world_bank_city_to_country
+      - name: catherinesheard_global_hwi1_1
