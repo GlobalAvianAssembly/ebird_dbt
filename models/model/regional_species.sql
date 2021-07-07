@@ -76,6 +76,16 @@ SELECT
     merlin_longest_run_of_non_zero_frequency,
     merlin_smallest_precision,
     birdlife.presence AS birdlife_presence,
+    traits.hand_wing_index,
+    traits.log_body_mass,
+    traits.range_size,
+    traits.territoriality,
+    traits.diet,
+    CASE traits.preferred_habitat
+        WHEN 1 THEN 'dense'
+        WHEN 2 THEN 'semi-open'
+        WHEN 3 THEN 'open'
+    END AS preferred_habitat
 FROM species_pools
 LEFT JOIN merlin
     ON species_pools.scientific_name = merlin.scientific_name AND species_pools.city_id = merlin.city_id
@@ -85,5 +95,6 @@ LEFT JOIN ebird_city
     ON species_pools.scientific_name = ebird_city.scientific_name AND species_pools.city_id = ebird_city.city_id
 JOIN {{ ref('city') }} city
     ON species_pools.city_id = city.city_id
+LEFT JOIN {{ ref('global_hand_wing_index') }} traits ON species_pools.scientific_name = traits.birdlife_scientific_name
 WHERE species_pools.city_id IN (SELECT DISTINCT city_id FROM ebird_city)
 ORDER BY present_in_city DESC, present_in_merlin DESC, present_in_birdlife DESC, species_pools.scientific_name

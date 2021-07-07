@@ -37,6 +37,18 @@ models:
         description: Number of hotspots this species appears at in the city
       - name: presence
         description: birdlife presence data
+      - name: hand_wing_index
+        description: hand wing index from Sheard et al (2020)
+      - name: log_body_mass
+        description: Log of body mass from Sheard et al (2020)
+      - name: range_size
+        description: range size from Sheard et al (2020)
+      - name: territoriality
+        description: Territoriality scores from Tobias et al. 2016 Frontiers in E&E (Sheard et al (2020))
+      - name: diet
+        description: Dietary category, based on Wilman et al. 2014 and updated from HBW Alive and other sources (see Pigot, Sheard, et al. 2020 for more information). (Sheard et al (2020))
+      - name: preferred_habitat
+        description: Habitat scores from Tobias et al. 2016 Frontiers in E&E. 1 = dense, 2 = semi-open, 3 = open. (Sheard et al (2020))
 
   - name: urban_area
     description: Details of the urban areas with in the study using birdlife regional pool
