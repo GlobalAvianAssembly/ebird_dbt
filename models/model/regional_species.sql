@@ -82,9 +82,10 @@ SELECT
     traits.territoriality,
     traits.diet,
     CASE traits.preferred_habitat
-        WHEN 1 THEN 'dense'
-        WHEN 2 THEN 'semi-open'
-        WHEN 3 THEN 'open'
+        WHEN '1' THEN 'dense'
+        WHEN '2' THEN 'semi-open'
+        WHEN '3' THEN 'open'
+        ELSE 'NA'
     END AS preferred_habitat
 FROM species_pools
 LEFT JOIN merlin
