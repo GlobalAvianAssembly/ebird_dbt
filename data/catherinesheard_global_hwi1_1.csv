@@ -1,4 +1,4 @@
-Species-ID,Order,Species name,IUCN name,Tree name,HWI,HWI,Body mass (log),Range Size,Island,Migration-1,Migration-2,Migration-3,Territoriality,Diet,Habitat,Latitude,AnnualTemp,TempRange,AnnualPrecip,PrecipRange,Synonym,Notes
+SpeciesID,Order,Species_name,IUCN_name,Tree_name,HWI,HWI,Body_mass_log,Range_Size,Island,Migration1,Migration2,Migration3,Territoriality,Diet,Habitat,Latitude,AnnualTemp,TempRange,AnnualPrecip,PrecipRange,Synonym,Notes
 10000,Tinamiformes,Tinamus tao,Tinamus tao,Tinamus_tao,14.19806859,4,3.204147125,376,0,Not a Migrant,1,resident,strong,fruit,1,-7.73,24.81559201,15.16126166,1971.720512,273.5485051,,
 10001,Tinamiformes,Tinamus solitarius,Tinamus solitarius,Tinamus_solitarius,13.63738999,4,3.141891682,112,0,Not a Migrant,1,resident,strong,seeds,1,-22.26,20.87319346,17.84779542,1446.038739,147.230815,,
 10002,Tinamiformes,Tinamus osgoodi,Tinamus osgoodi,Tinamus_osgoodi,13.81304348,1,3.108903128,5,0,Not a Migrant,1,resident,weak,fruit,1,-10.23,18.20033,16.01116,2336.4107,253.96059,,
