@@ -9,8 +9,8 @@ WITH hwi AS (
     {{ map_taxonomy('hwi_taxonomy') }}
 )
 SELECT
-    mapped_taxonomy.birdlife_scientific_name,
-    mapped_taxonomy.birdlife_common_name,
+    mapped_taxonomy.ebird_scientific_name,
+    mapped_taxonomy.ebird_common_name,
     hwi.*
 FROM hwi
 LEFT JOIN mapped_taxonomy USING (scientific_name)

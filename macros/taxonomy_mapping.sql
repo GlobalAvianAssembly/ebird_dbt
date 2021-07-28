@@ -10,50 +10,37 @@
 -- FROM source
 --
 {% macro map_taxonomy(taxonomy) %}
-    species_with_same_binomial_as_birdlife AS (
+    species_with_same_binomial_as_ebird AS (
         SELECT
             scientific_name,
             taxonomy.common_name,
-            scientific_name AS birdlife_scientific_name,
-            birdlife.common_name AS birdlife_common_name
+            scientific_name AS ebird_scientific_name,
+            ebird.common_name AS ebird_common_name
         FROM {{ taxonomy }} taxonomy
-            JOIN {{ ref('birdlife_taxonomy_with_alternatives') }} birdlife USING (scientific_name)
-    ), species_with_alternative_binomial_in_birdlife AS (
-        SELECT
-            taxonomy.scientific_name,
-            taxonomy.common_name,
-            birdlife.scientific_name AS birdlife_scientific_name,
-            birdlife.common_name AS birdlife_common_name
-        FROM {{ ref('birdlife_taxonomy_with_alternatives') }} birdlife
-            JOIN UNNEST(birdlife.alternative_scientific_names) alternative_scientific_name
-            JOIN {{ taxonomy }} taxonomy ON taxonomy.scientific_name = alternative_scientific_name
-    ), species_not_in_birdlife AS (
+            JOIN {{ ref('base_ebird_clements_taxonomy') }} ebird USING (scientific_name)
+    ), species_manually_mapped AS (
         SELECT
             taxonomy.scientific_name AS scientific_name,
             taxonomy.common_name AS common_name,
-            manual_mapping.birdlife_scientific_name AS birdlife_scientific_name,
-            birdlife.common_name AS birdlife_common_name
+            manual_mapping.ebird_scientific_name AS ebird_scientific_name,
+            manual_mapping.ebird_common_name AS ebird_common_name
         FROM {{ taxonomy }} taxonomy
-            JOIN {{ source('dropbox', 'avibase_mapped_taxonomy_missing_from_birdlife') }} manual_mapping
-                ON taxonomy.scientific_name = manual_mapping.scientific_name
-            JOIN {{ ref('birdlife_taxonomy_with_alternatives') }} birdlife
-                ON birdlife.scientific_name = manual_mapping.birdlife_scientific_name
+            JOIN {{ source('dropbox', 'avibase_manually_mapped_taxonomy') }} manual_mapping
+                ON taxonomy.scientific_name = manual_mapping.alternative_scientific_name
+        WHERE taxonomy.scientific_name NOT IN (SELECT scientific_name FROM {{ ref('base_ebird_clements_taxonomy') }})
     ), unmapped_species AS (
         SELECT
             scientific_name,
             common_name,
-            CAST(NULL AS STRING) AS birdlife_scientific_name,
-            CAST(NULL AS STRING) AS birdlife_common_name
+            CAST(NULL AS STRING) AS ebird_scientific_name,
+            CAST(NULL AS STRING) AS ebird_common_name
         FROM {{ taxonomy }}
-        WHERE scientific_name NOT IN (SELECT scientific_name FROM species_with_same_binomial_as_birdlife)
-            AND scientific_name NOT IN (SELECT scientific_name FROM species_with_alternative_binomial_in_birdlife)
-            AND scientific_name NOT IN (SELECT scientific_name FROM species_not_in_birdlife)
+        WHERE scientific_name NOT IN (SELECT scientific_name FROM species_with_same_binomial_as_ebird)
+            AND scientific_name NOT IN (SELECT scientific_name FROM species_manually_mapped)
     ), mapped_taxonomy AS (
-        SELECT * FROM species_with_same_binomial_as_birdlife
+        SELECT * FROM species_with_same_binomial_as_ebird
         UNION ALL
-        SELECT * FROM species_with_alternative_binomial_in_birdlife
-        UNION ALL
-        SELECT * FROM species_not_in_birdlife
+        SELECT * FROM species_manually_mapped
         UNION ALL
         SELECT * FROM unmapped_species
     )

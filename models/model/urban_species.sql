@@ -5,8 +5,8 @@ SELECT
     species.city_id AS city_id,
     species.common_name,
     species.scientific_name,
-    birdlife_scientific_name,
-    birdlife_common_name,
+    ebird_scientific_name,
+    ebird_common_name,
     percentage_of_checklists
 FROM {{ ref('eph_included_species_at_hotspot') }} species
 JOIN {{ ref('eph_included_hotspot') }} USING (hotspot_id)

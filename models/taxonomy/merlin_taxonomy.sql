@@ -5,4 +5,7 @@ WITH distinct_merlin_species AS (
      common_name
     FROM {{ ref('base_merlin_species_pool') }}
 ),
-{{ map_taxonomy('distinct_merlin_species') }}
+mapped_taxonomy AS (
+    WITH {{ map_taxonomy('distinct_merlin_species') }}
+)
+SELECT * FROM mapped_taxonomy WHERE ebird_scientific_name IS NOT NULL

@@ -3,37 +3,45 @@ WITH
 ebird_city AS (
     SELECT
         city_id,
-        birdlife_scientific_name AS scientific_name,
-        birdlife_common_name AS common_name,
+        ebird_scientific_name AS scientific_name,
+        ebird_common_name AS common_name,
         COUNT(*) AS number_of_hotspot_appearances
     FROM
         {{ ref('urban_species') }}
     GROUP BY
-        birdlife_scientific_name,
-        birdlife_common_name,
+        ebird_scientific_name,
+        ebird_common_name,
         city_id
 ),
-birdlife AS (
+birdlife_dedup AS (
     SELECT
-        scientific_name,
-        common_name,
+        ebird_scientific_name AS scientific_name,
+        ebird_common_name AS common_name,
         city_id,
-        presence
+        iucn_red_list_2020,
+        presence,
+        row_number() OVER (PARTITION BY ebird_scientific_name, ebird_common_name, city_id ORDER BY iucn_red_list_order ASC) AS rownum
     FROM {{ ref('int_birdlife_regional_species_pool') }}
+    JOIN {{ ref('used_birdlife_taxonomy') }} USING(scientific_name)
+),
+birdlife AS (
+    SELECT * EXCEPT(rownum)
+    FROM birdlife_dedup
+    WHERE rownum = 1
 ),
 merlin AS (
     SELECT
-        taxonomy.birdlife_scientific_name AS scientific_name,
-        taxonomy.birdlife_common_name AS common_name,
+        taxonomy.ebird_scientific_name AS scientific_name,
+        taxonomy.ebird_common_name AS common_name,
         city_id,
         MAX(number_of_non_zero_frequency) AS merlin_number_of_non_zero_frequency,
         MAX(longest_run_of_non_zero_frequency) AS merlin_longest_run_of_non_zero_frequency,
         MIN(smallest_precision) AS merlin_smallest_precision
     FROM {{ ref('int_merlin_regional_species_pool') }} merlin
-    JOIN {{ ref('used_ebird_taxonomy') }} taxonomy USING(scientific_name)
+    JOIN {{ ref('merlin_taxonomy') }} taxonomy USING(scientific_name)
     GROUP BY
-        taxonomy.birdlife_scientific_name,
-        taxonomy.birdlife_common_name,
+        taxonomy.ebird_scientific_name,
+        taxonomy.ebird_common_name,
         city_id
 ),
 all_species AS (
@@ -75,18 +83,14 @@ SELECT
     merlin_number_of_non_zero_frequency,
     merlin_longest_run_of_non_zero_frequency,
     merlin_smallest_precision,
+    birdlife.iucn_red_list_2020,
     birdlife.presence AS birdlife_presence,
-    traits.hand_wing_index,
-    traits.log_body_mass,
-    traits.range_size,
-    traits.territoriality,
-    traits.diet,
-    CASE traits.preferred_habitat
-        WHEN '1' THEN 'dense'
-        WHEN '2' THEN 'semi-open'
-        WHEN '3' THEN 'open'
-        ELSE 'NA'
-    END AS preferred_habitat
+    taxon.hand_wing_index,
+    taxon.log_body_mass,
+    taxon.range_size,
+    taxon.territoriality,
+    taxon.diet,
+    taxon.preferred_habitat
 FROM species_pools
 LEFT JOIN merlin
     ON species_pools.scientific_name = merlin.scientific_name AND species_pools.city_id = merlin.city_id
@@ -96,6 +100,7 @@ LEFT JOIN ebird_city
     ON species_pools.scientific_name = ebird_city.scientific_name AND species_pools.city_id = ebird_city.city_id
 JOIN {{ ref('city') }} city
     ON species_pools.city_id = city.city_id
-LEFT JOIN {{ ref('global_hand_wing_index') }} traits ON species_pools.scientific_name = traits.birdlife_scientific_name
+JOIN {{ ref('taxonomy') }} taxon
+    ON species_pools.scientific_name = taxon.scientific_name
 WHERE species_pools.city_id IN (SELECT DISTINCT city_id FROM ebird_city)
 ORDER BY present_in_city DESC, present_in_merlin DESC, present_in_birdlife DESC, species_pools.scientific_name

@@ -32,7 +32,17 @@ WITH birdlife_expanded AS (
             ELSE 'Unknown Code'
         END AS origin,
         regional_pool.origin AS origin_code,
-        t.iucn_red_list_2020 AS iucn_red_list_2020
+        t.iucn_red_list_2020 AS iucn_red_list_2020,
+        CASE t.iucn_red_list_2020
+            WHEN 'LC' THEN 1
+            WHEN 'NT' THEN 2
+            WHEN 'VU' THEN 3
+            WHEN 'EN' THEN 4
+            WHEN 'CR' THEN 5
+            WHEN 'CR (PE)' THEN 6
+            WHEN 'DD' THEN 7
+            ELSE 8
+        END AS iucn_red_list_order
     FROM {{ source('dropbox', 'ee_birdlife_distribution_intersection_with_urban_area') }} regional_pool
     LEFT JOIN {{ ref('base_birdlife_taxonomy') }} t
         ON regional_pool.species = t.scientific_name
@@ -60,6 +70,7 @@ WITH birdlife_expanded AS (
                 AND core.city_id = sub.city_id
         ) AS presence,
         iucn_red_list_2020,
+        iucn_red_list_order,
         row_number() OVER (PARTITION BY scientific_name, common_name, city_id) AS rownum
     FROM birdlife_expanded core
 )

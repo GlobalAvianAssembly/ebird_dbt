@@ -19,9 +19,7 @@ protocol_type IN ('Traveling', 'Stationary', 'Area')
 --
 -- Species observations to include
 --
-{% macro is_included_observation() %}
-    approved = 1
-    AND
+{% macro is_included_ebird_species() %}
     (
         category IN ('species', 'issf')
         OR
@@ -33,6 +31,12 @@ protocol_type IN ('Traveling', 'Stationary', 'Area')
             category = 'form' AND REGEXP_CONTAINS(scientific_name, '^[A-Z][a-z]+ [a-z]+$')
         )
     )
+{% endmacro %}
+
+{% macro is_included_observation() %}
+    approved = 1
+    AND
+    {{ is_included_ebird_species() }}
 {% endmacro %}
 
 --
