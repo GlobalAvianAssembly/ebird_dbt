@@ -117,3 +117,9 @@ https://code.earthengine.google.com/?accept_repo=users/jamesr/city_metrics
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
+## Taxonomy
+
+### Missing taxonomy from Pigot but present in Elton and regional pool
+* Otus angelinae (present in birdlife regional pool in Jakarta)
+* Gallirallus okinawae (present in merlin regional pool only in Fukuoka and Nagoya)
+* Stachyris nonggangensis (present in merlin regional pool in Hanoi)

@@ -24,3 +24,4 @@ sources:
       - name: world_bank_city_to_country
       - name: catherinesheard_global_hwi1_1
       - name: ebird_clements_taxonomy_2019
+      - name: pigot_taxonomy_and_traits

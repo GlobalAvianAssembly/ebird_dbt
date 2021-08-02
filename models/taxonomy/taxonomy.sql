@@ -1,27 +1,51 @@
 {{ config(materialized='table') }}
 WITH used_taxonomy AS (
-    SELECT ebird_scientific_name FROM {{ ref('merlin_taxonomy') }}
-    UNION ALL
-    SELECT ebird_scientific_name FROM {{ ref('used_birdlife_taxonomy') }}
-    UNION ALL
-    SELECT ebird_scientific_name FROM {{ ref('used_ebird_taxonomy') }}
+    SELECT * FROM {{ ref('distinct_used_taxonomy') }}
 ),
-distinct_taxonomy AS (
-    SELECT DISTINCT
-        ebird_scientific_name
+traits AS (
+    SELECT * EXCEPT(common_name) FROM {{ ref('trait_database') }}
+),
+direct_mapped AS (
+    SELECT
+        *
     FROM used_taxonomy
+    JOIN traits USING (scientific_name)
+),
+birdlife_mapped AS (
+    SELECT
+        used_taxonomy.*,
+        traits.* EXCEPT(scientific_name)
+    FROM used_taxonomy
+    JOIN {{ ref('used_birdlife_taxonomy') }} birdlife ON used_taxonomy.scientific_name = birdlife.ebird_scientific_name
+    JOIN traits ON traits.scientific_name = birdlife.scientific_name
+    WHERE used_taxonomy.scientific_name NOT IN (SELECT scientific_name FROM direct_mapped)
+),
+birdlife_alternative_name_mapped AS (
+    SELECT
+        used_taxonomy.*,
+        traits.* EXCEPT(scientific_name)
+    FROM used_taxonomy
+    JOIN {{ ref('birdlife_taxonomy_with_alternatives') }} birdlife ON used_taxonomy.scientific_name = birdlife.scientific_name
+    JOIN UNNEST(birdlife.alternative_scientific_names) AS alternative_scientific_name
+    JOIN traits ON traits.scientific_name = alternative_scientific_name
+    WHERE used_taxonomy.scientific_name NOT IN (SELECT scientific_name FROM direct_mapped)
+    AND used_taxonomy.scientific_name NOT IN (SELECT scientific_name FROM birdlife_mapped)
+),
+manually_mapped AS (
+    SELECT
+        used_taxonomy.*,
+        traits.* EXCEPT(scientific_name)
+    FROM used_taxonomy
+    JOIN {{ ref('avibase_manually_mapped_taxonomy') }} manual ON used_taxonomy.scientific_name = manual.ebird_scientific_name
+    JOIN traits ON traits.scientific_name = manual.alternative_scientific_name
+    WHERE used_taxonomy.scientific_name NOT IN (SELECT scientific_name FROM direct_mapped)
+    AND used_taxonomy.scientific_name NOT IN (SELECT scientific_name FROM birdlife_mapped)
+    AND used_taxonomy.scientific_name NOT IN (SELECT scientific_name FROM birdlife_alternative_name_mapped)
 )
-SELECT
-    ebird_scientific_name AS scientific_name,
-    ebird.common_name AS common_name,
-    ebird.t_order AS taxonomic_order,
-    ebird.t_family AS taxonomic_family,
-    hwi.hand_wing_index,
-    hwi.log_body_mass,
-    hwi.diet,
-    hwi.preferred_habitat,
-    hwi.range_size,
-    hwi.territoriality,
-FROM distinct_taxonomy
-JOIN {{ ref('base_ebird_clements_taxonomy') }} ebird ON ebird_scientific_name = ebird.scientific_name
-LEFT JOIN {{ ref('global_hand_wing_index') }} hwi USING (ebird_scientific_name)
+SELECT * FROM direct_mapped
+UNION ALL
+SELECT * FROM birdlife_mapped
+UNION ALL
+SELECT * FROM birdlife_alternative_name_mapped
+UNION ALL
+SELECT * FROM manually_mapped

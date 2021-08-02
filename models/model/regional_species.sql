@@ -85,12 +85,7 @@ SELECT
     merlin_smallest_precision,
     birdlife.iucn_red_list_2020,
     birdlife.presence AS birdlife_presence,
-    taxon.hand_wing_index,
-    taxon.log_body_mass,
-    taxon.range_size,
-    taxon.territoriality,
-    taxon.diet,
-    taxon.preferred_habitat
+    taxon.* EXCEPT(scientific_name, common_name)
 FROM species_pools
 LEFT JOIN merlin
     ON species_pools.scientific_name = merlin.scientific_name AND species_pools.city_id = merlin.city_id
