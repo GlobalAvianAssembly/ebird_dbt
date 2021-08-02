@@ -95,7 +95,7 @@ LEFT JOIN ebird_city
     ON species_pools.scientific_name = ebird_city.scientific_name AND species_pools.city_id = ebird_city.city_id
 JOIN {{ ref('city') }} city
     ON species_pools.city_id = city.city_id
-JOIN {{ ref('taxonomy') }} taxon
+LEFT JOIN {{ ref('taxonomy') }} taxon
     ON species_pools.scientific_name = taxon.scientific_name
 WHERE species_pools.city_id IN (SELECT DISTINCT city_id FROM ebird_city)
 ORDER BY present_in_city DESC, present_in_merlin DESC, present_in_birdlife DESC, species_pools.scientific_name
