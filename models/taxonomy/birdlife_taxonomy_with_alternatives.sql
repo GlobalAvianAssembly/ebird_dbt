@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 WITH alternative_names AS (
     SELECT
         scientific_name,
