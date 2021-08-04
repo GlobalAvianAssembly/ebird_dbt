@@ -2,24 +2,6 @@
 version: 2
 
 models:
-  - name: eph_included_species_at_hotspot
-    description: Species that appear on over the required percentage of checklists at a hotspot
-    columns:
-      - name: locality_id
-        description: the hotspot
-      - name: city_id
-        description: the city the hotspot is in
-      - name: scientific_name
-        description: The scientific name for the bird seen
-      - name: common_name
-        description: The common name for the bird seen
-      - name: number_of_checklists
-        description: The number of checklists this species appears on
-      - name: total_checklists_at_hotspot
-        description: the total number of checklists at the hotspot
-      - name: percentage_of_checklists
-        description: the percentage of checklists the species appears on
-
   - name: regional_species
     description: Species in the regional species pool for a city
     columns:
@@ -27,28 +9,22 @@ models:
         description: the city the hotspot is in
       - name: scientific_name
         description: The scientific name for the bird seen
+        tests:
+          - relationships:
+              to: ref('taxonomy')
+              field: scientific_name
       - name: common_name
         description: The common name for the bird seen
       - name: present_in_birdlife
         description: Whether this species is present in the birdlife compiled species pool
       - name: present_in_ebird
         description: Whether this species is present in the ebird compiled species pool
-      - name: number_of_ebird_hotspot_appearances
-        description: Number of hotspots this species appears at in the city
-      - name: presence
-        description: birdlife presence data
-      - name: hand_wing_index
-        description: hand wing index from Sheard et al (2020)
-      - name: log_body_mass
-        description: Log of body mass from Sheard et al (2020)
-      - name: range_size
-        description: range size from Sheard et al (2020)
-      - name: territoriality
-        description: Territoriality scores from Tobias et al. 2016 Frontiers in E&E (Sheard et al (2020))
-      - name: diet
-        description: Dietary category, based on Wilman et al. 2014 and updated from HBW Alive and other sources (see Pigot, Sheard, et al. 2020 for more information). (Sheard et al (2020))
-      - name: preferred_habitat
-        description: Habitat scores from Tobias et al. 2016 Frontiers in E&E. 1 = dense, 2 = semi-open, 3 = open. (Sheard et al (2020))
+      - name: present_in_either_pool
+        description: Whether this species is present in the birdlife or the merlin compiled species pool
+      - name: present_in_both_pools
+        description: Whether this species is present in the ebird and the merlin compiled species pool
+      - name: present_in_city
+        description: Whether this species is present in an ebird urban hotspot
 
   - name: urban_area
     description: Details of the urban areas with in the study using birdlife regional pool
@@ -119,7 +95,29 @@ models:
         description: the hotspot
       - name: scientific_name
         description: The scientific name for the bird seen
+        tests:
+          - relationships:
+              to: ref('taxonomy')
+              field: scientific_name
       - name: common_name
         description: The common name for the bird seen
       - name: percentage_of_checklists
         description: The percentage of checklists this species appears on at hotspots within the regional
+
+  - name: taxonomy
+    description: The taxonomic model based on eBird/Clements used
+    columns:
+      - name: scientific_name
+        description: species bionomial
+      - name: common_name
+        description: the English common name
+      - name: taxonomic_order
+        description: The species order
+      - name: taxonomic_family
+        description: The species family
+      - name: iucn_red_list_2020
+        description: The IUCN vulnerability from 2020
+      - name: diet
+        description: description of species diet
+      - name: foraging
+        description: how the species forages

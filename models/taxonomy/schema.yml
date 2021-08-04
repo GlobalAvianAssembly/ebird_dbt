@@ -64,6 +64,9 @@ models:
           - has_no_missing_species:
               all_species_model: ref('used_taxonomy_all')
               all_species_field: scientific_name
+          - relationships:
+              to: ref('used_taxonomy_all')
+              field: scientific_name
 
   - name: taxonomy_with_vulnerability
     description: Each species used from clements/eBird mapped to the birdline icun status.
@@ -74,3 +77,6 @@ models:
           - has_no_missing_species:
               all_species_model: ref('used_taxonomy_all')
               all_species_field: scientific_name
+          - relationships:
+              to: ref('used_taxonomy_all')
+              field: scientific_name

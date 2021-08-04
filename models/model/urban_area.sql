@@ -14,8 +14,7 @@ WITH urban_hotspots AS (
         city_id,
         common_name,
         COUNT(*) AS number_of_hotspot_appearances
-    FROM {{ ref('urban_species_birdlife') }}
-    WHERE present_in_regional_pool = TRUE
+    FROM {{ ref('urban_species') }}
     GROUP BY city_id, common_name
 ), urban_richness AS (
     SELECT
@@ -38,7 +37,6 @@ WITH urban_hotspots AS (
          COUNT(DISTINCT scientific_name) AS species_in_regional_pool
      FROM {{ ref('regional_species') }}
      WHERE present_in_merlin_pool = TRUE
-         AND {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
      GROUP BY city_id
 ), regional_richness_both AS (
      SELECT
@@ -48,7 +46,6 @@ WITH urban_hotspots AS (
      WHERE
             present_in_merlin_pool = TRUE
             AND present_in_birdlife_pool = TRUE
-            AND {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
      GROUP BY city_id
 ), regional_richness_either AS (
      SELECT
@@ -57,11 +54,7 @@ WITH urban_hotspots AS (
      FROM {{ ref('regional_species') }}
      WHERE  present_in_birdlife_pool = TRUE
             OR
-            (
-                present_in_merlin_pool = TRUE
-                AND
-                {{ merlin_pool_requirements('merlin_number_of_non_zero_frequency', 'merlin_longest_run_of_non_zero_frequency', 'merlin_smallest_precision') }}
-            )
+            present_in_merlin_pool = TRUE
     GROUP BY city_id
 ), city_landcover AS (
     SELECT
