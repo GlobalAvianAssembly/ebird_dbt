@@ -18,10 +18,8 @@ Celeus ochraceus,Ochre-backed Woodpecker,Celeus flavescens
 Chrysophlegma mentale,Checker-throated Woodpecker,Picus mentalis
 Dendrocopos analis,Freckle-breasted Woodpecker,Dendrocopos macei
 Chrysophlegma miniaceum,Banded Woodpecker,Picus mineaceus
-Chloropicus stierlingi,Stierling's Woodpecker,Dendropicos stierlingi
 Chloropicus elliotii,Elliot's Woodpecker,Mesopicos elliotii
 Dinopium psarodes,Red-backed Flameback,Dinopium benghalense
-Chloropicus elachus,Little Gray Woodpecker,Dendropicos elachus
 Chrysocolaptes stricklandi,Crimson-backed Flameback,Chrysocolaptes lucidus
 Aulacorhynchus albivitta,Southern Emerald-Toucanet,Aulacorhynchus prasinus
 Psilopogon duvaucelii,Blue-eared Barbet,Megalaima australis
@@ -85,8 +83,6 @@ Treron affinis,Gray-fronted Green-Pigeon,Treron pompadora
 Treron phayrei,Ashy-headed Green-Pigeon,Treron pompadora
 Streptopelia picturata,Madagascar Turtle-Dove,Nesoenas picturata
 Ptilinopus epius,Maroon-chinned Fruit-Dove,Ptilinopus subgularis
-Macropygia modiglianii,Barusan Cuckoo-Dove,Macropygia emiliana
-Macropygia cinnamomea,Enggano Cuckoo-Dove,Macropygia emiliana
 Chalcophaps longirostris,Pacific Emerald Dove,Chalcophaps indica
 Streptopelia dusumieri,Philippine Collared-Dove,Streptopelia bitorquata
 Leptotila cassinii,Gray-chested Dove,Leptotila cassini
@@ -119,7 +115,6 @@ Sitta cinnamoventris,Chestnut-bellied Nuthatch,Sitta castanea
 Sitta przewalskii,Przevalski's Nuthatch,Sitta leucopsis
 Acridotheres burmannicus,Vinous-breasted Starling,Sturnus burmannicus
 Saroglossa spilopterus,Spot-winged Starling,Saroglossa spiloptera
-Gracula enganensis,Enggano Myna,Gracula religiosa
 Acridotheres javanicus,Javan Myna,Acridotheres cinereus
 Gracula robusta,Nias Myna,Gracula religiosa
 Gracupica contra,Asian Pied Starling,Sturnus contra
@@ -345,7 +340,6 @@ Horornis flavolivaceus,Aberrant Bush Warbler,Cettia flavolivacea
 Horornis vulcanius,Sunda Bush Warbler,Cettia vulcania
 Acrocephalus orientalis,Oriental Reed Warbler,Acrocephalus arundinaceus
 Turdinus marmoratus,Marbled Wren-Babbler,Turdinus marmorata
-Napothera albostriata,Sumatran Wren-Babbler,Rimator malacoptilus
 Graminicola striatus,Chinese Grassbird,Graminicola bengalensis
 Laticilla cinerascens,Swamp Grass Babbler,Prinia burnesii
 Aethopyga vigorsii,Vigors's Sunbird,Aethopyga siparaja
@@ -406,14 +400,12 @@ Cyanoderma ambiguum,Buff-chested Babbler,Stachyris ambigua
 Cyanoderma rufifrons,Rufous-fronted Babbler,Stachyris rufifrons
 Stachyris strialata,Spot-necked Babbler,Stachyris striolata
 Trogon ramonianus,Amazonian Trogon,Trogon violaceus
-Harpactes mackloti,Sumatran Trogon,Apalharpactes mackloti
 Upupa marginata,Madagascar Hoopoe,Upupa epops
 Lophoceros fasciatus,African Pied Hornbill,Tockus fasciatus
 Horizocerus hartlaubi,Black Dwarf Hornbill,Tockus hartlaubi
 Horizocerus albocristatus,White-crested Hornbill,Tropicranus albocristatus
 Ixobrychus dubius,Black-backed Bittern,Tigriornis leucolopha
 Ardea intermedia,Intermediate Egret,Mesophoyx intermedia
-Pseudibis gigantea,Giant Ibis,Thaumatibis gigantea
 Theristicus branickii,Andean Ibis,Theristicus melanopis
 Trichoglossus rubritorquis,Red-collared Lorikeet,Trichoglossus haematodus
 Psittacula calthrapae,Layard's Parakeet,Psittacula calthropae
@@ -450,7 +442,6 @@ Nesophlox evelynae,Bahama Woodstar,Calliphlox evelynae
 Urochroa leucura,Green-backed Hillstar,Urochroa bougueri
 Eriocnemis aline,Emerald-bellied Puffleg,Eriocnemis alinae
 Stephanoxis loddigesii,Purple-crowned Plovercrest,Stephanoxis lalandi
-Campylopterus calcirupicola,Dry-forest Sabrewing,Campylopterus largipennis
 Sappho sparganurus,Red-tailed Comet,Sappho sparganura
 Juliamyia julie,Violet-bellied Hummingbird,Damophila julie
 Aglaiocercus kingii,Long-tailed Sylph,Aglaiocercus kingi
@@ -461,7 +452,6 @@ Setopagis heterura,Todd's Nightjar,Caprimulgus heterurus
 Setopagis parvula,Little Nightjar,Caprimulgus parvulus
 Systellura longirostris,Band-winged Nightjar,Caprimulgus longirostris
 Caprimulgus jotaka,Gray Nightjar,Caprimulgus indicus
-Oceanodroma socorroensis,Townsend's Storm-Petrel,Oceanodroma leucorhoa
 Oceanodroma microsoma,Least Storm-Petrel,Halocyptena microsoma
 Oceanodroma jabejabe,Cape Verde Storm-Petrel,Oceanodroma castro
 Puffinus elegans,Subantarctic Shearwater,Puffinus assimilis
@@ -545,3 +535,4 @@ Otus angelinae,Javan Scops Owl,Otus spilocephalus
 Gallirallus okinawae,Okinawa Rail,Gallirallus torquatus
 Stachyris nonggangensis,Nonggang Babbler,Stachyris herberti
 Vanellus macropterus,Javan Lapwing,Vanellus indicus
+Oceanodroma socorroensis,Townsend's Storm-Petrel,Oceanodroma leucorhoa
