@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 WITH used_taxonomy AS (
-    SELECT ebird_scientific_name FROM {{ ref('merlin_taxonomy') }}
+    SELECT ebird_scientific_name FROM {{ ref('used_merlin_taxonomy') }}
     UNION ALL
     SELECT ebird_scientific_name FROM {{ ref('used_birdlife_taxonomy') }}
     UNION ALL

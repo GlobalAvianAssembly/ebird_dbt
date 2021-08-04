@@ -2,7 +2,7 @@ ebird_scientific_name,ebird_common_name,birdlife_v4_2010_scientific_name
 Mentrocrex beankaensis,Tsingy Wood-Rail,Canirallus kioloides
 Rallus indicus,Brown-cheeked Rail,Rallus aquaticus
 Rallus tenuirostris,Aztec Rail,Rallus longirostris
-Hapalocrex flaviventer,Yellow-breasted Crake,
+Hapalocrex flaviventer,Yellow-breasted Crake,Porzana flaviventer
 Rallus crepitans,Clapper Rail,Porzana flaviventer
 Aramides cajaneus,Gray-cowled Wood-Rail,Aramides cajanea
 Rallus obsoletus,Ridgway's Rail,Rallus longirostris
@@ -160,7 +160,7 @@ Rhipidura albiventris,Visayan Fantail,Rhipidura cyaniceps
 Rhipidura samarensis,Visayan Blue-Fantail,Rhipidura superciliaris
 Rhipidura albogularis,Spot-breasted Fantail,Rhipidura albicollis
 Rhipidura albiscapa,Gray Fantail,Rhipidura fuliginosa
-Grallaria urraoensis,Urrao Antpitta,Grallaria fenwickorum
+Grallaria urraoensis,Urrao Antpitta,Grallaria milleri
 Grallaricula leymebambae,Leymebamba Antpitta,Grallaricula ferrugineipectus
 Salpornis salvadori,African Spotted Creeper,Salpornis spilonotus
 Salpornis spilonota,Indian Spotted Creeper,Salpornis spilonotus
@@ -232,7 +232,7 @@ Hypothymis puella,Pale-blue Monarch,Hypothymis azurea
 Terpsiphone incei,Amur Paradise-Flycatcher,Terpsiphone paradisi
 Terpsiphone batesi,Bates's Paradise-Flycatcher,Terpsiphone rufocinerea
 Petroica boodang,Scarlet Robin,Petroica multicolor
-Chelidorhynx hypoxanthus,Yellow-bellied Fairy-Fantail,Rhipidura hypoxantha
+Chelidorhynx hypoxanthus,Yellow-bellied Fairy-Fantail,Chelidorhynx hypoxantha
 Drymophila klagesi,Klages's Antbird,Drymophila caudata
 Epinecrophylla amazonica,Rio Madeira Stipplethroat,Epinecrophylla haematonota
 Drymophila striaticeps,Streak-headed Antbird,Drymophila caudata
@@ -253,223 +253,295 @@ Motacilla tschutschensis,Eastern Yellow Wagtail,Motacilla flava
 Anthus nyassae,Woodland Pipit,Anthus similis
 Artemisiospiza belli,Bell's Sparrow,Amphispiza belli
 Artemisiospiza nevadensis,Sagebrush Sparrow,Amphispiza belli
-Atlapetes blancae,Antioquia Brushfinch,
-Arremon atricapillus,Black-headed Brushfinch,
-Arremon perijanus,Perija Brushfinch,
-Arremon phaeopleurus,Caracas Brushfinch,
-Chlorospingus flavopectus,Common Chlorospingus,
-Arremon assimilis,Gray-browed Brushfinch,
-Cyanoloxia rothschildii,Amazonian Grosbeak,
-Cyanoloxia cyanoides,Blue-black Grosbeak,
-Cyanopica cooki,Iberian Magpie,
-Urocissa erythroryncha,Red-billed Blue-Magpie,
-Aphelocoma wollweberi,Mexican Jay,
-Corvus pectoralis,Collared Crow,
-Pica mauritanica,Maghreb Magpie,
-Ptiliogonys cinereus,Gray Silky-flycatcher,
-Cisticola cinnamomeus,Pale-crowned Cisticola,
-Calamonastes undosus,Miombo Wren-Warbler,
-Cisticola luapula,Luapula Cisticola,
-Cisticola marginatus,Winding Cisticola,
-Cisticola lugubris,Ethiopian Cisticola,
-Oreolais pulcher,Black-collared Apalis,
-Orthotomus chloronotus,Green-backed Tailorbird,
-Cisticola haematocephalus,Coastal Cisticola,
-Calamonastes stierlingi,Stierling's Wren-Warbler,
-Cisticola nana,Tiny Cisticola,
-Prinia superciliaris,Hill Prinia,
-Cossypha albicapillus,White-crowned Robin-Chat,
-Cercotrichas signata,Brown Scrub-Robin,
-Cyornis brunneatus,Brown-chested Jungle-Flycatcher,
-Cyornis sumatrensis,Indochinese Blue Flycatcher,
-Larvivora akahige,Japanese Robin,
-Ficedula luzoniensis,Bundok Flycatcher,
-Copsychus mindanensis,Philippine Magpie-Robin,
-Cyornis pallidipes,White-bellied Blue Flycatcher,
-Myrmecocichla arnotti,Arnot's Chat,
-Ficedula erithacus,Slaty-backed Flycatcher,
-Cyanoptila cumatilis,Zappey's Flycatcher,
-Tarsiger rufilatus,Himalayan Bluetail,
-Monticola imerina,Littoral Rock-Thrush,
-Thamnolaea semirufa,White-winged Cliff-Chat,
-Oenanthe heuglini,Heuglin's Wheatear,
-Brachypteryx cruralis,Himalayan Shortwing,
-Brachypteryx sinensis,Chinese Shortwing,
-Brachypteryx leucophris,Lesser Shortwing,
-Phoenicurus coeruleocephala,Blue-capped Redstart,
-Cyornis glaucicomans,Chinese Blue Flycatcher,
-Cercotrichas quadrivirgata,Bearded Scrub-Robin,
-Monticola cinclorhyncha,Blue-capped Rock-Thrush,
-Cercotrichas leucosticta,Forest Scrub-Robin,
-Brachypteryx goodfellowi,Taiwan Shortwing,
-Alethe castanea,Fire-crested Alethe,
-Larvivora komadori,Ryukyu Robin,
-Calliope pectoralis,Himalayan Rubythroat,
-Calliope tschebaiewi,Chinese Rubythroat,
-Cercotrichas barbata,Miombo Scrub-Robin,
-Ficedula elisae,Green-backed Flycatcher,
-Sholicola major,Nilgiri Sholakili,
-Locustella amnicola,Sakhalin Grasshopper-Warbler,
-Locustella chengi,Sichuan Bush Warbler,
-Cincloramphus timoriensis,Tawny Grassbird,
-Locustella montis,Javan Bush Warbler,
-Locustella thoracica,Spotted Bush Warbler,
-Laniarius sublacteus,Zanzibar Boubou,
-Pachycephala fulvotincta,Rusty-breasted Whistler,
-Pachycephala cinerea,Mangrove Whistler,
-Sittiparus owstoni,Owston's Tit,
-Cyanistes caeruleus,Eurasian Blue Tit,
-Sittiparus varius,Varied Tit,
-Poecile lugubris,Sombre Tit,
-Poecile weigoldicus,Sichuan Tit,
-Melaniparus guineensis,White-shouldered Black-Tit,
-Sittiparus castaneoventris,Chestnut-bellied Tit,
-Melaniparus niger,Southern Black-Tit,
-Cyanistes teneriffae,African Blue Tit,
-Melaniparus rufiventris,Rufous-bellied Tit,
-Sittiparus olivaceus,Iriomote Tit,
-Cichlocolaptes mazarbarnetti,Cryptic Treehunter,
-Lepidocolaptes duidae,Duida Woodcreeper,
-Lepidocolaptes layardi,Layard's Woodcreeper,
-Automolus subulatus,Striped Woodhaunter,
-Xiphorhynchus atlanticus,Ceara Woodcreeper,
-Ochetorhynchus melanurus,Crag Chilia,
-Automolus lammi,Pernambuco Foliage-gleaner,
-Lepidocolaptes fatimalimae,Inambari Woodcreeper,
-Automolus paraensis,Para Foliage-gleaner,
-Lepidocolaptes fuscicapillus,Rondonia Woodcreeper,
-Premnornis guttuliger,Rusty-winged Barbtail,
-Batis erlangeri,Western Black-headed Batis,
-Platysteira hormophora,West African Wattle-eye,
-Horornis flavolivaceus,Aberrant Bush Warbler,
-Horornis vulcanius,Sunda Bush Warbler,
-Acrocephalus orientalis,Oriental Reed Warbler,
-Turdinus marmoratus,Marbled Wren-Babbler,
-Napothera albostriata,Sumatran Wren-Babbler,
-Graminicola striatus,Chinese Grassbird,
-Laticilla cinerascens,Swamp Grass Babbler,
-Aethopyga vigorsii,Vigors's Sunbird,
-Leptocoma sperata,Purple-throated Sunbird,
-Cinnyris manoensis,Eastern Miombo Sunbird,
-Deleornis axillaris,Gray-headed Sunbird,
-Aethopyga temminckii,Temminck's Sunbird,
-Aethopyga guimarasensis,Maroon-naped Sunbird,
-Anthreptes aurantius,Violet-tailed Sunbird,
-Aethopyga magnifica,Magnificent Sunbird,
-Deleornis fraseri,Fraser's Sunbird,
-Anthreptes griseigularis,Gray-throated Sunbird,
-Kurochkinegramma hypogrammicum,Purple-naped Spiderhunter,
-Arachnothera modesta,Gray-breasted Spiderhunter,
-Cinnyris gertrudis,Western Miombo Sunbird,
-Leptocoma brasiliana,Van Hasselt's Sunbird,
-Montecincla fairbanki,Palani Laughingthrush,
-Turdoides reinwardtii,Blackcap Babbler,
-Montecincla cachinnans,Nilgiri Laughingthrush,
-Liocichla ripponi,Scarlet-faced Liocichla,
-Tephrodornis virgatus,Large Woodshrike,
-Tephrodornis affinis,Sri Lanka Woodshrike,
-Tephrodornis sylvicola,Malabar Woodshrike,
-Chrysocorythus estherae,Mountain Serin,
-Carpodacus verreauxii,Sharpe's Rosefinch,
-Carpodacus dubius,Chinese White-browed Rosefinch,
-Carpodacus waltoni,Pink-rumped Rosefinch,
-Crithagra reichardi,Reichard's Seedeater,
-Carpodacus stoliczkae,Pale Rosefinch,
-Crithagra gularis,Streaky-headed Seedeater,
-Crithagra reichenowi,Reichenow's Seedeater,
-Bucanetes mongolicus,Mongolian Finch,
-Crithagra canicapilla,West African Seedeater,
-Carpodacus formosanus,Taiwan Rosefinch,
-Zosterops virens,Cape White-eye,
-Zosterops melanurus,Sangkar White-eye,
-Zosterops auriventer,Hume's White-eye,
-Zosterops flavilateralis,Pale White-eye,
-Zosterops simplex,Swinhoe's White-eye,
-Zosterops kikuyuensis,Kikuyu White-eye,
-Vireo chivi,Chivi Vireo,
-Pteruthius ripleyi,Himalayan Shrike-Babbler,
-Pteruthius aeralatus,Blyth's Shrike-Babbler,
-Tunchiornis ochraceiceps,Tawny-crowned Greenlet,
-Sylvia subalpina,Moltoni's Warbler,
-Sylvia ruppeli,R�ppell's Warbler,
-Sylvia subcoerulea,Chestnut-vented Warbler,
-Sylvia abyssinica,African Hill Babbler,
-Psittiparus bakeri,Rufous-headed Parrotbill,
-Psittiparus ruficeps,White-breasted Parrotbill,
-Sylvia crassirostris,Eastern Orphean Warbler,
-Sinosuthora brunnea,Brown-winged Parrotbill,
-Conostoma aemodium,Great Parrotbill,
-Sylvia deserti,African Desert Warbler,
-Mixornis flavicollis,Gray-cheeked Tit-Babbler,
-Stachyris nonggangensis,Nonggang Babbler,
-Cyanoderma erythropterum,Chestnut-winged Babbler,
-Cyanoderma ambiguum,Buff-chested Babbler,
-Cyanoderma rufifrons,Rufous-fronted Babbler,
-Stachyris strialata,Spot-necked Babbler,
-Trogon ramonianus,Amazonian Trogon,
-Harpactes mackloti,Sumatran Trogon,
-Upupa marginata,Madagascar Hoopoe,
-Lophoceros fasciatus,African Pied Hornbill,
-Horizocerus hartlaubi,Black Dwarf Hornbill,
-Horizocerus albocristatus,White-crested Hornbill,
-Ixobrychus dubius,Black-backed Bittern,
-Ardea intermedia,Intermediate Egret,
-Pseudibis gigantea,Giant Ibis,
-Theristicus branickii,Andean Ibis,
-Trichoglossus rubritorquis,Red-collared Lorikeet,
-Psittacula calthrapae,Layard's Parakeet,
-Trichoglossus moluccanus,Rainbow Lorikeet,
-Orthopsittaca manilatus,Red-bellied Macaw,
-Psittacara wagleri,Scarlet-fronted Parakeet,
-Poicephalus fuscicollis,Brown-necked Parrot,
-Eupsittula nana,Olive-throated Parakeet,
-Amazona mercenarius,Scaly-naped Parrot,
-Buteo trizonatus,Forest Buzzard,
-Haliaeetus humilis,Lesser Fish-Eagle,
-Buteo plagiatus,Gray Hawk,
-Nisaetus pinskeri,Pinsker's Hawk-Eagle,
-Aquila africana,Cassin's Hawk-Eagle,
-Buteo japonicus,Eastern Buzzard,
-Ictinaetus malaiensis,Black Eagle,
-Haliaeetus ichthyaetus,Gray-headed Fish-Eagle,
-Aquila fasciata,Bonelli's Eagle,
-Buteo refectus,Himalayan Buzzard,
-Pernis steerei,Philippine Honey-buzzard,
-Pernis ptilorhynchus,Oriental Honey-buzzard,
-Circus hudsonius,Northern Harrier,
-Esacus magnirostris,Beach Thick-knee,
-Burhinus indicus,Indian Thick-knee,
-Turnix nanus,Black-rumped Buttonquail,
-Stercorarius maccormicki,South Polar Skua,
-Synthliboramphus scrippsi,Scripps's Murrelet,
-Vanellus macropterus,Javan Lapwing,
-Charadrius nivosus,Snowy Plover,
-Gelochelidon nilotica,Gull-billed Tern,
-Gallinago delicata,Wilson's Snipe,
-Tauraco schuettii,Black-billed Turaco,
-Amazilia saucerottei,Steely-vented Hummingbird,
-Nesophlox evelynae,Bahama Woodstar,
-Urochroa leucura,Green-backed Hillstar,
-Eriocnemis aline,Emerald-bellied Puffleg,
-Stephanoxis loddigesii,Purple-crowned Plovercrest,
-Campylopterus calcirupicola,Dry-forest Sabrewing,
-Sappho sparganurus,Red-tailed Comet,
-Juliamyia julie,Violet-bellied Hummingbird,
-Aglaiocercus kingii,Long-tailed Sylph,
-Schistes albogularis,Choco Daggerbill,
-Anthocephala berlepschi,Tolima Blossomcrown,
-Systellura decussata,Tschudi's Nightjar,
-Setopagis heterura,Todd's Nightjar,
-Setopagis parvula,Little Nightjar,
-Systellura longirostris,Band-winged Nightjar,
-Caprimulgus jotaka,Gray Nightjar,
-Oceanodroma socorroensis,Townsend's Storm-Petrel,
-Oceanodroma microsoma,Least Storm-Petrel,
-Oceanodroma jabejabe,Cape Verde Storm-Petrel,
-Puffinus elegans,Subantarctic Shearwater,
-Puffinus bailloni,Tropical Shearwater,
-Puffinus subalaris,Galapagos Shearwater,
-Puffinus bryani,Bryan's Shearwater,
-Puffinus persicus,Persian Shearwater,
-Puffinus bannermani,Bannerman's Shearwater,
-Pterodroma gouldi,Gray-faced Petrel,
+Atlapetes blancae,Antioquia Brushfinch,Atlapetes schistaceus
+Arremon atricapillus,Black-headed Brushfinch,Arremon virenticeps
+Arremon perijanus,Perija Brushfinch,Arremon torquatus
+Arremon phaeopleurus,Caracas Brushfinch,Arremon torquatus
+Chlorospingus flavopectus,Common Chlorospingus,Chlorospingus ophthalmicus
+Arremon assimilis,Gray-browed Brushfinch,Arremon torquatus
+Cyanoloxia rothschildii,Amazonian Grosbeak,Cyanocompsa cyanoides
+Cyanoloxia cyanoides,Blue-black Grosbeak,Cyanocompsa cyanoides
+Cyanopica cooki,Iberian Magpie,Cyanopica cyanus
+Urocissa erythroryncha,Red-billed Blue-Magpie,Urocissa erythrorhyncha
+Aphelocoma wollweberi,Mexican Jay,Aphelocoma ultramarina
+Corvus pectoralis,Collared Crow,Corvus torquatus
+Pica mauritanica,Maghreb Magpie,Pica pica
+Ptiliogonys cinereus,Gray Silky-flycatcher,Ptilogonys cinereus
+Cisticola cinnamomeus,Pale-crowned Cisticola,Cisticola brunnescens
+Calamonastes undosus,Miombo Wren-Warbler,Camaroptera undosa
+Cisticola luapula,Luapula Cisticola,Cisticola galactotes
+Cisticola marginatus,Winding Cisticola,Cisticola galactotes
+Cisticola lugubris,Ethiopian Cisticola,Cisticola galactotes
+Oreolais pulcher,Black-collared Apalis,Oreolais pulchra
+Orthotomus chloronotus,Green-backed Tailorbird,Orthotomus atrogularis
+Cisticola haematocephalus,Coastal Cisticola,Cisticola galactotes
+Calamonastes stierlingi,Stierling's Wren-Warbler,Camaroptera undosa
+Cisticola nana,Tiny Cisticola,Cisticola nanus
+Prinia superciliaris,Hill Prinia,Prinia atrogularis
+Cossypha albicapillus,White-crowned Robin-Chat,Cossypha albicapilla
+Cercotrichas signata,Brown Scrub-Robin,Erythropygia signata
+Cyornis brunneatus,Brown-chested Jungle-Flycatcher,Rhinomyias brunneatus
+Cyornis sumatrensis,Indochinese Blue Flycatcher,Cyornis tickelliae
+Larvivora akahige,Japanese Robin,Erithacus akahige
+Ficedula luzoniensis,Bundok Flycatcher,Ficedula hyperythra
+Copsychus mindanensis,Philippine Magpie-Robin,Copsychus saularis
+Cyornis pallidipes,White-bellied Blue Flycatcher,Cyornis pallipes
+Myrmecocichla arnotti,Arnot's Chat,Myrmecocichla arnoti
+Ficedula erithacus,Slaty-backed Flycatcher,Ficedula hodgsonii
+Cyanoptila cumatilis,Zappey's Flycatcher,Cyanoptila cyanomelana
+Tarsiger rufilatus,Himalayan Bluetail,Tarsiger cyanurus
+Monticola imerina,Littoral Rock-Thrush,Monticola imerinus
+Thamnolaea semirufa,White-winged Cliff-Chat,Myrmecocichla semirufa
+Oenanthe heuglini,Heuglin's Wheatear,Oenanthe bottae
+Brachypteryx cruralis,Himalayan Shortwing,Brachypteryx montana
+Brachypteryx sinensis,Chinese Shortwing,Brachypteryx montana
+Brachypteryx leucophris,Lesser Shortwing,Brachypteryx leucophrys
+Phoenicurus coeruleocephala,Blue-capped Redstart,Phoenicurus caeruleocephala
+Cyornis glaucicomans,Chinese Blue Flycatcher,Cyornis rubeculoides
+Cercotrichas quadrivirgata,Bearded Scrub-Robin,Erythropygia quadrivirgata
+Monticola cinclorhyncha,Blue-capped Rock-Thrush,Monticola cinclorhynchus
+Cercotrichas leucosticta,Forest Scrub-Robin,Erythropygia leucosticta
+Brachypteryx goodfellowi,Taiwan Shortwing,Brachypteryx montana
+Alethe castanea,Fire-crested Alethe,Alethe diademata
+Larvivora komadori,Ryukyu Robin,Erithacus komadori
+Calliope pectoralis,Himalayan Rubythroat,Luscinia pectoralis
+Calliope tschebaiewi,Chinese Rubythroat,Luscinia pectoralis
+Cercotrichas barbata,Miombo Scrub-Robin,Erythropygia barbata
+Ficedula elisae,Green-backed Flycatcher,Ficedula narcissina
+Sholicola major,Nilgiri Sholakili,Myiomela major
+Locustella amnicola,Sakhalin Grasshopper-Warbler,Locustella fasciolata
+Locustella chengi,Sichuan Bush Warbler,Bradypterus seebohmi
+Cincloramphus timoriensis,Tawny Grassbird,Megalurus timoriensis
+Locustella montis,Javan Bush Warbler,Bradypterus seebohmi
+Locustella thoracica,Spotted Bush Warbler,Bradypterus thoracicus
+Laniarius sublacteus,Zanzibar Boubou,Laniarius aethiopicus
+Pachycephala fulvotincta,Rusty-breasted Whistler,Pachycephala pectoralis
+Pachycephala cinerea,Mangrove Whistler,Pachycephala grisola
+Sittiparus owstoni,Owston's Tit,Parus varius
+Cyanistes caeruleus,Eurasian Blue Tit,Parus caeruleus
+Sittiparus varius,Varied Tit,Parus varius
+Poecile lugubris,Sombre Tit,Parus lugubris
+Poecile weigoldicus,Sichuan Tit,Parus montanus
+Melaniparus guineensis,White-shouldered Black-Tit,Parus dichrous
+Sittiparus castaneoventris,Chestnut-bellied Tit,Parus varius
+Melaniparus niger,Southern Black-Tit,Parus niger
+Cyanistes teneriffae,African Blue Tit,Parus caeruleus
+Melaniparus rufiventris,Rufous-bellied Tit,Parus rufiventris
+Sittiparus olivaceus,Iriomote Tit,Parus varius
+Cichlocolaptes mazarbarnetti,Cryptic Treehunter,Philydor novaesi
+Lepidocolaptes duidae,Duida Woodcreeper,Lepidocolaptes albolineatus
+Lepidocolaptes layardi,Layard's Woodcreeper,Lepidocolaptes albolineatus
+Automolus subulatus,Striped Woodhaunter,Hyloctistes subulatus
+Xiphorhynchus atlanticus,Ceara Woodcreeper,Xiphorhynchus fuscus
+Ochetorhynchus melanurus,Crag Chilia,Ochetorhynchus melanura
+Automolus lammi,Pernambuco Foliage-gleaner,Automolus leucophthalmus
+Lepidocolaptes fatimalimae,Inambari Woodcreeper,Lepidocolaptes albolineatus
+Automolus paraensis,Para Foliage-gleaner,Automolus infuscatus
+Lepidocolaptes fuscicapillus,Rondonia Woodcreeper,Lepidocolaptes albolineatus
+Premnornis guttuliger,Rusty-winged Barbtail,Premnornis guttuligera
+Batis erlangeri,Western Black-headed Batis,Batis minor
+Platysteira hormophora,West African Wattle-eye,Platysteira castanea
+Horornis flavolivaceus,Aberrant Bush Warbler,Cettia flavolivacea
+Horornis vulcanius,Sunda Bush Warbler,Cettia vulcania
+Acrocephalus orientalis,Oriental Reed Warbler,Acrocephalus arundinaceus
+Turdinus marmoratus,Marbled Wren-Babbler,Turdinus marmorata
+Napothera albostriata,Sumatran Wren-Babbler,Rimator malacoptilus
+Graminicola striatus,Chinese Grassbird,Graminicola bengalensis
+Laticilla cinerascens,Swamp Grass Babbler,Prinia burnesii
+Aethopyga vigorsii,Vigors's Sunbird,Aethopyga siparaja
+Leptocoma sperata,Purple-throated Sunbird,Nectarinia sperata
+Cinnyris manoensis,Eastern Miombo Sunbird,Nectarinia manoensis
+Deleornis axillaris,Gray-headed Sunbird,Anthreptes fraseri
+Aethopyga temminckii,Temminck's Sunbird,Aethopyga mystacalis
+Aethopyga guimarasensis,Maroon-naped Sunbird,Aethopyga flagrans
+Anthreptes aurantius,Violet-tailed Sunbird,Anthreptes aurantium
+Aethopyga magnifica,Magnificent Sunbird,Aethopyga siparaja
+Deleornis fraseri,Fraser's Sunbird,Anthreptes fraseri
+Anthreptes griseigularis,Gray-throated Sunbird,Anthreptes malacensis
+Kurochkinegramma hypogrammicum,Purple-naped Spiderhunter,Hypogramma hypogrammicum
+Arachnothera modesta,Gray-breasted Spiderhunter,Arachnothera affinis
+Cinnyris gertrudis,Western Miombo Sunbird,Nectarinia manoensis
+Leptocoma brasiliana,Van Hasselt's Sunbird,Nectarinia sperata
+Montecincla fairbanki,Palani Laughingthrush,Strophocincla fairbanki
+Turdoides reinwardtii,Blackcap Babbler,Turdoides reinwardii
+Montecincla cachinnans,Nilgiri Laughingthrush,Garrulax sannio
+Liocichla ripponi,Scarlet-faced Liocichla,Liocichla phoenicea
+Tephrodornis virgatus,Large Woodshrike,Tephrodornis gularis
+Tephrodornis affinis,Sri Lanka Woodshrike,Tephrodornis pondicerianus
+Tephrodornis sylvicola,Malabar Woodshrike,Tephrodornis gularis
+Chrysocorythus estherae,Mountain Serin,Serinus estherae
+Carpodacus verreauxii,Sharpe's Rosefinch,Carpodacus rodopeplus
+Carpodacus dubius,Chinese White-browed Rosefinch,Carpodacus thura
+Carpodacus waltoni,Pink-rumped Rosefinch,Carpodacus pulcherrimus
+Crithagra reichardi,Reichard's Seedeater,Serinus reichardi
+Carpodacus stoliczkae,Pale Rosefinch,Carpodacus synoicus
+Crithagra gularis,Streaky-headed Seedeater,Serinus gularis
+Crithagra reichenowi,Reichenow's Seedeater,Serinus atrogularis
+Bucanetes mongolicus,Mongolian Finch,Eremopsaltria mongolicus
+Crithagra canicapilla,West African Seedeater,Serinus gularis
+Carpodacus formosanus,Taiwan Rosefinch,Carpodacus vinaceus
+Zosterops virens,Cape White-eye,Zosterops pallidus
+Zosterops melanurus,Sangkar White-eye,Zosterops palpebrosus
+Zosterops auriventer,Hume's White-eye,Zosterops palpebrosus
+Zosterops flavilateralis,Pale White-eye,Zosterops abyssinicus
+Zosterops simplex,Swinhoe's White-eye,Zosterops japonicus
+Zosterops kikuyuensis,Kikuyu White-eye,Zosterops poliogastrus
+Vireo chivi,Chivi Vireo,Vireo olivaceus
+Pteruthius ripleyi,Himalayan Shrike-Babbler,Pteruthius flaviscapis
+Pteruthius aeralatus,Blyth's Shrike-Babbler,Pteruthius flaviscapis
+Tunchiornis ochraceiceps,Tawny-crowned Greenlet,Hylophilus ochraceiceps
+Sylvia subalpina,Moltoni's Warbler,Sylvia cantillans
+Sylvia ruppeli,Rüppell's Warbler,Sylvia rueppelli
+Sylvia subcoerulea,Chestnut-vented Warbler,Sylvia subcaerulea
+Sylvia abyssinica,African Hill Babbler,Pseudoalcippe abyssinica
+Psittiparus bakeri,Rufous-headed Parrotbill,Paradoxornis ruficeps
+Psittiparus ruficeps,White-breasted Parrotbill,Paradoxornis ruficeps
+Sylvia crassirostris,Eastern Orphean Warbler,Sylvia hortensis
+Sinosuthora brunnea,Brown-winged Parrotbill,Paradoxornis brunneus
+Conostoma aemodium,Great Parrotbill,Conostoma oemodium
+Sylvia deserti,African Desert Warbler,Sylvia nana
+Mixornis flavicollis,Gray-cheeked Tit-Babbler,Macronous flavicollis
+Cyanoderma erythropterum,Chestnut-winged Babbler,Stachyris erythroptera
+Cyanoderma ambiguum,Buff-chested Babbler,Stachyris ambigua
+Cyanoderma rufifrons,Rufous-fronted Babbler,Stachyris rufifrons
+Stachyris strialata,Spot-necked Babbler,Stachyris striolata
+Trogon ramonianus,Amazonian Trogon,Trogon violaceus
+Harpactes mackloti,Sumatran Trogon,Apalharpactes mackloti
+Upupa marginata,Madagascar Hoopoe,Upupa epops
+Lophoceros fasciatus,African Pied Hornbill,Tockus fasciatus
+Horizocerus hartlaubi,Black Dwarf Hornbill,Tockus hartlaubi
+Horizocerus albocristatus,White-crested Hornbill,Tropicranus albocristatus
+Ixobrychus dubius,Black-backed Bittern,Tigriornis leucolopha
+Ardea intermedia,Intermediate Egret,Mesophoyx intermedia
+Pseudibis gigantea,Giant Ibis,Thaumatibis gigantea
+Theristicus branickii,Andean Ibis,Theristicus melanopis
+Trichoglossus rubritorquis,Red-collared Lorikeet,Trichoglossus haematodus
+Psittacula calthrapae,Layard's Parakeet,Psittacula calthropae
+Trichoglossus moluccanus,Rainbow Lorikeet,Trichoglossus haematodus
+Orthopsittaca manilatus,Red-bellied Macaw,Orthopsittaca manilata
+Psittacara wagleri,Scarlet-fronted Parakeet,Aratinga wagleri
+Poicephalus fuscicollis,Brown-necked Parrot,Poicephalus robustus
+Eupsittula nana,Olive-throated Parakeet,Aratinga nana
+Amazona mercenarius,Scaly-naped Parrot,Amazona mercenaria
+Buteo trizonatus,Forest Buzzard,Buteo oreophilus
+Haliaeetus humilis,Lesser Fish-Eagle,Ichthyophaga humilis
+Buteo plagiatus,Gray Hawk,Buteo nitidus
+Nisaetus pinskeri,Pinsker's Hawk-Eagle,Nisaetus philippensis
+Aquila africana,Cassin's Hawk-Eagle,Aquila africanus
+Buteo japonicus,Eastern Buzzard,Buteo buteo
+Ictinaetus malaiensis,Black Eagle,Ictinaetus malayensis
+Haliaeetus ichthyaetus,Gray-headed Fish-Eagle,Ichthyophaga ichthyaetus
+Aquila fasciata,Bonelli's Eagle,Aquila fasciatus
+Buteo refectus,Himalayan Buzzard,Buteo buteo
+Pernis steerei,Philippine Honey-buzzard,Pernis celebensis
+Pernis ptilorhynchus,Oriental Honey-buzzard,Pernis ptilorhyncus
+Circus hudsonius,Northern Harrier,Circus cyaneus
+Esacus magnirostris,Beach Thick-knee,Esacus giganteus
+Burhinus indicus,Indian Thick-knee,Burhinus oedicnemus
+Turnix nanus,Black-rumped Buttonquail,Turnix hottentottus
+Stercorarius maccormicki,South Polar Skua,Catharacta maccormicki
+Synthliboramphus scrippsi,Scripps's Murrelet,Synthliboramphus hypoleucus
+Charadrius nivosus,Snowy Plover,Charadrius alexandrinus
+Gelochelidon nilotica,Gull-billed Tern,Sterna nilotica
+Gallinago delicata,Wilson's Snipe,Gallinago gallinago
+Tauraco schuettii,Black-billed Turaco,Tauraco schuetti
+Amazilia saucerottei,Steely-vented Hummingbird,Amazilia saucerrottei
+Nesophlox evelynae,Bahama Woodstar,Calliphlox evelynae
+Urochroa leucura,Green-backed Hillstar,Urochroa bougueri
+Eriocnemis aline,Emerald-bellied Puffleg,Eriocnemis alinae
+Stephanoxis loddigesii,Purple-crowned Plovercrest,Stephanoxis lalandi
+Campylopterus calcirupicola,Dry-forest Sabrewing,Campylopterus largipennis
+Sappho sparganurus,Red-tailed Comet,Sappho sparganura
+Juliamyia julie,Violet-bellied Hummingbird,Damophila julie
+Aglaiocercus kingii,Long-tailed Sylph,Aglaiocercus kingi
+Schistes albogularis,Choco Daggerbill,Schistes geoffroyi
+Anthocephala berlepschi,Tolima Blossomcrown,Anthocephala floriceps
+Systellura decussata,Tschudi's Nightjar,Caprimulgus longirostris
+Setopagis heterura,Todd's Nightjar,Caprimulgus heterurus
+Setopagis parvula,Little Nightjar,Caprimulgus parvulus
+Systellura longirostris,Band-winged Nightjar,Caprimulgus longirostris
+Caprimulgus jotaka,Gray Nightjar,Caprimulgus indicus
+Oceanodroma socorroensis,Townsend's Storm-Petrel,Oceanodroma leucorhoa
+Oceanodroma microsoma,Least Storm-Petrel,Halocyptena microsoma
+Oceanodroma jabejabe,Cape Verde Storm-Petrel,Oceanodroma castro
+Puffinus elegans,Subantarctic Shearwater,Puffinus assimilis
+Puffinus bailloni,Tropical Shearwater,Puffinus lherminieri
+Puffinus subalaris,Galapagos Shearwater,Puffinus lherminieri
+Puffinus bryani,Bryan's Shearwater,Puffinus assimilis
+Puffinus persicus,Persian Shearwater,Puffinus assimilis
+Puffinus bannermani,Bannerman's Shearwater,Puffinus assimilis
+Pterodroma gouldi,Gray-faced Petrel,Pterodroma macroptera
+Mentrocrex kioloides,Madagascar Wood-Rail,Canirallus kioloides
+Chloropicus namaquus,Bearded Woodpecker,Thripias namaquus
+Chloropicus xantholophus,Golden-crowned Woodpecker,Thripias xantholophus
+Dryobates arizonae,Arizona Woodpecker,Picoides arizonae
+Dendrocoptes medius,Middle Spotted Woodpecker,Dendrocopos medius
+Chloropicus pyrrhogaster,Fire-bellied Woodpecker,Thripias pyrrhogaster
+Dryobates stricklandi,Strickland's Woodpecker,Picoides stricklandi
+Dendrocoptes auriceps,Brown-fronted Woodpecker,Dendrocopos auriceps
+Dryobates villosus,Hairy Woodpecker,Picoides villosus
+Yungipicus canicapillus,Gray-capped Woodpecker,Dendrocopos canicapillus
+Yungipicus moluccensis,Sunda Woodpecker,Dendrocopos moluccensis
+Dryobates fumigatus,Smoky-brown Woodpecker,Picoides fumigatus
+Chloropicus obsoletus,Brown-backed Woodpecker,Dendrocopos obsoletus
+Yungipicus temminckii,Sulawesi Woodpecker,Dendrocopos temminckii
+Yungipicus nanus,Brown-capped Woodpecker,Dendrocopos nanus
+Dryobates albolarvatus,White-headed Woodpecker,Picoides albolarvatus
+Yungipicus kizuki,Pygmy Woodpecker,Dendrocopos kizuki
+Chloropicus griseocephalus,Olive Woodpecker,Mesopicos griseocephalus
+Yungipicus maculatus,Philippine Woodpecker,Dendrocopos maculatus
+Dryobates borealis,Red-cockaded Woodpecker,Picoides borealis
+Dasylophus cumingi,Scale-feathered Malkoha,Phaenicophaeus cumingi
+Streptopelia chinensis,Spotted Dove,Stigmatopelia chinensis
+Dixiphia pipra,White-crowned Manakin,Pipra pipra
+Sturnia blythii,Malabar Starling,Sturnus malabaricus
+Brachypodius urostictus,Yellow-wattled Bulbul,Pycnonotus urostictus
+Rubigula erythropthalmos,Spectacled Bulbul,Pycnonotus erythropthalmos
+Brachypodius eutilotus,Puff-backed Bulbul,Pycnonotus eutilotus
+Rubigula cyaniventris,Gray-bellied Bulbul,Pycnonotus cyaniventris
+Hypsipetes guimarasensis,Visayan Bulbul,Ixos philippinus
+Rubigula melanicterus,Black-capped Bulbul,Pycnonotus melanicterus
+Brachypodius melanoleucos,Black-and-white Bulbul,Pycnonotus melanoleucos
+Rubigula squamata,Scaly-breasted Bulbul,Pycnonotus squamatus
+Ptyonoprogne fuligula,Rock Martin,Hirundo obsoleta
+Analisoma coerulescens,Blackish Cuckooshrike,Coracina coerulescens
+Analisoma ostenta,White-winged Cuckooshrike,Coracina ostenta
+Xanthomixis tenebrosa,Dusky Tetraka,Bernieria tenebrosa
+Porphyrospiza alaudina,Band-tailed Sierra-Finch,Phrygilus alaudinus
+Porphyrospiza carbonaria,Carbonated Sierra-Finch,Phrygilus carbonarius
+Melopyrrha violacea,Greater Antillean Bullfinch,Loxigilla violacea
+Centronyx bairdii,Baird's Sparrow,Ammodramus bairdii
+Centronyx henslowii,Henslow's Sparrow,Ammodramus henslowii
+Spizelloides arborea,American Tree Sparrow,Spizella arborea
+Cercotrichas coryphoeus,Karoo Scrub-Robin,Erythropygia coryphaeus
+Machlolophus aplonotus,Indian Yellow Tit,Parus xanthogenys
+Periparus venustulus,Yellow-bellied Tit,Parus venustulus
+Periparus elegans,Elegant Tit,Parus elegans
+Urosphena pallidipes,Pale-footed Bush Warbler,Cettia pallidipes
+Napothera danjoui,Short-tailed Scimitar-Babbler,Jabouilleia danjoui
+Pellorneum malaccense,Short-tailed Babbler,Malacocincla malaccensis
+Cyanomitra veroxii,Mouse-colored Sunbird,Nectarinia veroxii
+Actinodura strigula,Chestnut-tailed Minla,Minla strigula
+Actinodura cyanouroptera,Blue-winged Minla,Minla cyanouroptera
+Ianthocincla lanceolata,Chinese Babax,Babax lanceolatus
+Turdoides huttoni,Afghan Babbler,Turdoides caudata
+Ianthocincla koslowi,Tibetan Babax,Babax koslowi
+Ianthocincla waddelli,Giant Babax,Babax waddelli
+Minla annectens,Rufous-backed Sibia,Heterophasia annectens
+Acanthis hornemanni,Hoary Redpoll,Carduelis flammea
+Acanthis cabaret,Lesser Redpoll,Carduelis flammea
+Megapomatorhinus gravivox,Black-streaked Scimitar-Babbler,Pomatorhinus gravivox
+Megapomatorhinus erythrocnemis,Black-necklaced Scimitar-Babbler,Pomatorhinus erythrocnemis
+Megapomatorhinus swinhoei,Gray-sided Scimitar-Babbler,Pomatorhinus swinhoei
+Megapomatorhinus hypoleucos,Large Scimitar-Babbler,Pomatorhinus hypoleucos
+Megapomatorhinus erythrogenys,Rusty-cheeked Scimitar-Babbler,Pomatorhinus erythrogenys
+Psittacara strenuus,Pacific Parakeet,Aratinga brevipes
+Thectocercus acuticaudatus,Blue-crowned Parakeet,Aratinga acuticaudata
+Anous albivitta,Gray Noddy,Procelsterna albivitta
+Aerodramus amelis,Ameline Swiftlet,Collocalia amelis
+Aerodramus germani,Germain's Swiftlet,Collocalia germani
+Aerodramus sororum,Sulawesi Swiftlet,Collocalia infuscata
+Otus angelinae,Javan Scops Owl,Otus spilocephalus
+Gallirallus okinawae,Okinawa Rail,Gallirallus torquatus
+Stachyris nonggangensis,Nonggang Babbler,Stachyris herberti
+Vanellus macropterus,Javan Lapwing,Vanellus indicus

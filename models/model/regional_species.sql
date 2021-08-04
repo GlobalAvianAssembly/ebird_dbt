@@ -38,7 +38,7 @@ merlin AS (
         MAX(longest_run_of_non_zero_frequency) AS merlin_longest_run_of_non_zero_frequency,
         MIN(smallest_precision) AS merlin_smallest_precision
     FROM {{ ref('int_merlin_regional_species_pool') }} merlin
-    JOIN {{ ref('merlin_taxonomy') }} taxonomy USING(scientific_name)
+    JOIN {{ ref('used_merlin_taxonomy') }} taxonomy USING(scientific_name)
     GROUP BY
         taxonomy.ebird_scientific_name,
         taxonomy.ebird_common_name,
@@ -95,7 +95,7 @@ LEFT JOIN ebird_city
     ON species_pools.scientific_name = ebird_city.scientific_name AND species_pools.city_id = ebird_city.city_id
 JOIN {{ ref('city') }} city
     ON species_pools.city_id = city.city_id
-LEFT JOIN {{ ref('taxonomy') }} taxon
+JOIN {{ ref('taxonomy_with_traits') }} taxon
     ON species_pools.scientific_name = taxon.scientific_name
 WHERE species_pools.city_id IN (SELECT DISTINCT city_id FROM ebird_city)
 ORDER BY present_in_city DESC, present_in_merlin DESC, present_in_birdlife DESC, species_pools.scientific_name

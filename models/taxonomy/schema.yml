@@ -13,17 +13,53 @@ models:
         description: array of alternative scientific names for this species
 
   - name: used_ebird_taxonomy
-    description: Species included in models from ebird taxonomy
+    description: Species included in models from ebird/clements taxonomy
     columns:
       - name: common_name
         description: the common name for the species
       - name: scientific_name
         description: the eBird binomial for the species
-      - name: birdlife_common_name
-        description: the common name for the species from birdlife
-        tests:
-          - not_null
-      - name: birdlife_scientific_name
+
+  - name: used_merlin_taxonomy
+    description: Species included in models from ebird/clements taxonomy in merlin
+    columns:
+      - name: common_name
+        description: the common name for the species
+      - name: scientific_name
+        description: the eBird binomial for the species
+
+  - name: used_birdlife_taxonomy
+    description: Species included in models from birdlife taxonomy in birdlife mapped to the ebird/clements taxonomy
+    columns:
+      - name: common_name
+        description: the birdlife common name for the species
+      - name: scientific_name
         description: the birdlife binomial for the species
+      - name: ebird_common_name
+        description: the common name for the species from ebird/clements
         tests:
           - not_null
+      - name: ebird_scientific_name
+        description: the ebird/clements binomial for the species
+        tests:
+          - not_null
+
+  - name: used_taxonomy_all
+    description: All species from clements/eBird taxonomy used from birdlife, eBird, and Merlin in urban and regional pools
+    columns:
+      - name: common_name
+        description: the common name for the species
+      - name: scientific_name
+        description: the eBird binomial for the species
+
+  - name: trait_database
+    description: The elton and pigot data combined using the Jetz taxonomy.
+
+  - name: taxonomy_with_traits
+    description: Each species used from clements/eBird mapped to the trait_database (which uses Jetz).  Some of these mappings will be to closed available species.
+    columns:
+      - name: scientific_name
+        tests:
+          - has_no_missing_species:
+              all_species_model: ref('used_taxonomy_all')
+              all_species_field: scientific_name
