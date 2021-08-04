@@ -117,6 +117,8 @@ models:
         description: The species family
       - name: iucn_red_list_2020
         description: The IUCN vulnerability from 2020
+        tests:
+          - not_null
       - name: diet
         description: description of species diet
       - name: foraging

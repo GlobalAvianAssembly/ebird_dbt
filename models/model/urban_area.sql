@@ -9,40 +9,32 @@ WITH urban_hotspots AS (
     FROM {{ ref('eph_included_hotspot') }}
     WHERE {{ is_urban() }}
     GROUP BY city_id
-), urban_species AS (
-    SELECT
-        city_id,
-        common_name,
-        COUNT(*) AS number_of_hotspot_appearances
-    FROM {{ ref('urban_species') }}
-    GROUP BY city_id, common_name
 ), urban_richness AS (
     SELECT
-        city_id,
-        COUNT(DISTINCT common_name) AS urban_richness,
-        COUNT(IF(number_of_hotspot_appearances = 1, 1, NULL)) AS one_observation,
-        COUNT(IF(number_of_hotspot_appearances = 2, 1, NULL)) AS two_observations
-    FROM urban_species
-    GROUP BY city_id
+            city_id,
+            COUNT(DISTINCT scientific_name) AS urban_richness
+        FROM {{ ref('regional_species_filtered') }}
+        WHERE present_in_city = TRUE
+        GROUP BY city_id
 ), regional_richness_birdlife AS (
     SELECT
         city_id,
         COUNT(DISTINCT scientific_name) AS species_in_regional_pool
-    FROM {{ ref('regional_species') }}
+    FROM {{ ref('regional_species_filtered') }}
     WHERE present_in_birdlife_pool = TRUE
     GROUP BY city_id
 ), regional_richness_merlin AS (
      SELECT
          city_id,
          COUNT(DISTINCT scientific_name) AS species_in_regional_pool
-     FROM {{ ref('regional_species') }}
+     FROM {{ ref('regional_species_filtered') }}
      WHERE present_in_merlin_pool = TRUE
      GROUP BY city_id
 ), regional_richness_both AS (
      SELECT
          city_id,
          COUNT(DISTINCT scientific_name) AS species_in_regional_pool
-     FROM {{ ref('regional_species') }}
+     FROM {{ ref('regional_species_filtered') }}
      WHERE
             present_in_merlin_pool = TRUE
             AND present_in_birdlife_pool = TRUE
@@ -51,7 +43,7 @@ WITH urban_hotspots AS (
      SELECT
          city_id,
          COUNT(DISTINCT scientific_name) AS species_in_regional_pool
-     FROM {{ ref('regional_species') }}
+     FROM {{ ref('regional_species_filtered') }}
      WHERE  present_in_birdlife_pool = TRUE
             OR
             present_in_merlin_pool = TRUE
@@ -125,12 +117,8 @@ SELECT
     regional_richness_both.species_in_regional_pool AS species_in_both_regional_pools,
     regional_richness_either.species_in_regional_pool AS species_in_either_regional_pool,
     urban_richness.urban_richness AS urban_richness,
-    CASE
-        WHEN urban_richness.two_observations > 0
-        THEN ROUND(urban_richness.urban_richness + ((urban_richness.one_observation * urban_richness.one_observation) / (2 * urban_richness.two_observations)), 1)
-        ELSE -1
-    END AS urban_chao_estimate,
     ROUND(urban_richness.urban_richness / regional_richness_birdlife.species_in_regional_pool * 100, 1) AS percentage_of_birdlife_regional_richness,
+    ROUND(urban_richness.urban_richness / regional_richness_merlin.species_in_regional_pool * 100, 1) AS percentage_of_merlin_regional_richness,
     STRUCT(
         urban_hotspots.min_urban_hotspot_elevation AS min_elevation,
         urban_hotspots.max_urban_hotspot_elevation AS max_elevation,
