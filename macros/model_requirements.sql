@@ -88,3 +88,9 @@ EXTRACT(YEAR FROM {{ col_date }}) >= {{ var('min_year_for_inclusion') }}
     AND {{ col_merlin_longest_run_of_non_zero_frequency }} > {{ var('min_merlin_continuous_periods_present_allowed') }}
     AND {{ col_merlin_smallest_precision }} <= {{ var('min_merlin_precision_allowed') }}
 {% endmacro %}
+
+{% macro filter_to_accepted_taxonomy() %}
+    is_pelagic_specialist = FALSE
+    AND
+    iucn_red_list_2020 IN ('LC', 'NT', 'VU', 'EN', 'CR', 'DD', 'NR')
+{% endmacro %}
