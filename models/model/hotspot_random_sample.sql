@@ -1,8 +1,9 @@
 {{ config(materialized='table') }}
 
 {% set checklist_sample_size = 15 %}
+{% set number_of_random_samples = 100 %}
 
-{% for i in range(100) %}
+{% for i in range(number_of_random_samples) %}
     {% if not loop.first %} UNION ALL {% endif %}
     (
         WITH sample AS (
