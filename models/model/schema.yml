@@ -43,18 +43,6 @@ models:
         description: the longitude of the city from nordpil or wikipedia
       - name: total_urban_hotspots
         description: the total number of hotspots within this city included in study
-      - name: urban_richness
-        description: the number of species present in the city that are in the regional pool
-      - name: urban_chao_estimate
-        description: the chao estimate for urban species richness
-      - name: species_in_regional_pool
-        description: the size of the birdlife species pool richness
-      - name: min_urban_hotspot_elevation
-        description: The minimum elevation of any hotspot inside the city
-      - name: max_urban_hotspot_elevation
-        description: The maximum elevation of any hotspot inside the city
-      - name: percentage_of_regional_richness
-        description: The percentage of the regional pool found inside the city
 
   - name: urban_hotspot
     description: Hotspot included in study within an urban areay
@@ -79,30 +67,6 @@ models:
         description: the city this hotspot is related to
       - name: number_of_checklists
         description: the number of checklists at the hotspot
-      - name: total_richness
-        description: the total species richness at this hotspot of all species observed
-      - name: project_richness
-        description: the species richness only including species that appear on the required number of checklists.
-      - name: chao_estimate
-        description: The chao2 estimate of richness at this hotspot
-
-  - name: urban_species
-    description: Species that occur at urban hotspots
-    columns:
-      - name: city_id
-        description: the city the hotspot is in
-      - name: locality_id
-        description: the hotspot
-      - name: scientific_name
-        description: The scientific name for the bird seen
-        tests:
-          - relationships:
-              to: ref('taxonomy')
-              field: scientific_name
-      - name: common_name
-        description: The common name for the bird seen
-      - name: percentage_of_checklists
-        description: The percentage of checklists this species appears on at hotspots within the regional
 
   - name: taxonomy
     description: The taxonomic model based on eBird/Clements used

@@ -1,4 +1,4 @@
-
+{{ config(materialized='ephemeral') }}
 SELECT
     hotspot_id,
     species.locality_id AS locality_id,

@@ -1,18 +1,4 @@
 WITH
-included_hotspot_richness AS (
-    SELECT
-        hotspot_id,
-        COUNT(*) AS richness
-    FROM {{ ref('urban_species' )}}
-    GROUP BY hotspot_id
-),
-total_hotspot_richness AS (
-    SELECT
-        hotspot_id,
-        COUNT(*) AS richness
-    FROM {{ ref('int_species_at_hotspot' )}}
-    GROUP BY hotspot_id
-),
 checklist_distance_stats AS (
     SELECT
         locality_id,
@@ -31,7 +17,7 @@ checklist_area_stats AS (
     WHERE effort_area_ha IS NOT NULL
     GROUP BY locality_id
 ),
-chao2 AS (
+hotspot_data AS (
     SELECT
         hotspot_id,
         locality_id,
@@ -40,23 +26,25 @@ chao2 AS (
         longitude,
         city_id,
         elevation,
-        number_of_checklists,
-        ihr.richness AS project_richness,
-        thr.richness AS total_richness,
-        (SELECT COUNT(*) FROM {{ ref('int_species_at_hotspot') }} WHERE number_of_checklist_appearances = 1 AND hotspot_id = hs.hotspot_id) AS one_observation,
-        (SELECT COUNT(*) FROM {{ ref('int_species_at_hotspot') }} WHERE number_of_checklist_appearances = 2 AND hotspot_id = hs.hotspot_id) AS two_observations
+        number_of_checklists
     FROM {{ ref('eph_included_hotspot') }} hs
-    JOIN included_hotspot_richness ihr USING (hotspot_id)
-    JOIN total_hotspot_richness thr USING (hotspot_id)
     WHERE {{ is_urban() }}
 )
 SELECT
-    * EXCEPT (one_observation, two_observations),
-    CASE
-        WHEN two_observations > 0
-        THEN ROUND(total_richness + ((one_observation * one_observation) / (2 * two_observations)), 1)
-        ELSE -1
-    END AS chao_estimate
-FROM chao2
-LEFT JOIN checklist_distance_stats USING (locality_id)
-LEFT JOIN checklist_area_stats USING (locality_id)
+    hotspot_data.*,
+    STRUCT(
+        checklist_distance_stats.mean_effort_distance_km,
+        checklist_distance_stats.max_effort_distance_km,
+        checklist_area_stats.mean_effort_area_ha,
+        checklist_area_stats.max_effort_area_ha
+    ) AS effort_summary,
+    {{ landcover_struct('b500') }} AS percentage_landcover_500m,
+    {{ landcover_struct('b1km') }} AS percentage_landcover_1km,
+    {{ landcover_struct('b2km') }} AS percentage_landcover_2km,
+    {{ landcover_struct('b3km') }} AS percentage_landcover_3km,
+    {{ landcover_struct('b4km') }} AS percentage_landcover_4km,
+    {{ landcover_struct('b5km') }} AS percentage_landcover_5km
+FROM hotspot_data
+JOIN checklist_distance_stats USING (locality_id)
+JOIN checklist_area_stats USING (locality_id)
+JOIN {{ source('dropbox', 'ee_hotspot_copernicus_land_coverage_and_pop_density') }} landcover USING (hotspot_id)

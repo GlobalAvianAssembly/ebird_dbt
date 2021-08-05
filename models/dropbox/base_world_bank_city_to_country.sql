@@ -6,6 +6,7 @@ SELECT
     GDP_MD_EST AS gdp_estimate,
     ECONOMY AS economy_description,
     INCOME_GRP AS income_group,
-    FIPS_10_ AS country_code
+    FIPS_10_ AS country_code,
+    POP_EST AS population_estimate
 FROM
     {{ source('dropbox', 'world_bank_city_to_country') }}

@@ -1,6 +1,6 @@
 WITH cities_from_urban_hotspots AS (
     SELECT
-        row_number() OVER () AS city_id,
+        {{ dbt_utils.surrogate_key(['CITY_NAME']) }} AS city_id,
         CITY_NAME AS name,
         ROUND(CAST(POP_2015 AS NUMERIC), 0) AS population_2015,
         ROUND(CAST(BU_2015 AS NUMERIC), 0) AS built_area_2015,
@@ -12,7 +12,8 @@ WITH cities_from_urban_hotspots AS (
 SELECT
     city_id,
     name,
-    population_2015,
+    population_2015 AS european_commission_city_population_2015,
+    population_estimate AS world_bank_country_population,
     built_area_2015,
     country_code,
     STRUCT(
@@ -27,9 +28,10 @@ SELECT
         max_urban_hotspot_elevation AS max
     ) AS urban_hotspot_elevations,
     STRUCT(
-        gdp_estimate,
+        gdp_estimate AS gdp_estimate_million_dollars,
         economy_description,
-        income_group
+        income_group,
+        ROUND(gdp_estimate / population_estimate * 1000, 3) AS gdp_estimate_thousand_dollars_per_person
     ) AS country_economy,
     STRUCT(
         ecosystems,
