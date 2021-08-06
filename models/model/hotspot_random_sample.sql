@@ -1,23 +1,20 @@
 {{ config(materialized='table') }}
 
-{% set checklist_sample_size = 15 %}
-{% set number_of_random_samples = 100 %}
+{%- set number_of_random_samples = var('number_of_times_to_sample') -%}
 
-{% for i in range(number_of_random_samples) %}
-    {% if not loop.first %} UNION ALL {% endif %}
-    (
-        WITH sample AS (
-            SELECT DISTINCT
-                '{{ i }}' AS sample_id,
-                scientific_name,
-                common_name,
-                ROUND(COUNT(*) / {{ checklist_sample_size }} * 100, 2) AS percentage_of_checklists,
-                'L5422255' AS locality_id
-            FROM {{ ref('observations_filtered') }}
-            WHERE checklist_id IN
-                (SELECT checklist_id FROM {{ ref('int_checklist') }} WHERE locality_id = 'L5422255' ORDER BY RAND() LIMIT {{ checklist_sample_size }})
-            GROUP BY scientific_name, common_name
-         )
-         SELECT * FROM sample WHERE {{ appears_on_required_percentage_of_checklists('percentage_of_checklists') }}
-    )
-{% endfor %}
+{%- set fetch_localities_query -%}
+    SELECT locality_id FROM {{ ref('urban_hotspot') }}
+{%- endset -%}
+
+{%- set results = run_query(fetch_localities_query) -%}
+
+{%- if execute -%}
+    {%- set results_list = results.columns[0].values() -%}
+    {%- for locality_id in results_list -%}
+        {%- if not loop.first %} UNION ALL {% endif -%}
+        {%- for i in range(number_of_random_samples) -%}
+            {%- if not loop.first %} UNION ALL {% endif -%}
+            SELECT * FROM {{target.schema}}.sample_random_checklists_at_locality('{{ locality_id }}', {{ i }})
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endif -%}

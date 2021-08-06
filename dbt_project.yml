@@ -22,6 +22,8 @@ vars:
   min_merlin_number_of_periods_allowed: 3
   min_merlin_continuous_periods_present_allowed: 3
   min_merlin_precision_allowed: 100
+  checklist_random_sample_size: 15
+  number_of_times_to_sample: 100
   
 # This setting configures which "profile" dbt uses for this project.
 profile: 'urban_ebird'
@@ -41,6 +43,8 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
 
+on-run-start:
+  - '{{ create_stored_procedures() }}'
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models

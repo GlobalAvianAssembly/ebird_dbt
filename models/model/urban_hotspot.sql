@@ -45,6 +45,6 @@ SELECT
     {{ landcover_struct('b4km') }} AS percentage_landcover_4km,
     {{ landcover_struct('b5km') }} AS percentage_landcover_5km
 FROM hotspot_data
-JOIN checklist_distance_stats USING (locality_id)
-JOIN checklist_area_stats USING (locality_id)
-JOIN {{ source('dropbox', 'ee_hotspot_copernicus_land_coverage_and_pop_density') }} landcover USING (hotspot_id)
+LEFT JOIN checklist_distance_stats USING (locality_id)
+LEFT JOIN checklist_area_stats USING (locality_id)
+JOIN {{ source('dropbox', 'ee_hotspot_copernicus_land_coverage_and_pop_density') }} landcover ON landcover.hotspot_id = hotspot_data.locality_id
