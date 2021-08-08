@@ -43,7 +43,8 @@ SELECT
     {{ landcover_struct('b2km') }} AS percentage_landcover_2km,
     {{ landcover_struct('b3km') }} AS percentage_landcover_3km,
     {{ landcover_struct('b4km') }} AS percentage_landcover_4km,
-    {{ landcover_struct('b5km') }} AS percentage_landcover_5km
+    {{ landcover_struct('b5km') }} AS percentage_landcover_5km,
+    row_number() OVER() AS row_number
 FROM hotspot_data
 LEFT JOIN checklist_distance_stats USING (locality_id)
 LEFT JOIN checklist_area_stats USING (locality_id)

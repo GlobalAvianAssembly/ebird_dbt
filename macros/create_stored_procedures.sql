@@ -2,6 +2,8 @@
     create schema if not exists {{target.schema}};
 
     {{ create_sample_locality_procedure() }};
+
+    {{ create_all_samples_at_locality_procedure() }};
 {% endmacro %}
 
 {% macro create_sample_locality_procedure() %}
@@ -28,4 +30,14 @@
             GROUP BY scientific_name, common_name
          )
         SELECT * FROM sample WHERE {{ appears_on_required_percentage_of_checklists('percentage_of_checklists') }}
+{% endmacro %}
+
+
+{% macro create_all_samples_at_locality_procedure() %}
+    CREATE OR REPLACE TABLE FUNCTION {{target.schema}}.all_samples_of_random_checklists_at_locality(input_locality_id STRING)
+    AS
+    {% for i in range(var('number_of_times_to_sample')) -%}
+        {%- if not loop.first %} UNION ALL {% endif -%}
+        SELECT * FROM {{target.schema}}.sample_random_checklists_at_locality(input_locality_id, {{ i }})
+   {%- endfor -%}
 {% endmacro %}
