@@ -1,20 +1,9 @@
-{{ config(materialized='table') }}
+{{ config(materialized='incremental') }}
 
-{%- set number_of_random_samples = var('number_of_times_to_sample') -%}
-
-{%- set fetch_localities_query -%}
-    SELECT locality_id FROM {{ ref('urban_hotspot') }}
-{%- endset -%}
-
-{%- set results = run_query(fetch_localities_query) -%}
-
-{%- if execute -%}
-    {%- set results_list = results.columns[0].values() -%}
-    {%- for locality_id in results_list -%}
-        {%- if not loop.first %} UNION ALL {% endif -%}
-        {%- for i in range(number_of_random_samples) -%}
-            {%- if not loop.first %} UNION ALL {% endif -%}
-            SELECT * FROM {{target.schema}}.sample_random_checklists_at_locality('{{ locality_id }}', {{ i }})
-        {%- endfor -%}
-    {%- endfor -%}
-{%- endif -%}
+SELECT
+    0 AS sample_id,
+    '' AS scientific_name,
+    '' AS common_name,
+    0.0 AS percentage_of_checklists,
+    '' AS locality_id
+LIMIT 0
