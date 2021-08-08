@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 WITH
 checklist_distance_stats AS (
     SELECT
