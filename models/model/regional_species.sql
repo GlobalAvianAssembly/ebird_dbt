@@ -1,17 +1,22 @@
 {{ config(materialized='table') }}
 WITH
+ebird_all_species AS (
+     SELECT DISTINCT
+         city_id,
+         scientific_name AS scientific_name
+     FROM
+         {{ ref('int_species_at_hotspot') }}
+ ),
 ebird_city AS (
     SELECT DISTINCT
         city_id,
-        scientific_name AS scientific_name,
-        common_name AS common_name
+        scientific_name AS scientific_name
     FROM
         {{ ref('urban_species') }}
 ),
 birdlife AS (
     SELECT DISTINCT
         ebird_scientific_name AS scientific_name,
-        ebird_common_name AS common_name,
         city_id
     FROM {{ ref('int_birdlife_regional_species_pool') }}
     JOIN {{ ref('used_birdlife_taxonomy') }} taxon_mapping USING (scientific_name)
@@ -19,7 +24,6 @@ birdlife AS (
 merlin AS (
     SELECT DISTINCT
         merlin.scientific_name AS scientific_name,
-        merlin.common_name AS common_name,
         city_id
     FROM {{ ref('int_merlin_regional_species_pool') }} merlin
     WHERE {{ merlin_pool_requirements('number_of_non_zero_frequency', 'longest_run_of_non_zero_frequency', 'smallest_precision') }}
@@ -28,11 +32,13 @@ all_species AS (
     SELECT DISTINCT
         *
     FROM (
-        SELECT scientific_name, common_name, city_id FROM ebird_city
+        SELECT scientific_name, city_id FROM ebird_all_species
         UNION ALL
-        SELECT scientific_name, common_name, city_id FROM birdlife
+        SELECT scientific_name, city_id FROM ebird_city
         UNION ALL
-        SELECT scientific_name, common_name, city_id FROM merlin
+        SELECT scientific_name, city_id FROM birdlife
+        UNION ALL
+        SELECT scientific_name, city_id FROM merlin
     )
 ),
 species_pools AS (
@@ -51,7 +57,7 @@ species_pools AS (
 )
 SELECT
     species_pools.scientific_name AS scientific_name,
-    species_pools.common_name AS common_name,
+    taxonomy.common_name AS common_name,
     city.name AS city_name,
     city.city_id AS city_id,
     species_pools.present_in_merlin AS present_in_merlin_pool,
@@ -68,5 +74,6 @@ LEFT JOIN ebird_city
     ON species_pools.scientific_name = ebird_city.scientific_name AND species_pools.city_id = ebird_city.city_id
 JOIN {{ ref('city') }} city
     ON species_pools.city_id = city.city_id
+JOIN {{ ref('taxonomy') }} taxonomy ON species_pools.scientific_name = taxonomy.scientific_name
 WHERE species_pools.city_id IN (SELECT DISTINCT city_id FROM ebird_city)
 ORDER BY present_in_city DESC, present_in_merlin DESC, present_in_birdlife DESC, species_pools.scientific_name
